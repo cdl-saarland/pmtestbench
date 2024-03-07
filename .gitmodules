@@ -1,0 +1,3 @@
+[submodule "lib/iwho"]
+	path = lib/iwho
+	url = https://github.com/cdl-saarland/iwho.git
