@@ -3,6 +3,8 @@
 A set of tools to infer port mappings of out-of-order CPUs from throughput microbenchmarks.
 It also serves as the Artifact for the ASPLOS paper "Explainable Port Mapping Inference with Sparse Performance Counters for AMD's Zen Architectures".
 
+This artifact is also available as a Vagrant/VirtualBox virtual machine image at [Zenodo](https://zenodo.org/doi/10.5281/zenodo.6818170).
+
 ## Maturity
 This is a research prototype, expect things to break!
 
