@@ -21,7 +21,6 @@ VAGRANT_HOME=/home/vagrant/
 # run folder.
 cp -r /vagrant/* $VAGRANT_HOME
 cp -r /vagrant/.inputrc $VAGRANT_HOME
-cp -r /vagrant/.bashrc $VAGRANT_HOME
 cd $VAGRANT_HOME
 
 
@@ -32,17 +31,20 @@ git clone https://tpope.io/vim/sensible.git
 cd $VAGRANT_HOME
 
 
-# cd $VAGRANT_HOME
-#
-# # set up the python environment
-# cd pmtestbench
-#
-# ./setup_venv.sh
-#
-# source ./env/anica_ui/bin/activate
-#
-# # make the python environment available to the user by default
-# echo "source /home/vagrant/pmtestbench/env/pmtestbench/bin/activate" >> $VAGRANT_HOME/.bashrc
+# set up the python environment
+cd pmtestbench
+
+./setup_venv.sh
+
+source ./env/pmtestbench/bin/activate
+
+# add copyhost command
+echo "function copyhost { cp -r \"$@\" /vagrant/; }" >> $VAGRANT_HOME/.bashrc
+
+# make the python environment available to the user by default
+echo "source /home/vagrant/pmtestbench/env/pmtestbench/bin/activate" >> $VAGRANT_HOME/.bashrc
+
+cd $VAGRANT_HOME
 
 cd ./pmtestbench/lib/cppfastproc
 make
