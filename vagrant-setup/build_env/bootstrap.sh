@@ -39,7 +39,7 @@ cd pmtestbench
 source ./env/pmtestbench/bin/activate
 
 # add copyhost command
-echo "function copyhost { cp -r \"$@\" /vagrant/; }" >> $VAGRANT_HOME/.bashrc
+echo "function copyhost { cp -r \"\$@\" /vagrant/; }" >> $VAGRANT_HOME/.bashrc
 
 # make the python environment available to the user by default
 echo "source /home/vagrant/pmtestbench/env/pmtestbench/bin/activate" >> $VAGRANT_HOME/.bashrc
