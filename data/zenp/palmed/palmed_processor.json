@@ -1,0 +1,6 @@
+{
+    "processor_kind": "palmed",
+    "spm_path": "./palmed_zen_extracted_2021-11-25.json",
+    "palmed_insnmap_path": "./fixed_palmed_insn_map.json",
+    "iwho_config_path": "../iwho_config-spec17.json"
+}

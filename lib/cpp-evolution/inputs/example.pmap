@@ -1,0 +1,16 @@
+# this is a sample example
+
+mapping:
+mul: # this is the mapping for a mul instruction
+    ABCD: 4 # add is decomposed into 4 uops that can be executed on ports A, B, C, and D
+    AB: 1   # and also one uop that can be executed on ports A and B.
+
+add:
+    ABCD: 1
+
+sub:
+    ABCD: 1
+
+div:
+    D: 4
+

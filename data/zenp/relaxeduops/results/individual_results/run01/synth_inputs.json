@@ -1,0 +1,30 @@
+{
+  "config": {
+    "synthesizer_kind": "smt",
+    "mapping_class": "Mapping3",
+    "num_ports": 10,
+    "smt_use_constrained_mapping3": true,
+    "num_uops_per_insn": {
+      "mov dword ptr W:MEM(32), R:GPR:32": 2,
+      "vmovapd xmmword ptr W:MEM(128), R:XMM0..15": 2
+    },
+    "smt_slack_val": 0.02,
+    "smt_slack_kind": "cpi",
+    "smt_insn_bound": 10,
+    "smt_exp_limit_strategy": "incremental_optimistic",
+    "smt_dump_constraints": true
+  },
+  "bottleneck_ipc": 4.952063143745047,
+  "known_portset_sizes": {
+    "vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15": 1,
+    "vroundps W:XMM0..15, R:XMM0..15, IMM(8)": 1,
+    "vbroadcastss W:XMM0..15, R:XMM0..15": 2,
+    "mov W:GPR:32, dword ptr R:MEM(32)": 2,
+    "vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15": 2,
+    "vminps W:XMM0..15, R:XMM0..15, R:XMM0..15": 2,
+    "vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15": 2,
+    "vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15": 3,
+    "add RW:GPR:32, R:GPR:32": 4,
+    "vpor W:XMM0..15, R:XMM0..15, R:XMM0..15": 4
+  }
+}

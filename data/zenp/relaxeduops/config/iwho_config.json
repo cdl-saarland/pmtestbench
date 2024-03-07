@@ -1,0 +1,6 @@
+{
+    "context_specifier": "x86_uops_info",
+    "filters": [
+        {"kind": "blacklist", "file_path": "./insn_blacklist.csv"}
+    ]
+}

@@ -1,0 +1,15 @@
+vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15
+vroundps W:XMM0..15, R:XMM0..15, IMM(8)
+mov W:GPR:32, dword ptr R:MEM(32)
+vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vminps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vbroadcastss W:XMM0..15, R:XMM0..15
+vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15
+add RW:GPR:32, R:GPR:32
+vpor W:XMM0..15, R:XMM0..15, R:XMM0..15
+
+mov dword ptr W:MEM(32), R:GPR:32
+vmovapd xmmword ptr W:MEM(128), R:XMM0..15
+
+add dword ptr RW:MEM(32), R:GPR:32

@@ -1,0 +1,35 @@
+{
+  "kind": "Mapping3",
+  "arch": {
+    "kind": "Architecture",
+    "insns": [
+      "add RW:GPR:32, R:GPR:32",
+      "mov W:GPR:32, dword ptr R:MEM(32)",
+      "mov dword ptr W:MEM(32), R:GPR:32",
+      "vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vbroadcastss W:XMM0..15, R:XMM0..15",
+      "vminps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vmovapd xmmword ptr W:MEM(128), R:XMM0..15",
+      "vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpor W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vroundps W:XMM0..15, R:XMM0..15, IMM(8)"
+    ]
+  },
+  "assignment": {
+    "add RW:GPR:32, R:GPR:32": [ [ 0, 5, 6, 7 ] ],
+    "mov W:GPR:32, dword ptr R:MEM(32)": [ [ 1, 6 ] ],
+    "mov dword ptr W:MEM(32), R:GPR:32": [ [ 1 ], [ 0, 5, 6, 7 ] ],
+    "vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 2, 8 ] ],
+    "vbroadcastss W:XMM0..15, R:XMM0..15": [ [ 2, 5 ] ],
+    "vminps W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 4, 5 ] ],
+    "vmovapd xmmword ptr W:MEM(128), R:XMM0..15": [ [ 1 ], [ 2 ] ],
+    "vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 4, 5, 8 ] ],
+    "vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 4, 8 ] ],
+    "vpor W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 2, 4, 5, 8 ] ],
+    "vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15": [ [ 2 ] ],
+    "vroundps W:XMM0..15, R:XMM0..15, IMM(8)": [ [ 8 ] ]
+  },
+  "metadata": { "creation_date": "2023-08-26T07:52:32.873985" }
+}

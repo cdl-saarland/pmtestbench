@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+*_cachedir
+
+*.gv
+*.dot
+*.csv
+
+# Gurobi stuff
+*.lp
+*.sol
+
+# TeX stuff
+tex/
+*.tex
+*.aux
+*.pdf
+
+
+# output files
+unsat_core*.json
+result*.json
+*.progress
+*.dat
+*.map3
+*.log
+dot_output
+dot
+*distribution.json
+*.db
+traces/
+measurements/
+discovery_results/
+generated_html/
+*.s
+
+*.png
+*.pgf
+*.df
+
+# pyenv stuff
+.python-version
+
+# venv stuff
+env
+html
+
+*.egg-info
+dist/
+
+# local config files:
+**/pred_registry.json
+

@@ -1,0 +1,446 @@
+# mapping for kyste on kyste02.exps
+mapping: # {{{
+RCL8r1: # {{{
+    ABJ: 1
+# }}}
+
+SHLD32rri8: # {{{
+    BEGI: 4
+    ADGHJ: 8
+    ABCDIJ: 3
+    BCDEGIJ: 7
+# }}}
+
+RCR16ri: # {{{
+    AGI: 1
+# }}}
+
+VPBLENDVBYrr: # {{{
+    CDH: 5
+# }}}
+
+PSLLQrr: # {{{
+    BCDFGJ: 5
+# }}}
+
+VPADDDrr: # {{{
+    ACDEGH: 2
+    ABDFJ: 2
+# }}}
+
+RCPPSr: # {{{
+    AEJ: 3
+# }}}
+
+VPBROADCASTDrr: # {{{
+    BDEFH: 2
+# }}}
+
+ROR8ri: # {{{
+    ACDEI: 1
+# }}}
+
+VPSUBSWrr: # {{{
+    EFHI: 2
+# }}}
+
+VFMADD231SDr: # {{{
+    ADFH: 4
+# }}}
+
+ANDN64rr: # {{{
+    CH: 1
+# }}}
+
+LZCNT32rr: # {{{
+    ACDF: 1
+# }}}
+
+SUB8ri: # {{{
+    ABCE: 3
+# }}}
+
+SHR32ri: # {{{
+    ADGIJ: 2
+# }}}
+
+VPMADDUBSWYrr: # {{{
+    BGIJ: 6
+# }}}
+
+VPUNPCKLQDQrr: # {{{
+    DGIJ: 1
+# }}}
+
+VBLENDPDYrri: # {{{
+    CDEF: 3
+# }}}
+
+VPUNPCKLWDrr: # {{{
+    ACH: 1
+    EHI: 1
+# }}}
+
+VPSUBUSWYrr: # {{{
+    ACDF: 1
+    CDEFHI: 3
+# }}}
+
+VFNMADD213PDr: # {{{
+    DF: 2
+# }}}
+
+CMOVE16rr: # {{{
+    DJ: 1
+# }}}
+
+VORPDrr: # {{{
+    EHJ: 1
+# }}}
+
+CMPXCHG64rr: # {{{
+    FG: 3
+    BGI: 7
+# }}}
+
+CMOVNP32rr: # {{{
+    ACEF: 1
+# }}}
+
+CMOVNS16rr: # {{{
+    BDF: 1
+    ADEFI: 1
+# }}}
+
+VMINSSrr: # {{{
+    ABH: 1
+# }}}
+
+SUB16ri: # {{{
+    CDGHIJ: 2
+# }}}
+
+SHLX32rr: # {{{
+    BCDEH: 1
+# }}}
+
+VPHSUBSWrr: # {{{
+    BDFGI: 8
+# }}}
+
+VPSLLDYri: # {{{
+    EFJ: 5
+    ABCHIJ: 2
+# }}}
+
+BSWAP64r: # {{{
+    ACDEF: 1
+# }}}
+
+CMOVG32rr: # {{{
+    ABE: 2
+# }}}
+
+VPMINSDrr: # {{{
+    BCDEGHJ: 3
+# }}}
+
+VPADDQrr: # {{{
+    BG: 1
+    ABDEFI: 2
+# }}}
+
+ROR16r1: # {{{
+    BFH: 1
+# }}}
+
+VPSLLWri: # {{{
+    BDGIJ: 3
+# }}}
+
+VPADDBYrr: # {{{
+    BDEGJ: 3
+    BCEFGHIJ: 3
+# }}}
+
+VMOVDQAYrr: # {{{
+    ACEHJ: 1
+    ABGHIJ: 4
+# }}}
+
+VFNMSUB231SSr: # {{{
+    ACDHJ: 6
+    ABDEFIJ: 2
+# }}}
+
+VMOVSSrr: # {{{
+    BFGHJ: 1
+# }}}
+
+VMPSADBWrri: # {{{
+    BDJ: 5
+# }}}
+
+VCVTPH2PSrr: # {{{
+    BDGJ: 8
+    ABCFHIJ: 4
+# }}}
+
+VPSRADYrr: # {{{
+    EH: 3
+# }}}
+
+BLSI32rr: # {{{
+    AEF: 2
+# }}}
+
+IMUL32rri: # {{{
+    ABF: 2
+# }}}
+
+VPSRADri: # {{{
+    ABEF: 3
+# }}}
+
+BLSMSK64rr: # {{{
+    CGIJ: 2
+# }}}
+
+VCVTSS2SDrr: # {{{
+    BDFGJ: 4
+# }}}
+
+VCVTPS2DQrr: # {{{
+    DFGH: 2
+# }}}
+
+VMULPDYrr: # {{{
+    AFHJ: 3
+# }}}
+
+CVTPD2PSrr: # {{{
+    DFGI: 2
+# }}}
+
+PHADDWrr: # {{{
+    BCF: 3
+    AGH: 7
+    ABDEFHI: 6
+    CDFHJ: 8
+    ACDEGHIJ: 6
+# }}}
+
+VPMULUDQrr: # {{{
+    BDGHI: 4
+# }}}
+
+PMAXSBrr: # {{{
+    DE: 3
+    BCDH: 7
+    BCFHI: 4
+    ACDEGJ: 5
+    BCDEFGIJ: 8
+# }}}
+
+VFNMSUB132PDr: # {{{
+    ADEFI: 3
+# }}}
+
+PMINUWrr: # {{{
+    AFGHIJ: 3
+# }}}
+
+VBROADCASTSSrr: # {{{
+    BCDEG: 2
+# }}}
+
+VPSHUFBrr: # {{{
+    AHI: 1
+# }}}
+
+VFMSUB231SDr: # {{{
+    BCDH: 1
+    BCFI: 4
+    ADEHIJ: 2
+    BGHIJ: 2
+# }}}
+
+VFNMADD213PSr: # {{{
+    AFGHJ: 1
+# }}}
+
+VFNMSUB231SDr: # {{{
+    ABCEI: 1
+    BDHI: 4
+# }}}
+
+RCR64r1: # {{{
+    ADEFGIJ: 3
+# }}}
+
+VPSLLVQrr: # {{{
+    BCEI: 3
+    AGJ: 5
+# }}}
+
+VMOVAPSYrr: # {{{
+    ABFI: 3
+# }}}
+
+VANDPDrr: # {{{
+    DGI: 2
+# }}}
+
+SUB32ri8: # {{{
+    ACDEGHJ: 3
+# }}}
+
+AND16ri8: # {{{
+    ADE: 2
+# }}}
+
+DPPDrri: # {{{
+    BDG: 8
+    CEGHJ: 7
+    ACGHIJ: 1
+# }}}
+
+VPMAXUBYrr: # {{{
+    BCDEFGIJ: 7
+# }}}
+
+XOR16rr: # {{{
+    ACHI: 1
+# }}}
+
+PSADBWrr: # {{{
+    CDGJ: 3
+# }}}
+
+CMOVAE64rr: # {{{
+    AHI: 1
+# }}}
+
+VPMINUDrr: # {{{
+    CDFHI: 3
+# }}}
+
+RCR64ri: # {{{
+    ACDHI: 3
+# }}}
+
+VPSRAWYri: # {{{
+    EGI: 5
+# }}}
+
+INC32r: # {{{
+    ABCEGH: 1
+# }}}
+
+VFMSUBADD213PSYr: # {{{
+    ABCEFH: 6
+# }}}
+
+BTC64rr: # {{{
+    CDI: 1
+# }}}
+
+VFMADDSUB132PSr: # {{{
+    ADJ: 4
+    ABCDEGJ: 2
+    ABDEIJ: 7
+    ABDGIJ: 4
+    CDEFGIJ: 3
+    AFGHIJ: 7
+# }}}
+
+VFMSUBADD132PDr: # {{{
+    BDEH: 4
+# }}}
+
+DIVSSrr: # {{{
+    BDEFGI: 2
+    AJ: 5
+    ACDHJ: 2
+# }}}
+
+VFNMADD231PSYr: # {{{
+    BCDIJ: 5
+# }}}
+
+CMOVAE16rr: # {{{
+    ACEI: 1
+    CEFI: 1
+# }}}
+
+VPMOVSXDQrr: # {{{
+    BCDFGJ: 1
+    BCDGHJ: 2
+# }}}
+
+CMOVNS64rr: # {{{
+    BCDEJ: 1
+# }}}
+
+VFNMSUB231PSr: # {{{
+    AFIJ: 4
+# }}}
+
+VFNMADD132PDr: # {{{
+    DF: 2
+# }}}
+
+PCMPGTWrr: # {{{
+    DGHIJ: 2
+# }}}
+
+BSF16rr: # {{{
+    BGI: 8
+    ADEFHJ: 4
+# }}}
+
+DEC64r: # {{{
+    BCEJ: 3
+    ACGIJ: 1
+# }}}
+
+ANDNPDrr: # {{{
+    ABDFGIJ: 1
+# }}}
+
+PSLLQri: # {{{
+    FGHIJ: 3
+# }}}
+
+PCMPEQWrr: # {{{
+    DHIJ: 1
+# }}}
+
+BTR32rr: # {{{
+    ABFHI: 1
+# }}}
+
+ADD64ri32: # {{{
+    ABFGI: 4
+# }}}
+
+VDIVSSrr: # {{{
+    BC: 5
+    ABEG: 4
+# }}}
+
+VPSLLQYrr: # {{{
+    AI: 3
+# }}}
+
+LZCNT16rr: # {{{
+    AB: 1
+# }}}
+
+VFMSUB231PSYr: # {{{
+    BC: 2
+    ABDEGJ: 5
+# }}}
+
+# }}}
+

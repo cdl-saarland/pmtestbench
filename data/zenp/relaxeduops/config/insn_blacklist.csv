@@ -1,0 +1,2224 @@
+aadd dword ptr RW:MEM(32), R:GPR:32  # by scheme: crashes
+aadd qword ptr RW:MEM(64), R:GPR:64  # by scheme: crashes
+aand dword ptr RW:MEM(32), R:GPR:32  # by scheme: crashes
+aand qword ptr RW:MEM(64), R:GPR:64  # by scheme: crashes
+adc RW:GPR:16, 0x0  # has a self dependency
+adc RW:GPR:16, IMM(16)  # has a self dependency
+adc RW:GPR:16, IMM(8)  # has a self dependency
+adc RW:GPR:16, R:GPR:16  # has a self dependency
+adc RW:GPR:16, word ptr R:MEM(16)  # has a self dependency
+adc RW:GPR:32, 0x0  # has a self dependency
+adc RW:GPR:32, IMM(32)  # has a self dependency
+adc RW:GPR:32, IMM(8)  # has a self dependency
+adc RW:GPR:32, R:GPR:32  # has a self dependency
+adc RW:GPR:32, dword ptr R:MEM(32)  # has a self dependency
+adc RW:GPR:64, 0x0  # has a self dependency
+adc RW:GPR:64, IMM(32)  # has a self dependency
+adc RW:GPR:64, IMM(8)  # has a self dependency
+adc RW:GPR:64, R:GPR:64  # has a self dependency
+adc RW:GPR:64, qword ptr R:MEM(64)  # has a self dependency
+adc RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+adc RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+adc RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+adc RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+adc RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+adc RW:al, 0x0  # has a self dependency
+adc RW:al, IMM(8)  # has a self dependency
+adc RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+adc RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)  # has a self dependency
+adc RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+adc RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+adc RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+adc RW:ax, IMM(16)  # has a self dependency
+adc RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+adc RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+adc RW:eax, IMM(32)  # has a self dependency
+adc RW:rax, IMM(32)  # has a self dependency
+adc byte ptr RW:MEM(8), 0x0  # has a self dependency
+adc byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+adc byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+adc byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+adc dword ptr RW:MEM(32), 0x0  # has a self dependency
+adc dword ptr RW:MEM(32), IMM(32)  # has a self dependency
+adc dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+adc dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+adc qword ptr RW:MEM(64), 0x0  # has a self dependency
+adc qword ptr RW:MEM(64), IMM(32)  # has a self dependency
+adc qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+adc qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+adc word ptr RW:MEM(16), 0x0  # has a self dependency
+adc word ptr RW:MEM(16), IMM(16)  # has a self dependency
+adc word ptr RW:MEM(16), IMM(8)  # has a self dependency
+adc word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+adcx RW:GPR:32, R:GPR:32  # has a self dependency
+adcx RW:GPR:32, dword ptr R:MEM(32)  # has a self dependency
+adcx RW:GPR:64, R:GPR:64  # has a self dependency
+adcx RW:GPR:64, qword ptr R:MEM(64)  # has a self dependency
+add RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+add RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+add RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+add RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+add RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+add RW:al, 0x0  # has a self dependency
+add RW:al, IMM(8)  # has a self dependency
+add RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+add RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+add RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+add RW:ax, IMM(16)  # has a self dependency
+add RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+add RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+add RW:eax, IMM(32)  # has a self dependency
+add RW:rax, IMM(32)  # has a self dependency
+add byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+addpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+addps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+addsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+addss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+addsubpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addsubpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+addsubps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+addsubps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+adox RW:GPR:32, R:GPR:32  # has a self dependency
+adox RW:GPR:32, dword ptr R:MEM(32)  # has a self dependency
+adox RW:GPR:64, R:GPR:64  # has a self dependency
+adox RW:GPR:64, qword ptr R:MEM(64)  # has a self dependency
+aesdec RW:XMM0..15, R:XMM0..15  # by extension: AES
+aesdec RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AES
+aesdeclast RW:XMM0..15, R:XMM0..15  # by extension: AES
+aesdeclast RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AES
+aesenc RW:XMM0..15, R:XMM0..15  # by extension: AES
+aesenc RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AES
+aesenclast RW:XMM0..15, R:XMM0..15  # by extension: AES
+aesenclast RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AES
+aesimc W:XMM0..15, R:XMM0..15  # by extension: AES
+aesimc W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AES
+aeskeygenassist W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: AES
+aeskeygenassist W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: AES
+and RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+and RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+and RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+and RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+and RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+and RW:al, 0x0  # has a self dependency
+and RW:al, IMM(8)  # has a self dependency
+and RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+and RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+and RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+and RW:ax, IMM(16)  # has a self dependency
+and RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+and RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+and RW:eax, IMM(32)  # has a self dependency
+and RW:rax, IMM(32)  # has a self dependency
+and byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+andnpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+andnpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+andnps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+andnps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+andpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+andpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+andps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+andps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+aor dword ptr RW:MEM(32), R:GPR:32  # by scheme: crashes
+aor qword ptr RW:MEM(64), R:GPR:64  # by scheme: crashes
+axor dword ptr RW:MEM(32), R:GPR:32  # by scheme: crashes
+axor qword ptr RW:MEM(64), R:GPR:64  # by scheme: crashes
+bextr W:GPR:32, R:GPR:32, IMM(32)  # by extension: outdated
+bextr W:GPR:32, dword ptr R:MEM(32), IMM(32)  # by extension: outdated
+bextr W:GPR:64, R:GPR:64, IMM(32)  # by extension: outdated
+bextr W:GPR:64, qword ptr R:MEM(64), IMM(32)  # by extension: outdated
+blcfill W:GPR:32, R:GPR:32  # by extension: outdated
+blcfill W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blcfill W:GPR:64, R:GPR:64  # by extension: outdated
+blcfill W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blci W:GPR:32, R:GPR:32  # by extension: outdated
+blci W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blci W:GPR:64, R:GPR:64  # by extension: outdated
+blci W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blcic W:GPR:32, R:GPR:32  # by extension: outdated
+blcic W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blcic W:GPR:64, R:GPR:64  # by extension: outdated
+blcic W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blcmsk W:GPR:32, R:GPR:32  # by extension: outdated
+blcmsk W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blcmsk W:GPR:64, R:GPR:64  # by extension: outdated
+blcmsk W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blcs W:GPR:32, R:GPR:32  # by extension: outdated
+blcs W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blcs W:GPR:64, R:GPR:64  # by extension: outdated
+blcs W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blendpd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+blendpd RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+blendps RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+blendps RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+blendvpd RW:XMM0..15, R:XMM0..15, R:xmm0  # has 3 or more explicit read operands
+blendvpd RW:XMM0..15, xmmword ptr R:MEM(128), R:xmm0  # has 3 or more explicit read operands
+blendvps RW:XMM0..15, R:XMM0..15, R:xmm0  # has 3 or more explicit read operands
+blendvps RW:XMM0..15, xmmword ptr R:MEM(128), R:xmm0  # has 3 or more explicit read operands
+blsfill W:GPR:32, R:GPR:32  # by extension: outdated
+blsfill W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blsfill W:GPR:64, R:GPR:64  # by extension: outdated
+blsfill W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+blsic W:GPR:32, R:GPR:32  # by extension: outdated
+blsic W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+blsic W:GPR:64, R:GPR:64  # by extension: outdated
+blsic W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+call R:GPR:64  # affects control flow
+call SYM  # affects control flow
+call qword ptr R:MEM(64)  # affects control flow
+cbw  # has a self dependency
+cdq  # has a self dependency
+cdqe  # has a self dependency
+cld  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+clflush zmmword ptr R:MEM(512)  # by mnemonic: system instruction
+clflushopt zmmword ptr R:MEM(512)  # by mnemonic: system instruction
+cli  # by mnemonic: system instruction
+clwb zmmword ptr R:MEM(512)  # by mnemonic: system instruction
+clzero  # by extension: system instruction
+cmc  # has a self dependency
+cmova RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmova RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmova RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmova RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmova RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmova RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovae RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovae RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovae RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovae RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovae RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovae RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovb RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovb RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovb RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovb RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovb RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovb RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovbe RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovbe RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovbe RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovbe RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovbe RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovbe RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmove RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmove RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmove RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmove RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmove RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmove RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovg RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovg RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovg RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovg RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovg RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovg RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovge RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovge RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovge RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovge RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovge RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovge RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovl RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovl RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovl RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovl RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovl RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovl RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovle RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovle RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovle RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovle RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovle RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovle RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovne RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovne RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovne RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovne RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovne RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovne RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovno RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovno RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovno RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovno RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovno RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovno RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovnp RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovnp RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovnp RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovnp RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovnp RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovnp RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovns RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovns RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovns RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovns RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovns RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovns RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovo RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovo RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovo RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovo RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovo RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovo RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovp RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovp RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovp RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovp RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovp RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovp RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmovs RW:GPR:16, R:GPR:16  # is a cmovCC or setCC
+cmovs RW:GPR:16, word ptr R:MEM(16)  # is a cmovCC or setCC
+cmovs RW:GPR:32, R:GPR:32  # is a cmovCC or setCC
+cmovs RW:GPR:32, dword ptr R:MEM(32)  # is a cmovCC or setCC
+cmovs RW:GPR:64, R:GPR:64  # is a cmovCC or setCC
+cmovs RW:GPR:64, qword ptr R:MEM(64)  # is a cmovCC or setCC
+cmp R:ah,bh,ch,dh, 0x0  # uses an 8-bit high register
+cmp R:ah,bh,ch,dh, IMM(8)  # uses an 8-bit high register
+cmp R:ah,bh,ch,dh, R:ah,bh,ch,dh  # uses an 8-bit high register
+cmp R:ah,bh,ch,dh, R:al,bl,cl,dl  # uses an 8-bit high register
+cmp R:ah,bh,ch,dh, byte ptr R:MEM(8)  # uses an 8-bit high register
+cmp R:al,bl,cl,dl, R:ah,bh,ch,dh  # uses an 8-bit high register
+cmp byte ptr R:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+cmpbexadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpbexadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpbxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpbxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpeqpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpeqpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpeqps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpeqps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpeqsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpeqsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpeqss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpeqss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmplepd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmplepd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpleps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpleps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmplesd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmplesd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpless RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpless RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmplexadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmplexadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpltpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpltpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpltps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpltps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpltsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpltsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpltss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpltss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmplxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmplxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnbexadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnbexadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnbxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnbxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpneqpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpneqpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpneqps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpneqps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpneqsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpneqsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpneqss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpneqss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmpnlepd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnlepd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpnleps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnleps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpnlesd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnlesd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpnless RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnless RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmpnlexadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnlexadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnltpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnltpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpnltps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnltps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpnltsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnltsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpnltss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpnltss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmpnlxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnlxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnoxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnoxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnpxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnpxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnsxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnsxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpnzxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpnzxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpordpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpordpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpordps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpordps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpordsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpordsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpordss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpordss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmpoxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpoxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmppd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+cmppd RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+cmpps RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+cmpps RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+cmppxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmppxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpsb byte ptr R:[rsi], byte ptr R:es:[rdi]  # by scheme: incrementing string ops
+cmpsd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+cmpsd RW:XMM0..15, qword ptr R:MEM(64), IMM(8)  # by extension: SSE
+cmpsd dword ptr R:[rsi], dword ptr R:es:[rdi]  # by scheme: incrementing string ops
+cmpsq qword ptr R:[rsi], qword ptr R:es:[rdi]  # by scheme: crashes
+cmpss RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+cmpss RW:XMM0..15, dword ptr R:MEM(32), IMM(8)  # by extension: SSE
+cmpsw word ptr R:[rsi], word ptr R:es:[rdi]  # by scheme: incrementing string ops
+cmpsxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpsxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+cmpunordpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpunordpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpunordps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpunordps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cmpunordsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpunordsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cmpunordss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cmpunordss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cmpxchg RW:GPR:16, R:GPR:16  # has a self dependency
+cmpxchg RW:GPR:32, R:GPR:32  # has a self dependency
+cmpxchg RW:GPR:64, R:GPR:64  # has a self dependency
+cmpxchg RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+cmpxchg RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+cmpxchg RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+cmpxchg RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+cmpxchg byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+cmpxchg byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+cmpxchg dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+cmpxchg qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+cmpxchg word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+cmpxchg16b xmmword ptr RW:MEM(128)  # has a self dependency
+cmpxchg8b qword ptr RW:MEM(64)  # has a self dependency
+cmpzxadd dword ptr RW:MEM(32), RW:GPR:32, R:GPR:32  # has 3 or more explicit read operands
+cmpzxadd qword ptr RW:MEM(64), RW:GPR:64, R:GPR:64  # has 3 or more explicit read operands
+comisd R:XMM0..15, R:XMM0..15  # by extension: SSE
+comisd R:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+comiss R:XMM0..15, R:XMM0..15  # by extension: SSE
+comiss R:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cpuid  # has a self dependency
+cqo  # has a self dependency
+crc32 RW:GPR:32, R:GPR:16  # by extension: SSE
+crc32 RW:GPR:32, R:GPR:32  # by extension: SSE
+crc32 RW:GPR:32, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # by extension: SSE
+crc32 RW:GPR:32, byte ptr R:MEM(8)  # by extension: SSE
+crc32 RW:GPR:32, dword ptr R:MEM(32)  # by extension: SSE
+crc32 RW:GPR:32, word ptr R:MEM(16)  # by extension: SSE
+crc32 RW:GPR:64, R:GPR:64  # by extension: SSE
+crc32 RW:GPR:64, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # by extension: SSE
+crc32 RW:GPR:64, byte ptr R:MEM(8)  # by extension: SSE
+crc32 RW:GPR:64, qword ptr R:MEM(64)  # by extension: SSE
+crc32 RW:eax,ebp,ebx,ecx,edi,edx,esi,esp, R:ah,bh,ch,dh  # has not enough r/w registers available
+cvtdq2pd W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtdq2pd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtdq2ps W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtdq2ps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvtpd2dq W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtpd2dq W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvtpd2pi W:FPMM:64, R:XMM0..15  # has not enough r/w registers available
+cvtpd2pi W:FPMM:64, xmmword ptr R:MEM(128)  # has not enough r/w registers available
+cvtpd2ps W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtpd2ps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvtpi2pd W:XMM0..15, R:FPMM:64  # by extension: SSE
+cvtpi2pd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtpi2ps RW:XMM0..15, R:FPMM:64  # by extension: SSE
+cvtpi2ps RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtps2dq W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtps2dq W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvtps2pd W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtps2pd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtps2pi W:FPMM:64, R:XMM0..15  # has not enough r/w registers available
+cvtps2pi W:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+cvtsd2si W:GPR:32, R:XMM0..15  # by extension: SSE
+cvtsd2si W:GPR:32, qword ptr R:MEM(64)  # by extension: SSE
+cvtsd2si W:GPR:64, R:XMM0..15  # by extension: SSE
+cvtsd2si W:GPR:64, qword ptr R:MEM(64)  # by extension: SSE
+cvtsd2ss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtsd2ss RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtsi2sd RW:XMM0..15, R:GPR:32  # by extension: SSE
+cvtsi2sd RW:XMM0..15, R:GPR:64  # by extension: SSE
+cvtsi2sd RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cvtsi2sd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtsi2ss RW:XMM0..15, R:GPR:32  # by extension: SSE
+cvtsi2ss RW:XMM0..15, R:GPR:64  # by extension: SSE
+cvtsi2ss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cvtsi2ss RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+cvtss2sd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+cvtss2sd RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+cvtss2si W:GPR:32, R:XMM0..15  # by extension: SSE
+cvtss2si W:GPR:32, dword ptr R:MEM(32)  # by extension: SSE
+cvtss2si W:GPR:64, R:XMM0..15  # by extension: SSE
+cvtss2si W:GPR:64, dword ptr R:MEM(32)  # by extension: SSE
+cvttpd2dq W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvttpd2dq W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvttpd2pi W:FPMM:64, R:XMM0..15  # has not enough r/w registers available
+cvttpd2pi W:FPMM:64, xmmword ptr R:MEM(128)  # has not enough r/w registers available
+cvttps2dq W:XMM0..15, R:XMM0..15  # by extension: SSE
+cvttps2dq W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+cvttps2pi W:FPMM:64, R:XMM0..15  # has not enough r/w registers available
+cvttps2pi W:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+cvttsd2si W:GPR:32, R:XMM0..15  # by extension: SSE
+cvttsd2si W:GPR:32, qword ptr R:MEM(64)  # by extension: SSE
+cvttsd2si W:GPR:64, R:XMM0..15  # by extension: SSE
+cvttsd2si W:GPR:64, qword ptr R:MEM(64)  # by extension: SSE
+cvttss2si W:GPR:32, R:XMM0..15  # by extension: SSE
+cvttss2si W:GPR:32, dword ptr R:MEM(32)  # by extension: SSE
+cvttss2si W:GPR:64, R:XMM0..15  # by extension: SSE
+cvttss2si W:GPR:64, dword ptr R:MEM(32)  # by extension: SSE
+cwd  # has a self dependency
+cwde  # has a self dependency
+dec RW:ah,bh,ch,dh  # has not enough r/w registers available
+div R:GPR:16  # has a self dependency
+div R:GPR:32  # has a self dependency
+div R:GPR:64  # has a self dependency
+div R:ah,bh,ch,dh  # has a self dependency
+div R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+div byte ptr R:MEM(8)  # has a self dependency
+div dword ptr R:MEM(32)  # has a self dependency
+div qword ptr R:MEM(64)  # has a self dependency
+div word ptr R:MEM(16)  # has a self dependency
+divpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+divpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+divps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+divps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+divsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+divsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+divss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+divss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+dppd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+dppd RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+dpps RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+dpps RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+enclu  # has a self dependency
+enter IMM(16), IMM(8)  # has a self dependency
+extractps W:GPR:32, R:XMM0..15, IMM(8)  # by extension: SSE
+extractps dword ptr W:MEM(32), R:XMM0..15, IMM(8)  # by extension: SSE
+extrq W:XMM0..15, IMM(8), IMM(8)  # by extension: SSE
+extrq W:XMM0..15, R:XMM0..15  # by extension: SSE
+fxrstor R:MEM(4096)  # has a self dependency
+fxrstor64 R:MEM(4096)  # has a self dependency
+fxsave W:MEM(4096)  # by extension: SSE
+fxsave64 W:MEM(4096)  # by extension: SSE
+haddpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+haddpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+haddps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+haddps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+hsubpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+hsubpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+hsubps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+hsubps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+idiv R:GPR:16  # has a self dependency
+idiv R:GPR:32  # has a self dependency
+idiv R:GPR:64  # has a self dependency
+idiv R:ah,bh,ch,dh  # has a self dependency
+idiv R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+idiv byte ptr R:MEM(8)  # has a self dependency
+idiv dword ptr R:MEM(32)  # has a self dependency
+idiv qword ptr R:MEM(64)  # has a self dependency
+idiv word ptr R:MEM(16)  # has a self dependency
+imul R:GPR:16  # has a self dependency
+imul R:GPR:32  # has a self dependency
+imul R:GPR:64  # has a self dependency
+imul R:ah,bh,ch,dh  # has a self dependency
+imul R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+imul RW:GPR:16, R:GPR:16  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, R:GPR:16, 0x0  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, R:GPR:16, IMM(16)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, R:GPR:16, IMM(8)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, word ptr R:MEM(16)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, word ptr R:MEM(16), 0x0  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, word ptr R:MEM(16), IMM(16)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:16, word ptr R:MEM(16), IMM(8)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:32, R:GPR:32  # by scheme: related to an excluded blocking insn
+imul RW:GPR:32, dword ptr R:MEM(32)  # by scheme: related to an excluded blocking insn
+imul RW:GPR:64, R:GPR:64  # by scheme: related to an excluded blocking insn
+imul RW:GPR:64, qword ptr R:MEM(64)  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, R:GPR:32, 0x0  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, R:GPR:32, IMM(32)  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, R:GPR:32, IMM(8)  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, dword ptr R:MEM(32), 0x0  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, dword ptr R:MEM(32), IMM(32)  # by scheme: related to an excluded blocking insn
+imul W:GPR:32, dword ptr R:MEM(32), IMM(8)  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, R:GPR:64, 0x0  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, R:GPR:64, IMM(32)  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, R:GPR:64, IMM(8)  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, qword ptr R:MEM(64), 0x0  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, qword ptr R:MEM(64), IMM(32)  # by scheme: related to an excluded blocking insn
+imul W:GPR:64, qword ptr R:MEM(64), IMM(8)  # by scheme: related to an excluded blocking insn
+imul byte ptr R:MEM(8)  # has a self dependency
+imul dword ptr R:MEM(32)  # has a self dependency
+imul qword ptr R:MEM(64)  # has a self dependency
+imul word ptr R:MEM(16)  # has a self dependency
+in RW:al, 0x0  # has a self dependency
+in RW:al, IMM(8)  # has a self dependency
+in RW:al, R:dx  # has a self dependency
+in RW:ax, 0x0  # has a self dependency
+in RW:ax, IMM(8)  # has a self dependency
+in RW:ax, R:dx  # has a self dependency
+in W:eax, 0x0  # by mnemonic: system instruction
+in W:eax, IMM(8)  # by mnemonic: system instruction
+in W:eax, R:dx  # by mnemonic: system instruction
+inc RW:ah,bh,ch,dh  # has not enough r/w registers available
+insb  # has a self dependency
+insd  # by mnemonic: system instruction
+insertps RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+insertps RW:XMM0..15, dword ptr R:MEM(32), IMM(8)  # by extension: SSE
+insertq W:XMM0..15, R:XMM0..15  # by extension: SSE
+insertq W:XMM0..15, R:XMM0..15, IMM(8), IMM(8)  # by extension: SSE
+insw  # has a self dependency
+int 0x0  # affects control flow
+int IMM(8)  # affects control flow
+int3  # affects control flow
+iretd  # affects control flow
+iretq  # affects control flow
+iretw  # affects control flow
+ja SYM  # affects control flow
+jae SYM  # affects control flow
+jb SYM  # affects control flow
+jbe SYM  # affects control flow
+je SYM  # affects control flow
+jg SYM  # affects control flow
+jge SYM  # affects control flow
+jl SYM  # affects control flow
+jle SYM  # affects control flow
+jmp R:GPR:64  # affects control flow
+jmp SYM  # affects control flow
+jmp qword ptr R:MEM(64)  # affects control flow
+jne SYM  # affects control flow
+jno SYM  # affects control flow
+jnp SYM  # affects control flow
+jns SYM  # affects control flow
+jo SYM  # affects control flow
+jp SYM  # affects control flow
+jrcxz SYM  # affects control flow
+js SYM  # affects control flow
+lahf  # has a self dependency
+lddqu W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+ldmxcsr dword ptr R:MEM(32)  # has a self dependency
+leave  # has a self dependency
+lfence  # by extension: SSE
+lock adc byte ptr RW:MEM(8), 0x0  # has a self dependency
+lock adc byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+lock adc byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+lock adc byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+lock adc dword ptr RW:MEM(32), 0x0  # has a self dependency
+lock adc dword ptr RW:MEM(32), IMM(32)  # has a self dependency
+lock adc dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+lock adc dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+lock adc qword ptr RW:MEM(64), 0x0  # has a self dependency
+lock adc qword ptr RW:MEM(64), IMM(32)  # has a self dependency
+lock adc qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+lock adc qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+lock adc word ptr RW:MEM(16), 0x0  # has a self dependency
+lock adc word ptr RW:MEM(16), IMM(16)  # has a self dependency
+lock adc word ptr RW:MEM(16), IMM(8)  # has a self dependency
+lock adc word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+lock add byte ptr RW:MEM(8), 0x0  # has LOCK prefix
+lock add byte ptr RW:MEM(8), IMM(8)  # has LOCK prefix
+lock add byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+lock add byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock add dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock add dword ptr RW:MEM(32), IMM(32)  # has LOCK prefix
+lock add dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock add dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock add qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock add qword ptr RW:MEM(64), IMM(32)  # has LOCK prefix
+lock add qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock add qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock add word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock add word ptr RW:MEM(16), IMM(16)  # has LOCK prefix
+lock add word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock add word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock and byte ptr RW:MEM(8), 0x0  # has LOCK prefix
+lock and byte ptr RW:MEM(8), IMM(8)  # has LOCK prefix
+lock and byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+lock and byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock and dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock and dword ptr RW:MEM(32), IMM(32)  # has LOCK prefix
+lock and dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock and dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock and qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock and qword ptr RW:MEM(64), IMM(32)  # has LOCK prefix
+lock and qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock and qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock and word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock and word ptr RW:MEM(16), IMM(16)  # has LOCK prefix
+lock and word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock and word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock btc dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock btc dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock btc dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock btc qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock btc qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock btc qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock btc word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock btc word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock btc word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock btr dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock btr dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock btr dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock btr qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock btr qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock btr qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock btr word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock btr word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock btr word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock bts dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock bts dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock bts dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock bts qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock bts qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock bts qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock bts word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock bts word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock bts word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock cmpxchg byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+lock cmpxchg byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+lock cmpxchg dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+lock cmpxchg qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+lock cmpxchg word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+lock cmpxchg16b xmmword ptr RW:MEM(128)  # has a self dependency
+lock cmpxchg8b qword ptr RW:MEM(64)  # has a self dependency
+lock dec byte ptr RW:MEM(8)  # has LOCK prefix
+lock dec dword ptr RW:MEM(32)  # has LOCK prefix
+lock dec qword ptr RW:MEM(64)  # has LOCK prefix
+lock dec word ptr RW:MEM(16)  # has LOCK prefix
+lock inc byte ptr RW:MEM(8)  # has LOCK prefix
+lock inc dword ptr RW:MEM(32)  # has LOCK prefix
+lock inc qword ptr RW:MEM(64)  # has LOCK prefix
+lock inc word ptr RW:MEM(16)  # has LOCK prefix
+lock neg byte ptr RW:MEM(8)  # has LOCK prefix
+lock neg dword ptr RW:MEM(32)  # has LOCK prefix
+lock neg qword ptr RW:MEM(64)  # has LOCK prefix
+lock neg word ptr RW:MEM(16)  # has LOCK prefix
+lock not byte ptr RW:MEM(8)  # has LOCK prefix
+lock not dword ptr RW:MEM(32)  # has LOCK prefix
+lock not qword ptr RW:MEM(64)  # has LOCK prefix
+lock not word ptr RW:MEM(16)  # has LOCK prefix
+lock or byte ptr RW:MEM(8), 0x0  # has LOCK prefix
+lock or byte ptr RW:MEM(8), IMM(8)  # has LOCK prefix
+lock or byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+lock or byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock or dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock or dword ptr RW:MEM(32), IMM(32)  # has LOCK prefix
+lock or dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock or dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock or qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock or qword ptr RW:MEM(64), IMM(32)  # has LOCK prefix
+lock or qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock or qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock or word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock or word ptr RW:MEM(16), IMM(16)  # has LOCK prefix
+lock or word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock or word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock sbb byte ptr RW:MEM(8), 0x0  # has a self dependency
+lock sbb byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+lock sbb byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+lock sbb byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+lock sbb dword ptr RW:MEM(32), 0x0  # has a self dependency
+lock sbb dword ptr RW:MEM(32), IMM(32)  # has a self dependency
+lock sbb dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+lock sbb dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+lock sbb qword ptr RW:MEM(64), 0x0  # has a self dependency
+lock sbb qword ptr RW:MEM(64), IMM(32)  # has a self dependency
+lock sbb qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+lock sbb qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+lock sbb word ptr RW:MEM(16), 0x0  # has a self dependency
+lock sbb word ptr RW:MEM(16), IMM(16)  # has a self dependency
+lock sbb word ptr RW:MEM(16), IMM(8)  # has a self dependency
+lock sbb word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+lock sub byte ptr RW:MEM(8), 0x0  # has LOCK prefix
+lock sub byte ptr RW:MEM(8), IMM(8)  # has LOCK prefix
+lock sub byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+lock sub byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock sub dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock sub dword ptr RW:MEM(32), IMM(32)  # has LOCK prefix
+lock sub dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock sub dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock sub qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock sub qword ptr RW:MEM(64), IMM(32)  # has LOCK prefix
+lock sub qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock sub qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock sub word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock sub word ptr RW:MEM(16), IMM(16)  # has LOCK prefix
+lock sub word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock sub word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lock xadd byte ptr RW:MEM(8), RW:ah,bh,ch,dh  # has not enough r/w registers available
+lock xadd byte ptr RW:MEM(8), RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock xadd dword ptr RW:MEM(32), RW:GPR:32  # has LOCK prefix
+lock xadd qword ptr RW:MEM(64), RW:GPR:64  # has LOCK prefix
+lock xadd word ptr RW:MEM(16), RW:GPR:16  # has LOCK prefix
+lock xor byte ptr RW:MEM(8), 0x0  # has LOCK prefix
+lock xor byte ptr RW:MEM(8), IMM(8)  # has LOCK prefix
+lock xor byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+lock xor byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has LOCK prefix
+lock xor dword ptr RW:MEM(32), 0x0  # has LOCK prefix
+lock xor dword ptr RW:MEM(32), IMM(32)  # has LOCK prefix
+lock xor dword ptr RW:MEM(32), IMM(8)  # has LOCK prefix
+lock xor dword ptr RW:MEM(32), R:GPR:32  # has LOCK prefix
+lock xor qword ptr RW:MEM(64), 0x0  # has LOCK prefix
+lock xor qword ptr RW:MEM(64), IMM(32)  # has LOCK prefix
+lock xor qword ptr RW:MEM(64), IMM(8)  # has LOCK prefix
+lock xor qword ptr RW:MEM(64), R:GPR:64  # has LOCK prefix
+lock xor word ptr RW:MEM(16), 0x0  # has LOCK prefix
+lock xor word ptr RW:MEM(16), IMM(16)  # has LOCK prefix
+lock xor word ptr RW:MEM(16), IMM(8)  # has LOCK prefix
+lock xor word ptr RW:MEM(16), R:GPR:16  # has LOCK prefix
+lodsb RW:al, byte ptr R:[rsi]  # has a self dependency
+lodsd RW:eax, dword ptr R:[rsi]  # has a self dependency
+lodsq RW:rax, qword ptr R:[rsi]  # has a self dependency
+lodsw RW:ax, word ptr R:[rsi]  # has a self dependency
+loop SYM  # affects control flow
+loope SYM  # affects control flow
+loopne SYM  # affects control flow
+maskmovdqu R:XMM0..15, R:XMM0..15  # by extension: SSE
+maskmovq R:FPMM:64, R:FPMM:64  # by extension: MMX
+maxpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+maxpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+maxps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+maxps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+maxsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+maxsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+maxss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+maxss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+mfence  # by extension: SSE
+minpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+minpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+minps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+minps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+minsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+minsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+minss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+minss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+monitorx  # by extension: system instruction
+mov RW:GPR:16, R:SEGMENT:16  # uses a segment register
+mov RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+mov RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+mov RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+mov RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+mov RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+mov RW:al, byte ptr R:MEM(8)  # has a self dependency
+mov RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+mov RW:ax, word ptr R:MEM(16)  # has a self dependency
+mov RW:ds,es,fs,gs,ss, R:GPR:16  # has not enough r/w registers available
+mov RW:ds,es,fs,gs,ss, word ptr R:MEM(16)  # has not enough r/w registers available
+mov W:GPR:32, R:GPR:32  # by scheme: does not use ports
+mov W:GPR:32, R:SEGMENT:16  # uses a segment register
+mov W:GPR:64, R:GPR:64  # by scheme: does not use ports
+mov byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+mov word ptr RW:MEM(16), R:SEGMENT:16  # uses a segment register
+movabs W:GPR:64, IMM(64)  # by scheme: gives inconsistent results
+movapd W:XMM0..15, R:XMM0..15  # by extension: SSE
+movapd W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movapd xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movaps W:XMM0..15, R:XMM0..15  # by extension: SSE
+movaps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movaps xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movd W:FPMM:64, R:GPR:32  # has not enough r/w registers available
+movd W:FPMM:64, dword ptr R:MEM(32)  # has not enough r/w registers available
+movd W:GPR:32, R:FPMM:64  # by extension: MMX
+movd W:GPR:32, R:XMM0..15  # by extension: SSE
+movd W:XMM0..15, R:GPR:32  # by extension: SSE
+movd W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+movd dword ptr W:MEM(32), R:FPMM:64  # by extension: MMX
+movd dword ptr W:MEM(32), R:XMM0..15  # by extension: SSE
+movddup W:XMM0..15, R:XMM0..15  # by extension: SSE
+movddup W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movdq2q W:FPMM:64, R:XMM0..15  # has not enough r/w registers available
+movdqa W:XMM0..15, R:XMM0..15  # by extension: SSE
+movdqa W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movdqa xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movdqu W:XMM0..15, R:XMM0..15  # by extension: SSE
+movdqu W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movdqu xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movhlps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+movhpd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movhpd qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movhps RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movhps qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movlhps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+movlpd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movlpd qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movlps RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movlps qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movmskpd W:GPR:32, R:XMM0..15  # by extension: SSE
+movmskps W:GPR:32, R:XMM0..15  # by extension: SSE
+movntdq xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movntdqa W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movnti dword ptr W:MEM(32), R:GPR:32  # by extension: SSE
+movnti qword ptr W:MEM(64), R:GPR:64  # by extension: SSE
+movntpd xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movntps xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movntq qword ptr W:MEM(64), R:FPMM:64  # by extension: MMX
+movntsd qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movntss dword ptr W:MEM(32), R:XMM0..15  # by extension: SSE
+movq W:FPMM:64, R:FPMM:64  # has not enough r/w registers available
+movq W:FPMM:64, R:GPR:64  # has not enough r/w registers available
+movq W:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+movq W:GPR:64, R:FPMM:64  # by extension: MMX
+movq W:GPR:64, R:SEGMENT:16  # uses a segment register
+movq W:GPR:64, R:XMM0..15  # by extension: SSE
+movq W:XMM0..15, R:GPR:64  # by extension: SSE
+movq W:XMM0..15, R:XMM0..15  # by extension: SSE
+movq W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movq qword ptr W:MEM(64), R:FPMM:64  # by extension: MMX
+movq qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movq2dq W:XMM0..15, R:FPMM:64  # by extension: SSE
+movsb byte ptr RW:es:[rdi], byte ptr R:[rsi]  # has a self dependency
+movsd W:XMM0..15, R:XMM0..15  # by extension: SSE
+movsd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+movsd dword ptr W:es:[rdi], dword ptr R:[rsi]  # by scheme: incrementing string ops
+movsd qword ptr W:MEM(64), R:XMM0..15  # by extension: SSE
+movshdup W:XMM0..15, R:XMM0..15  # by extension: SSE
+movshdup W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movsldup W:XMM0..15, R:XMM0..15  # by extension: SSE
+movsldup W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movsq qword ptr W:es:[rdi], qword ptr R:[rsi]  # by scheme: incrementing string ops
+movss W:XMM0..15, R:XMM0..15  # by extension: SSE
+movss W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+movss dword ptr W:MEM(32), R:XMM0..15  # by extension: SSE
+movsw word ptr RW:es:[rdi], word ptr R:[rsi]  # has a self dependency
+movsx RW:ax,bp,bx,cx,di,dx,si,sp, R:ah,bh,ch,dh  # has not enough r/w registers available
+movsx W:eax,ebp,ebx,ecx,edi,edx,esi,esp, R:ah,bh,ch,dh  # has not enough r/w registers available
+movupd W:XMM0..15, R:XMM0..15  # by extension: SSE
+movupd W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movupd xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movups W:XMM0..15, R:XMM0..15  # by extension: SSE
+movups W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+movups xmmword ptr W:MEM(128), R:XMM0..15  # by extension: SSE
+movzx RW:ax,bp,bx,cx,di,dx,si,sp, R:ah,bh,ch,dh  # has not enough r/w registers available
+movzx W:eax,ebp,ebx,ecx,edi,edx,esi,esp, R:ah,bh,ch,dh  # has not enough r/w registers available
+mpsadbw RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+mpsadbw RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+mul R:GPR:16  # has a self dependency
+mul R:GPR:32  # has a self dependency
+mul R:GPR:64  # has a self dependency
+mul R:ah,bh,ch,dh  # has a self dependency
+mul R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+mul byte ptr R:MEM(8)  # has a self dependency
+mul dword ptr R:MEM(32)  # has a self dependency
+mul qword ptr R:MEM(64)  # has a self dependency
+mul word ptr R:MEM(16)  # has a self dependency
+mulpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+mulpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+mulps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+mulps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+mulsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+mulsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+mulss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+mulss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+mwaitx  # has a self dependency
+neg RW:ah,bh,ch,dh  # has not enough r/w registers available
+nop  # by scheme: does not use ports
+nop R:GPR:16  # by scheme: does not use ports
+nop R:GPR:32  # by scheme: does not use ports
+nop R:GPR:64  # by scheme: does not use ports
+nop dword ptr R:MEM(32)  # by scheme: does not use ports
+nop qword ptr R:MEM(64)  # by scheme: does not use ports
+nop word ptr R:MEM(16)  # by scheme: does not use ports
+not RW:ah,bh,ch,dh  # has not enough r/w registers available
+or RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+or RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+or RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+or RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+or RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+or RW:al, 0x0  # has a self dependency
+or RW:al, IMM(8)  # has a self dependency
+or RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+or RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+or RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+or RW:ax, IMM(16)  # has a self dependency
+or RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+or RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+or RW:eax, IMM(32)  # has a self dependency
+or RW:rax, IMM(32)  # has a self dependency
+or byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+orpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+orpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+orps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+orps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+out 0x0, R:al  # by mnemonic: system instruction
+out 0x0, R:ax  # by mnemonic: system instruction
+out 0x0, R:eax  # by mnemonic: system instruction
+out IMM(8), R:al  # by mnemonic: system instruction
+out IMM(8), R:ax  # by mnemonic: system instruction
+out IMM(8), R:eax  # by mnemonic: system instruction
+out R:dx, R:al  # by mnemonic: system instruction
+out R:dx, R:ax  # by mnemonic: system instruction
+out R:dx, R:eax  # by mnemonic: system instruction
+outsb  # by mnemonic: system instruction
+outsd  # by mnemonic: system instruction
+outsw  # by mnemonic: system instruction
+pabsb W:XMM0..15, R:XMM0..15  # by extension: SSE
+pabsb W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pabsd W:XMM0..15, R:XMM0..15  # by extension: SSE
+pabsd W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pabsw W:XMM0..15, R:XMM0..15  # by extension: SSE
+pabsw W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+packssdw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+packssdw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+packsswb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+packsswb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+packusdw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+packusdw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+packuswb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+packuswb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddsb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddsb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddusb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddusb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddusw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddusw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+paddw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+paddw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+palignr RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+palignr RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pand RW:FPMM:64, R:FPMM:64  # has not enough r/w registers available
+pand RW:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+pand RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pand RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pandn RW:FPMM:64, R:FPMM:64  # has not enough r/w registers available
+pandn RW:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+pandn RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pandn RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pause  # by mnemonic: system instruction
+pavgb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pavgb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pavgw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pavgw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pblendvb RW:XMM0..15, R:XMM0..15, R:xmm0  # has 3 or more explicit read operands
+pblendvb RW:XMM0..15, xmmword ptr R:MEM(128), R:xmm0  # has 3 or more explicit read operands
+pblendw RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pblendw RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pcmpeqb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpeqb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpeqd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpeqd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpeqq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpeqq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpeqw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpeqw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpestri R:XMM0..15, R:XMM0..15, IMM(8)  # has a self dependency
+pcmpestri R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # has a self dependency
+pcmpestrm R:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pcmpestrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pcmpgtb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpgtb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpgtd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpgtd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpgtq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpgtq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpgtw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pcmpgtw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pcmpistri R:XMM0..15, R:XMM0..15, IMM(8)  # has a self dependency
+pcmpistri R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # has a self dependency
+pcmpistrm R:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pcmpistrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pdep W:GPR:32, R:GPR:32, R:GPR:32  # by scheme: excessively slow
+pdep W:GPR:32, R:GPR:32, dword ptr R:MEM(32)  # by scheme: gives inconsistent results
+pdep W:GPR:64, R:GPR:64, R:GPR:64  # by scheme: excessively slow
+pdep W:GPR:64, R:GPR:64, qword ptr R:MEM(64)  # by scheme: excessively slow
+pext W:GPR:32, R:GPR:32, R:GPR:32  # by scheme: excessively slow
+pext W:GPR:32, R:GPR:32, dword ptr R:MEM(32)  # by scheme: gives inconsistent results
+pext W:GPR:64, R:GPR:64, R:GPR:64  # by scheme: excessively slow
+pext W:GPR:64, R:GPR:64, qword ptr R:MEM(64)  # by scheme: excessively slow
+pextrb W:GPR:32, R:XMM0..15, IMM(8)  # by extension: SSE
+pextrb byte ptr RW:MEM(8), R:XMM0..15, IMM(8)  # by extension: SSE
+pextrd W:GPR:32, R:XMM0..15, IMM(8)  # by extension: SSE
+pextrd dword ptr W:MEM(32), R:XMM0..15, IMM(8)  # by extension: SSE
+pextrq W:GPR:64, R:XMM0..15, IMM(8)  # by extension: SSE
+pextrq qword ptr W:MEM(64), R:XMM0..15, IMM(8)  # by extension: SSE
+pextrw W:GPR:32, R:XMM0..15, IMM(8)  # by extension: SSE
+pextrw word ptr RW:MEM(16), R:XMM0..15, IMM(8)  # by extension: SSE
+phaddd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phaddd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phaddsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phaddsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phaddw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phaddw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phminposuw W:XMM0..15, R:XMM0..15  # by extension: SSE
+phminposuw W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phsubd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phsubd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phsubsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phsubsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+phsubw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+phsubw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pinsrb RW:XMM0..15, R:GPR:32, IMM(8)  # by extension: SSE
+pinsrb RW:XMM0..15, byte ptr R:MEM(8), IMM(8)  # by extension: SSE
+pinsrd RW:XMM0..15, R:GPR:32, IMM(8)  # by extension: SSE
+pinsrd RW:XMM0..15, dword ptr R:MEM(32), IMM(8)  # by extension: SSE
+pinsrq RW:XMM0..15, R:GPR:64, IMM(8)  # by extension: SSE
+pinsrq RW:XMM0..15, qword ptr R:MEM(64), IMM(8)  # by extension: SSE
+pinsrw RW:XMM0..15, R:GPR:32, IMM(8)  # by extension: SSE
+pinsrw RW:XMM0..15, word ptr R:MEM(16), IMM(8)  # by extension: SSE
+pmaddubsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaddubsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaddwd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaddwd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxsb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxsb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxsd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxub RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxub RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxud RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxud RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmaxuw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmaxuw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminsb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminsb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminsd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminub RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminub RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminud RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminud RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pminuw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pminuw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmovmskb W:GPR:32, R:XMM0..15  # by extension: SSE
+pmovsxbd W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxbd W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+pmovsxbq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxbq W:XMM0..15, word ptr R:MEM(16)  # by extension: SSE
+pmovsxbw W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxbw W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovsxdq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxdq W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovsxwd W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxwd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovsxwq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovsxwq W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+pmovzxbd W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxbd W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+pmovzxbq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxbq W:XMM0..15, word ptr R:MEM(16)  # by extension: SSE
+pmovzxbw W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxbw W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovzxdq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxdq W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovzxwd W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxwd W:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+pmovzxwq W:XMM0..15, R:XMM0..15  # by extension: SSE
+pmovzxwq W:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+pmuldq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmuldq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmulhrsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmulhrsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmulhuw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmulhuw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmulhw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmulhw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmulld RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmulld RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmullw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmullw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pmuludq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pmuludq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pop RW:GPR:16  # has a self dependency
+pop RW:fs  # uses a segment register
+pop RW:gs  # uses a segment register
+pop W:GPR:64  # has a self dependency
+pop qword ptr W:MEM(64)  # has a self dependency
+pop word ptr RW:MEM(16)  # has a self dependency
+popcnt RW:GPR:16, R:GPR:16  # by extension: SSE
+popcnt RW:GPR:16, word ptr R:MEM(16)  # by extension: SSE
+popcnt W:GPR:32, R:GPR:32  # by extension: SSE
+popcnt W:GPR:32, dword ptr R:MEM(32)  # by extension: SSE
+popcnt W:GPR:64, R:GPR:64  # by extension: SSE
+popcnt W:GPR:64, qword ptr R:MEM(64)  # by extension: SSE
+popfq  # has a self dependency
+por RW:FPMM:64, R:FPMM:64  # has not enough r/w registers available
+por RW:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+por RW:XMM0..15, R:XMM0..15  # by extension: SSE
+por RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+prefetch byte ptr R:MEM(512)  # by mnemonic: system instruction
+prefetchit0 byte ptr R:MEM(8)  # by mnemonic: system instruction
+prefetchit1 byte ptr R:MEM(8)  # by mnemonic: system instruction
+prefetchnta byte ptr R:MEM(512)  # by extension: SSE
+prefetcht0 byte ptr R:MEM(512)  # by extension: SSE
+prefetcht1 byte ptr R:MEM(512)  # by extension: SSE
+prefetcht2 byte ptr R:MEM(512)  # by extension: SSE
+prefetchw byte ptr R:MEM(512)  # by mnemonic: system instruction
+prefetchwt1 byte ptr R:MEM(8)  # by mnemonic: system instruction
+psadbw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psadbw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pshufb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pshufb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pshufd W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pshufd W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pshufhw W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pshufhw W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+pshuflw W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+pshuflw W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+psignb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psignb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psignd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psignd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psignw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psignw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pslld RW:XMM0..15, IMM(8)  # by extension: SSE
+pslld RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pslld RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+pslldq RW:XMM0..15, IMM(8)  # by extension: SSE
+psllq RW:XMM0..15, IMM(8)  # by extension: SSE
+psllq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psllq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psllw RW:XMM0..15, IMM(8)  # by extension: SSE
+psllw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psllw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psrad RW:XMM0..15, IMM(8)  # by extension: SSE
+psrad RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psrad RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psraw RW:XMM0..15, IMM(8)  # by extension: SSE
+psraw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psraw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psrld RW:XMM0..15, IMM(8)  # by extension: SSE
+psrld RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psrld RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psrldq RW:XMM0..15, IMM(8)  # by extension: SSE
+psrlq RW:XMM0..15, IMM(8)  # by extension: SSE
+psrlq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psrlq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psrlw RW:XMM0..15, IMM(8)  # by extension: SSE
+psrlw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psrlw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubsb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubsb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubsw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubsw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubusb RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubusb RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubusw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubusw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+psubw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+psubw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+ptest R:XMM0..15, R:XMM0..15  # by extension: SSE
+ptest R:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+ptwrite R:GPR:32  # by extension: system instruction
+ptwrite R:GPR:64  # by extension: system instruction
+ptwrite dword ptr R:MEM(32)  # by extension: system instruction
+ptwrite qword ptr R:MEM(64)  # by extension: system instruction
+punpckhbw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpckhbw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpckhdq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpckhdq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpckhqdq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpckhqdq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpckhwd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpckhwd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpcklbw RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpcklbw RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpckldq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpckldq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpcklqdq RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpcklqdq RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+punpcklwd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+punpcklwd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+push 0x0  # has a self dependency
+push IMM(16)  # has a self dependency
+push IMM(32)  # has a self dependency
+push IMM(8)  # has a self dependency
+push R:GPR:16  # has a self dependency
+push R:GPR:64  # has a self dependency
+push R:fs  # uses a segment register
+push R:gs  # uses a segment register
+push qword ptr R:MEM(64)  # has a self dependency
+push word ptr R:MEM(16)  # has a self dependency
+pushfq  # has a self dependency
+pxor RW:FPMM:64, R:FPMM:64  # has not enough r/w registers available
+pxor RW:FPMM:64, qword ptr R:MEM(64)  # has not enough r/w registers available
+pxor RW:XMM0..15, R:XMM0..15  # by extension: SSE
+pxor RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+rcl RW:GPR:16  # has a self dependency
+rcl RW:GPR:16, IMM(8)  # has a self dependency
+rcl RW:GPR:16, R:cl  # has a self dependency
+rcl RW:GPR:32  # has a self dependency
+rcl RW:GPR:32, IMM(8)  # has a self dependency
+rcl RW:GPR:32, R:cl  # has a self dependency
+rcl RW:GPR:64  # has a self dependency
+rcl RW:GPR:64, IMM(8)  # has a self dependency
+rcl RW:GPR:64, R:cl  # has a self dependency
+rcl RW:ah,bh,ch,dh  # has not enough r/w registers available
+rcl RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+rcl RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+rcl RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+rcl RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl  # has a self dependency
+rcl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+rcl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+rcl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+rcl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+rcl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+rcl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+rcl byte ptr RW:MEM(8)  # has a self dependency
+rcl byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+rcl byte ptr RW:MEM(8), R:cl  # has a self dependency
+rcl dword ptr RW:MEM(32)  # has a self dependency
+rcl dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+rcl dword ptr RW:MEM(32), R:cl  # has a self dependency
+rcl qword ptr RW:MEM(64)  # has a self dependency
+rcl qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+rcl qword ptr RW:MEM(64), R:cl  # has a self dependency
+rcl word ptr RW:MEM(16)  # has a self dependency
+rcl word ptr RW:MEM(16), IMM(8)  # has a self dependency
+rcl word ptr RW:MEM(16), R:cl  # has a self dependency
+rcpps W:XMM0..15, R:XMM0..15  # by extension: SSE
+rcpps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+rcpss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+rcpss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+rcr RW:GPR:16  # has a self dependency
+rcr RW:GPR:16, IMM(8)  # has a self dependency
+rcr RW:GPR:16, R:cl  # has a self dependency
+rcr RW:GPR:32  # has a self dependency
+rcr RW:GPR:32, IMM(8)  # has a self dependency
+rcr RW:GPR:32, R:cl  # has a self dependency
+rcr RW:GPR:64  # has a self dependency
+rcr RW:GPR:64, IMM(8)  # has a self dependency
+rcr RW:GPR:64, R:cl  # has a self dependency
+rcr RW:ah,bh,ch,dh  # has not enough r/w registers available
+rcr RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+rcr RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+rcr RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+rcr RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl  # has a self dependency
+rcr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+rcr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+rcr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+rcr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+rcr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+rcr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+rcr byte ptr RW:MEM(8)  # has a self dependency
+rcr byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+rcr byte ptr RW:MEM(8), R:cl  # has a self dependency
+rcr dword ptr RW:MEM(32)  # has a self dependency
+rcr dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+rcr dword ptr RW:MEM(32), R:cl  # has a self dependency
+rcr qword ptr RW:MEM(64)  # has a self dependency
+rcr qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+rcr qword ptr RW:MEM(64), R:cl  # has a self dependency
+rcr word ptr RW:MEM(16)  # has a self dependency
+rcr word ptr RW:MEM(16), IMM(8)  # has a self dependency
+rcr word ptr RW:MEM(16), R:cl  # has a self dependency
+rdpkru  # has a self dependency
+rdrand RW:GPR:16  # by scheme: excessively slow
+rdrand W:GPR:32  # by scheme: excessively slow
+rdrand W:GPR:64  # by scheme: excessively slow
+rdseed RW:GPR:16  # by scheme: excessively slow
+rdseed W:GPR:32  # by scheme: excessively slow
+rdseed W:GPR:64  # by scheme: excessively slow
+rep cmpsb byte ptr R:[rsi], byte ptr R:es:[rdi]  # has REP prefix
+rep cmpsd dword ptr R:[rsi], dword ptr R:es:[rdi]  # has REP prefix
+rep cmpsq qword ptr R:[rsi], qword ptr R:es:[rdi]  # has REP prefix
+rep cmpsw word ptr R:[rsi], word ptr R:es:[rdi]  # has REP prefix
+rep insb  # has REP prefix
+rep insd  # has REP prefix
+rep insw  # has REP prefix
+rep lodsb RW:al, byte ptr R:[rsi]  # has REP prefix
+rep lodsd RW:eax, dword ptr R:[rsi]  # has REP prefix
+rep lodsq RW:rax, qword ptr R:[rsi]  # has REP prefix
+rep lodsw RW:ax, word ptr R:[rsi]  # has REP prefix
+rep movsb byte ptr RW:es:[rdi], byte ptr R:[rsi]  # has REP prefix
+rep movsd dword ptr RW:es:[rdi], dword ptr R:[rsi]  # has REP prefix
+rep movsq qword ptr RW:es:[rdi], qword ptr R:[rsi]  # has REP prefix
+rep movsw word ptr RW:es:[rdi], word ptr R:[rsi]  # has REP prefix
+rep outsb  # has REP prefix
+rep outsd  # has REP prefix
+rep outsw  # has REP prefix
+rep scasb R:al, byte ptr R:es:[rdi]  # has REP prefix
+rep scasd R:eax, dword ptr R:es:[rdi]  # has REP prefix
+rep scasq R:rax, qword ptr R:es:[rdi]  # has REP prefix
+rep scasw R:ax, word ptr R:es:[rdi]  # has REP prefix
+rep stosb byte ptr RW:es:[rdi], R:al  # has REP prefix
+rep stosd dword ptr RW:es:[rdi], R:eax  # has REP prefix
+rep stosq qword ptr RW:es:[rdi], R:rax  # has REP prefix
+rep stosw word ptr RW:es:[rdi], R:ax  # has REP prefix
+repne cmpsb byte ptr R:[rsi], byte ptr R:es:[rdi]  # has REP prefix
+repne cmpsd dword ptr R:[rsi], dword ptr R:es:[rdi]  # has REP prefix
+repne cmpsq qword ptr R:[rsi], qword ptr R:es:[rdi]  # has REP prefix
+repne cmpsw word ptr R:[rsi], word ptr R:es:[rdi]  # has REP prefix
+repne insb  # has REP prefix
+repne insd  # has REP prefix
+repne insw  # has REP prefix
+repne lodsb RW:al, byte ptr R:[rsi]  # has REP prefix
+repne lodsd RW:eax, dword ptr R:[rsi]  # has REP prefix
+repne lodsq RW:rax, qword ptr R:[rsi]  # has REP prefix
+repne lodsw RW:ax, word ptr R:[rsi]  # has REP prefix
+repne movsb byte ptr RW:es:[rdi], byte ptr R:[rsi]  # has REP prefix
+repne movsd dword ptr RW:es:[rdi], dword ptr R:[rsi]  # has REP prefix
+repne movsq qword ptr RW:es:[rdi], qword ptr R:[rsi]  # has REP prefix
+repne movsw word ptr RW:es:[rdi], word ptr R:[rsi]  # has REP prefix
+repne outsb  # has REP prefix
+repne outsd  # has REP prefix
+repne outsw  # has REP prefix
+repne scasb R:al, byte ptr R:es:[rdi]  # has REP prefix
+repne scasd R:eax, dword ptr R:es:[rdi]  # has REP prefix
+repne scasq R:rax, qword ptr R:es:[rdi]  # has REP prefix
+repne scasw R:ax, word ptr R:es:[rdi]  # has REP prefix
+repne stosb byte ptr RW:es:[rdi], R:al  # has REP prefix
+repne stosd dword ptr RW:es:[rdi], R:eax  # has REP prefix
+repne stosq qword ptr RW:es:[rdi], R:rax  # has REP prefix
+repne stosw word ptr RW:es:[rdi], R:ax  # has REP prefix
+ret  # affects control flow
+ret IMM(16)  # affects control flow
+retf  # affects control flow
+retf IMM(16)  # affects control flow
+retfq  # affects control flow
+retfq IMM(16)  # affects control flow
+rol RW:ah,bh,ch,dh  # has not enough r/w registers available
+rol RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+rol RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+rol RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+rol RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+rol RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+rol RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+rol RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+rol RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+rol RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+ror RW:ah,bh,ch,dh  # has not enough r/w registers available
+ror RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+ror RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+ror RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+ror RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+ror RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+ror RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+ror RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+ror RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+ror RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+roundpd W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+roundpd W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+roundps W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+roundps W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+roundsd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+roundsd RW:XMM0..15, qword ptr R:MEM(64), IMM(8)  # by extension: SSE
+roundss RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+roundss RW:XMM0..15, dword ptr R:MEM(32), IMM(8)  # by extension: SSE
+rsm  # affects control flow
+rsqrtps W:XMM0..15, R:XMM0..15  # by extension: SSE
+rsqrtps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+rsqrtss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+rsqrtss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+sahf  # uses an 8-bit high register
+sar RW:ah,bh,ch,dh  # has not enough r/w registers available
+sar RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+sar RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+sar RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+sar RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+sar RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+sar RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+sar RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+sar RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+sar RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+sbb RW:GPR:16, 0x0  # has a self dependency
+sbb RW:GPR:16, IMM(16)  # has a self dependency
+sbb RW:GPR:16, IMM(8)  # has a self dependency
+sbb RW:GPR:16, R:GPR:16  # has a self dependency
+sbb RW:GPR:16, word ptr R:MEM(16)  # has a self dependency
+sbb RW:GPR:32, 0x0  # has a self dependency
+sbb RW:GPR:32, IMM(32)  # has a self dependency
+sbb RW:GPR:32, IMM(8)  # has a self dependency
+sbb RW:GPR:32, R:GPR:32  # has a self dependency
+sbb RW:GPR:32, dword ptr R:MEM(32)  # has a self dependency
+sbb RW:GPR:64, 0x0  # has a self dependency
+sbb RW:GPR:64, IMM(32)  # has a self dependency
+sbb RW:GPR:64, IMM(8)  # has a self dependency
+sbb RW:GPR:64, R:GPR:64  # has a self dependency
+sbb RW:GPR:64, qword ptr R:MEM(64)  # has a self dependency
+sbb RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+sbb RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+sbb RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+sbb RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+sbb RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+sbb RW:al, 0x0  # has a self dependency
+sbb RW:al, IMM(8)  # has a self dependency
+sbb RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+sbb RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)  # has a self dependency
+sbb RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+sbb RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+sbb RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+sbb RW:ax, IMM(16)  # has a self dependency
+sbb RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+sbb RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+sbb RW:eax, IMM(32)  # has a self dependency
+sbb RW:rax, IMM(32)  # has a self dependency
+sbb byte ptr RW:MEM(8), 0x0  # has a self dependency
+sbb byte ptr RW:MEM(8), IMM(8)  # has a self dependency
+sbb byte ptr RW:MEM(8), R:ah,bh,ch,dh  # has a self dependency
+sbb byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # has a self dependency
+sbb dword ptr RW:MEM(32), 0x0  # has a self dependency
+sbb dword ptr RW:MEM(32), IMM(32)  # has a self dependency
+sbb dword ptr RW:MEM(32), IMM(8)  # has a self dependency
+sbb dword ptr RW:MEM(32), R:GPR:32  # has a self dependency
+sbb qword ptr RW:MEM(64), 0x0  # has a self dependency
+sbb qword ptr RW:MEM(64), IMM(32)  # has a self dependency
+sbb qword ptr RW:MEM(64), IMM(8)  # has a self dependency
+sbb qword ptr RW:MEM(64), R:GPR:64  # has a self dependency
+sbb word ptr RW:MEM(16), 0x0  # has a self dependency
+sbb word ptr RW:MEM(16), IMM(16)  # has a self dependency
+sbb word ptr RW:MEM(16), IMM(8)  # has a self dependency
+sbb word ptr RW:MEM(16), R:GPR:16  # has a self dependency
+scasb R:al, byte ptr R:es:[rdi]  # by scheme: incrementing string ops
+scasd R:eax, dword ptr R:es:[rdi]  # by scheme: incrementing string ops
+scasq R:rax, qword ptr R:es:[rdi]  # by scheme: incrementing string ops
+scasw R:ax, word ptr R:es:[rdi]  # by scheme: incrementing string ops
+seta RW:ah,bh,ch,dh  # has not enough r/w registers available
+seta RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+seta byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setae RW:ah,bh,ch,dh  # has not enough r/w registers available
+setae RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setae byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setb RW:ah,bh,ch,dh  # has not enough r/w registers available
+setb RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setb byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setbe RW:ah,bh,ch,dh  # has not enough r/w registers available
+setbe RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setbe byte ptr RW:MEM(8)  # is a cmovCC or setCC
+sete RW:ah,bh,ch,dh  # has not enough r/w registers available
+sete RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+sete byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setg RW:ah,bh,ch,dh  # has not enough r/w registers available
+setg RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setg byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setge RW:ah,bh,ch,dh  # has not enough r/w registers available
+setge RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setge byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setl RW:ah,bh,ch,dh  # has not enough r/w registers available
+setl RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setl byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setle RW:ah,bh,ch,dh  # has not enough r/w registers available
+setle RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setle byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setne RW:ah,bh,ch,dh  # has not enough r/w registers available
+setne RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setne byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setno RW:ah,bh,ch,dh  # has not enough r/w registers available
+setno RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setno byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setnp RW:ah,bh,ch,dh  # has not enough r/w registers available
+setnp RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setnp byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setns RW:ah,bh,ch,dh  # has not enough r/w registers available
+setns RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setns byte ptr RW:MEM(8)  # is a cmovCC or setCC
+seto RW:ah,bh,ch,dh  # has not enough r/w registers available
+seto RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+seto byte ptr RW:MEM(8)  # is a cmovCC or setCC
+setp RW:ah,bh,ch,dh  # has not enough r/w registers available
+setp RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+setp byte ptr RW:MEM(8)  # is a cmovCC or setCC
+sets RW:ah,bh,ch,dh  # has not enough r/w registers available
+sets RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # is a cmovCC or setCC
+sets byte ptr RW:MEM(8)  # is a cmovCC or setCC
+sfence  # by extension: SSE
+sha1msg1 RW:XMM0..15, R:XMM0..15  # by extension: SHA
+sha1msg1 RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SHA
+sha1msg2 RW:XMM0..15, R:XMM0..15  # by extension: SHA
+sha1msg2 RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SHA
+sha1nexte RW:XMM0..15, R:XMM0..15  # by extension: SHA
+sha1nexte RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SHA
+sha1rnds4 RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SHA
+sha1rnds4 RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SHA
+sha256msg1 RW:XMM0..15, R:XMM0..15  # by extension: SHA
+sha256msg1 RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SHA
+sha256msg2 RW:XMM0..15, R:XMM0..15  # by extension: SHA
+sha256msg2 RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SHA
+sha256rnds2 RW:XMM0..15, R:XMM0..15, R:xmm0  # has 3 or more explicit read operands
+sha256rnds2 RW:XMM0..15, xmmword ptr R:MEM(128), R:xmm0  # has 3 or more explicit read operands
+shl RW:ah,bh,ch,dh  # has not enough r/w registers available
+shl RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+shl RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+shl RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+shl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+shl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+shl RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+shl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+shl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+shl RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+shld RW:GPR:16, R:GPR:16, R:cl  # has 3 or more explicit read operands
+shld RW:GPR:32, R:GPR:32, R:cl  # has 3 or more explicit read operands
+shld RW:GPR:64, R:GPR:64, R:cl  # has 3 or more explicit read operands
+shld dword ptr RW:MEM(32), R:GPR:32, R:cl  # has 3 or more explicit read operands
+shld qword ptr RW:MEM(64), R:GPR:64, R:cl  # has 3 or more explicit read operands
+shld word ptr RW:MEM(16), R:GPR:16, R:cl  # has 3 or more explicit read operands
+shr RW:ah,bh,ch,dh  # has not enough r/w registers available
+shr RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+shr RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+shr RW:ah,bh,ch,dh, R:cl  # has not enough r/w registers available
+shr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b  # has not enough r/w registers available
+shr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+shr RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+shr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl  # has not enough r/w registers available
+shr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+shr RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+shrd RW:GPR:16, R:GPR:16, R:cl  # has 3 or more explicit read operands
+shrd RW:GPR:32, R:GPR:32, R:cl  # has 3 or more explicit read operands
+shrd RW:GPR:64, R:GPR:64, R:cl  # has 3 or more explicit read operands
+shrd dword ptr RW:MEM(32), R:GPR:32, R:cl  # has 3 or more explicit read operands
+shrd qword ptr RW:MEM(64), R:GPR:64, R:cl  # has 3 or more explicit read operands
+shrd word ptr RW:MEM(16), R:GPR:16, R:cl  # has 3 or more explicit read operands
+shufpd RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+shufpd RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+shufps RW:XMM0..15, R:XMM0..15, IMM(8)  # by extension: SSE
+shufps RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: SSE
+sqrtpd W:XMM0..15, R:XMM0..15  # by extension: SSE
+sqrtpd W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+sqrtps W:XMM0..15, R:XMM0..15  # by extension: SSE
+sqrtps W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+sqrtsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+sqrtsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+sqrtss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+sqrtss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+std  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+sti  # by mnemonic: system instruction
+stmxcsr dword ptr W:MEM(32)  # by extension: SSE
+stosb byte ptr RW:es:[rdi], R:al  # has a self dependency
+stosd dword ptr W:es:[rdi], R:eax  # by scheme: incrementing string ops
+stosq qword ptr W:es:[rdi], R:rax  # by scheme: incrementing string ops
+stosw word ptr RW:es:[rdi], R:ax  # has a self dependency
+sub RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+sub RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+sub RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+sub RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+sub RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+sub RW:al, 0x0  # has a self dependency
+sub RW:al, IMM(8)  # has a self dependency
+sub RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+sub RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+sub RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+sub RW:ax, IMM(16)  # has a self dependency
+sub RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+sub RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+sub RW:eax, IMM(32)  # has a self dependency
+sub RW:rax, IMM(32)  # has a self dependency
+sub byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+subpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+subpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+subps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+subps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+subsd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+subsd RW:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+subss RW:XMM0..15, R:XMM0..15  # by extension: SSE
+subss RW:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+t1mskc W:GPR:32, R:GPR:32  # by extension: outdated
+t1mskc W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+t1mskc W:GPR:64, R:GPR:64  # by extension: outdated
+t1mskc W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+test R:ah,bh,ch,dh, 0x0  # uses an 8-bit high register
+test R:ah,bh,ch,dh, IMM(8)  # uses an 8-bit high register
+test R:ah,bh,ch,dh, R:ah,bh,ch,dh  # uses an 8-bit high register
+test R:ah,bh,ch,dh, R:al,bl,cl,dl  # uses an 8-bit high register
+test R:al,bl,cl,dl, R:ah,bh,ch,dh  # uses an 8-bit high register
+test byte ptr R:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+tzmsk W:GPR:32, R:GPR:32  # by extension: outdated
+tzmsk W:GPR:32, dword ptr R:MEM(32)  # by extension: outdated
+tzmsk W:GPR:64, R:GPR:64  # by extension: outdated
+tzmsk W:GPR:64, qword ptr R:MEM(64)  # by extension: outdated
+ucomisd R:XMM0..15, R:XMM0..15  # by extension: SSE
+ucomisd R:XMM0..15, qword ptr R:MEM(64)  # by extension: SSE
+ucomiss R:XMM0..15, R:XMM0..15  # by extension: SSE
+ucomiss R:XMM0..15, dword ptr R:MEM(32)  # by extension: SSE
+ud2  # by mnemonic: system instruction
+unpckhpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+unpckhpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+unpckhps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+unpckhps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+unpcklpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+unpcklpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+unpcklps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+unpcklps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+vaesdec W:XMM0..15, R:XMM0..15, R:XMM0..15  # by extension: AVXAES
+vaesdec W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AVXAES
+vaesdec W:YMM0..15, R:YMM0..15, R:YMM0..15  # by extension: VAES
+vaesdec W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by extension: VAES
+vaesdeclast W:XMM0..15, R:XMM0..15, R:XMM0..15  # by extension: AVXAES
+vaesdeclast W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AVXAES
+vaesdeclast W:YMM0..15, R:YMM0..15, R:YMM0..15  # by extension: VAES
+vaesdeclast W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by extension: VAES
+vaesenc W:XMM0..15, R:XMM0..15, R:XMM0..15  # by extension: AVXAES
+vaesenc W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AVXAES
+vaesenc W:YMM0..15, R:YMM0..15, R:YMM0..15  # by extension: VAES
+vaesenc W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by extension: VAES
+vaesenclast W:XMM0..15, R:XMM0..15, R:XMM0..15  # by extension: AVXAES
+vaesenclast W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AVXAES
+vaesenclast W:YMM0..15, R:YMM0..15, R:YMM0..15  # by extension: VAES
+vaesenclast W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by extension: VAES
+vaesimc W:XMM0..15, R:XMM0..15  # by extension: AVXAES
+vaesimc W:XMM0..15, xmmword ptr R:MEM(128)  # by extension: AVXAES
+vaeskeygenassist W:XMM0..15, R:XMM0..15, IMM(8)  # by extension: AVXAES
+vaeskeygenassist W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # by extension: AVXAES
+vbcstnebf162ps W:XMM0..15, word ptr R:MEM(16)  # by scheme: crashes
+vbcstnebf162ps W:YMM0..15, word ptr R:MEM(16)  # by scheme: crashes
+vbcstnesh2ps W:XMM0..15, word ptr R:MEM(16)  # by scheme: crashes
+vbcstnesh2ps W:YMM0..15, word ptr R:MEM(16)  # by scheme: crashes
+vblendvpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vblendvpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vblendvpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vblendvpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vblendvps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vblendvps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vblendvps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vblendvps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vcmpord_sps W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: crashes
+vcvtdq2pd W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtdq2pd W:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtdq2pd W:YMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtdq2pd W:YMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtdq2ps W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtdq2ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtdq2ps W:YMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvtdq2ps W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtneebf162ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtneebf162ps W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtneeph2ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtneeph2ps W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtneobf162ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtneobf162ps W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtneoph2ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtneoph2ps W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtpd2dq W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtpd2dq W:XMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvtpd2dq W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtpd2dq W:XMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtpd2ps W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtpd2ps W:XMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvtpd2ps W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtpd2ps W:XMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtph2ps W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtph2ps W:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtph2ps W:YMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtph2ps W:YMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtps2dq W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtps2dq W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtps2dq W:YMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvtps2dq W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvtps2pd W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtps2pd W:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtps2pd W:YMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtps2pd W:YMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvtps2ph W:XMM0..15, R:XMM0..15, IMM(8)  # is a float conversion instruction
+vcvtps2ph W:XMM0..15, R:YMM0..15, IMM(8)  # is a float conversion instruction
+vcvtps2ph qword ptr W:MEM(64), R:XMM0..15, IMM(8)  # is a float conversion instruction
+vcvtps2ph xmmword ptr W:MEM(128), R:YMM0..15, IMM(8)  # is a float conversion instruction
+vcvtsd2si W:GPR:32, R:XMM0..15  # is a float conversion instruction
+vcvtsd2si W:GPR:32, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtsd2si W:GPR:64, R:XMM0..15  # is a float conversion instruction
+vcvtsd2si W:GPR:64, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtsd2ss W:XMM0..15, R:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtsd2ss W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtsi2sd W:XMM0..15, R:XMM0..15, R:GPR:32  # is a float conversion instruction
+vcvtsi2sd W:XMM0..15, R:XMM0..15, R:GPR:64  # is a float conversion instruction
+vcvtsi2sd W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvtsi2sd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtsi2ss W:XMM0..15, R:XMM0..15, R:GPR:32  # is a float conversion instruction
+vcvtsi2ss W:XMM0..15, R:XMM0..15, R:GPR:64  # is a float conversion instruction
+vcvtsi2ss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvtsi2ss W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvtss2sd W:XMM0..15, R:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvtss2sd W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvtss2si W:GPR:32, R:XMM0..15  # is a float conversion instruction
+vcvtss2si W:GPR:32, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvtss2si W:GPR:64, R:XMM0..15  # is a float conversion instruction
+vcvtss2si W:GPR:64, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvttpd2dq W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvttpd2dq W:XMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvttpd2dq W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvttpd2dq W:XMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvttps2dq W:XMM0..15, R:XMM0..15  # is a float conversion instruction
+vcvttps2dq W:XMM0..15, xmmword ptr R:MEM(128)  # is a float conversion instruction
+vcvttps2dq W:YMM0..15, R:YMM0..15  # is a float conversion instruction
+vcvttps2dq W:YMM0..15, ymmword ptr R:MEM(256)  # is a float conversion instruction
+vcvttsd2si W:GPR:32, R:XMM0..15  # is a float conversion instruction
+vcvttsd2si W:GPR:32, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvttsd2si W:GPR:64, R:XMM0..15  # is a float conversion instruction
+vcvttsd2si W:GPR:64, qword ptr R:MEM(64)  # is a float conversion instruction
+vcvttss2si W:GPR:32, R:XMM0..15  # is a float conversion instruction
+vcvttss2si W:GPR:32, dword ptr R:MEM(32)  # is a float conversion instruction
+vcvttss2si W:GPR:64, R:XMM0..15  # is a float conversion instruction
+vcvttss2si W:GPR:64, dword ptr R:MEM(32)  # is a float conversion instruction
+vdivpd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vdivpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivpd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivps W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vdivps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivps W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivsd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vdivsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vdivss W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vdivss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vfmadd132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd132sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd132sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmadd132ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd132ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmadd213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd213sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd213sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmadd213ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd213ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmadd231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmadd231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmadd231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmadd231sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd231sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmadd231ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmadd231ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsd W:XMM0..15, R:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmaddsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddss W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddss W:XMM0..15, R:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmaddss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsub132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsub213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsub213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsub231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsub231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsub231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsub231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsub231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmaddsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmaddsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmaddsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmaddsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmsub132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub132sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub132sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmsub132ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub132ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmsub213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub213sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub213sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmsub213ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub213ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmsub231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsub231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsub231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsub231sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub231sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmsub231ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsub231ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmsubadd132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubadd132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubadd213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubadd213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubadd231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubadd231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubadd231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubadd231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubadd231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmsubaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmsubaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmsubaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfmsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfmsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfmsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfmsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfmsubsd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubsd W:XMM0..15, R:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfmsubsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), R:XMM0..15  # has 3 or more explicit read operands
+vfmsubss W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfmsubss W:XMM0..15, R:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfmsubss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd132sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd132sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmadd132ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd132ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmadd213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd213sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd213sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmadd213ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd213ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmadd231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmadd231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmadd231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmadd231sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd231sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmadd231ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmadd231ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfnmaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmaddps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfnmaddsd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddsd W:XMM0..15, R:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmaddsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddss W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmaddss W:XMM0..15, R:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmaddss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub132pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub132pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub132pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub132pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub132ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub132ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub132ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub132ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub132sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub132sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmsub132ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub132ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmsub213pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub213pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub213pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub213pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub213ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub213ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub213ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub213ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub213sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub213sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmsub213ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub213ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmsub231pd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub231pd RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub231pd RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub231pd RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub231ps RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub231ps RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsub231ps RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsub231ps RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsub231sd RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub231sd RW:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmsub231ss RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsub231ss RW:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfnmsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubps W:XMM0..15, R:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+vfnmsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vfnmsubps W:YMM0..15, R:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+vfnmsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vfnmsubsd W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubsd W:XMM0..15, R:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # has 3 or more explicit read operands
+vfnmsubsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubss W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vfnmsubss W:XMM0..15, R:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # has 3 or more explicit read operands
+vfnmsubss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), R:XMM0..15  # has 3 or more explicit read operands
+vldmxcsr dword ptr R:MEM(32)  # has a self dependency
+vmaskmovdqu R:XMM0..15, R:XMM0..15  # by mnemonic: uses rdi
+vmovd W:XMM0..15, R:GPR:32  # by scheme: related to an excluded blocking insn
+vmovd W:XMM0..15, dword ptr R:MEM(32)  # by scheme: related to an excluded blocking insn
+vmovq W:XMM0..15, R:GPR:64  # by scheme: related to an excluded blocking insn
+vmovq W:XMM0..15, qword ptr R:MEM(64)  # by scheme: related to an excluded blocking insn
+vmulpd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vmulpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by mnemonic: stage 3 reject
+vmulpd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by mnemonic: stage 3 reject
+vmulpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by mnemonic: stage 3 reject
+vmulsd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vmulsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # by mnemonic: stage 3 reject
+vpblendvb W:XMM0..15, R:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+vpblendvb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), R:XMM0..15  # has 3 or more explicit read operands
+vpblendvb W:YMM0..15, R:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+vpblendvb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), R:YMM0..15  # has 3 or more explicit read operands
+vpclmulqdq W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)  # by extension: not supported by CPU
+vpclmulqdq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)  # by extension: not supported by CPU
+vpcmpestri R:XMM0..15, R:XMM0..15, IMM(8)  # has a self dependency
+vpcmpestri R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # has a self dependency
+vpcmpgtq W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpcmpgtq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpcmpgtq W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpcmpgtq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpcmpistri R:XMM0..15, R:XMM0..15, IMM(8)  # has a self dependency
+vpcmpistri R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)  # has a self dependency
+vpermd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpermilpd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpermilpd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpermilps W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpermilps W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpermps W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vphminposuw W:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpmaddubsw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmaddubsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmaddubsw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmaddubsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmaddwd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmaddwd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmaddwd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmaddwd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmuldq W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmuldq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmuldq W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmuldq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmulhrsw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhrsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmulhrsw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhrsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmulhuw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhuw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmulhuw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhuw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmulhw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmulhw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmulhw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmulld W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpmulld W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpmullw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmullw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmullw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmullw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpmuludq W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpmuludq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpmuludq W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpmuludq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpsadbw W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: related to an excluded blocking insn
+vpsadbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: related to an excluded blocking insn
+vpsadbw W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: related to an excluded blocking insn
+vpsadbw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: related to an excluded blocking insn
+vpsllvd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpsllvd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpsllvq W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpsllvq W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpsravd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpsravd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpsrlvd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpsrlvd W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vpsrlvq W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vpsrlvq W:YMM0..15, R:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vrcpps W:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vrcpps W:XMM0..15, xmmword ptr R:MEM(128)  # by mnemonic: stage 3 reject
+vrcpps W:YMM0..15, R:YMM0..15  # by mnemonic: stage 3 reject
+vrcpps W:YMM0..15, ymmword ptr R:MEM(256)  # by mnemonic: stage 3 reject
+vrcpss W:XMM0..15, R:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vrcpss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # by mnemonic: stage 3 reject
+vrsqrtps W:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vrsqrtps W:XMM0..15, xmmword ptr R:MEM(128)  # by mnemonic: stage 3 reject
+vrsqrtps W:YMM0..15, R:YMM0..15  # by mnemonic: stage 3 reject
+vrsqrtps W:YMM0..15, ymmword ptr R:MEM(256)  # by mnemonic: stage 3 reject
+vrsqrtss W:XMM0..15, R:XMM0..15, R:XMM0..15  # by mnemonic: stage 3 reject
+vrsqrtss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # by mnemonic: stage 3 reject
+vsqrtpd W:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vsqrtpd W:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtpd W:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtpd W:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtps W:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vsqrtps W:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtps W:YMM0..15, R:YMM0..15  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtps W:YMM0..15, ymmword ptr R:MEM(256)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtsd W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vsqrtsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vsqrtss W:XMM0..15, R:XMM0..15, R:XMM0..15  # by scheme: uses less than one port
+vsqrtss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+vstmxcsr dword ptr W:MEM(32)  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+wrpkru  # by extension: not supported by CPU
+xabort IMM(8)  # affects control flow
+xadd RW:ah,bh,ch,dh, RW:ah,bh,ch,dh  # has not enough r/w registers available
+xadd RW:ah,bh,ch,dh, RW:al,bl,cl,dl  # has not enough r/w registers available
+xadd RW:al,bl,cl,dl, RW:ah,bh,ch,dh  # has not enough r/w registers available
+xadd byte ptr RW:MEM(8), RW:ah,bh,ch,dh  # has not enough r/w registers available
+xbegin SYM  # affects control flow
+xchg RW:ah,bh,ch,dh, RW:ah,bh,ch,dh  # has not enough r/w registers available
+xchg RW:ah,bh,ch,dh, RW:al,bl,cl,dl  # has not enough r/w registers available
+xchg RW:al,bl,cl,dl, RW:ah,bh,ch,dh  # has not enough r/w registers available
+xchg RW:ax, RW:GPR:16  # has a self dependency
+xchg RW:eax, RW:GPR:32  # has a self dependency
+xchg RW:rax, RW:GPR:64  # has a self dependency
+xchg byte ptr RW:MEM(8), RW:ah,bh,ch,dh  # has not enough r/w registers available
+xchg byte ptr RW:MEM(8), RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+xchg dword ptr RW:MEM(32), RW:GPR:32  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+xchg qword ptr RW:MEM(64), RW:GPR:64  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+xchg word ptr RW:MEM(16), RW:GPR:16  # by scheme: runs in more cycles than it has uops, not in the port mapping model
+xend  # affects control flow
+xlatb  # has a self dependency
+xor RW:ah,bh,ch,dh, 0x0  # has not enough r/w registers available
+xor RW:ah,bh,ch,dh, IMM(8)  # has not enough r/w registers available
+xor RW:ah,bh,ch,dh, R:ah,bh,ch,dh  # has not enough r/w registers available
+xor RW:ah,bh,ch,dh, R:al,bl,cl,dl  # has not enough r/w registers available
+xor RW:ah,bh,ch,dh, byte ptr R:MEM(8)  # has not enough r/w registers available
+xor RW:al, 0x0  # has a self dependency
+xor RW:al, IMM(8)  # has a self dependency
+xor RW:al,bl,cl,dl, R:ah,bh,ch,dh  # has not enough r/w registers available
+xor RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0  # has not enough r/w registers available
+xor RW:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)  # has not enough r/w registers available
+xor RW:ax, IMM(16)  # has a self dependency
+xor RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0  # has not enough r/w registers available
+xor RW:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)  # has not enough r/w registers available
+xor RW:eax, IMM(32)  # has a self dependency
+xor RW:rax, IMM(32)  # has a self dependency
+xor byte ptr RW:MEM(8), R:ah,bh,ch,dh  # uses an 8-bit high register
+xorpd RW:XMM0..15, R:XMM0..15  # by extension: SSE
+xorpd RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+xorps RW:XMM0..15, R:XMM0..15  # by extension: SSE
+xorps RW:XMM0..15, xmmword ptr R:MEM(128)  # by extension: SSE
+xtest  # by extension: system instruction
+{vex} vcvtneps2bf16 W:XMM0..15, R:XMM0..15  # by scheme: crashes
+{vex} vcvtneps2bf16 W:XMM0..15, R:YMM0..15  # by scheme: crashes
+{vex} vcvtneps2bf16 W:XMM0..15, xmmword ptr R:MEM(128)  # by scheme: crashes
+{vex} vcvtneps2bf16 W:XMM0..15, ymmword ptr R:MEM(256)  # by scheme: crashes
+{vex} vpmadd52huq RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+{vex} vpmadd52huq RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+{vex} vpmadd52huq RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+{vex} vpmadd52huq RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands
+{vex} vpmadd52luq RW:XMM0..15, R:XMM0..15, R:XMM0..15  # has 3 or more explicit read operands
+{vex} vpmadd52luq RW:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)  # has 3 or more explicit read operands
+{vex} vpmadd52luq RW:YMM0..15, R:YMM0..15, R:YMM0..15  # has 3 or more explicit read operands
+{vex} vpmadd52luq RW:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)  # has 3 or more explicit read operands

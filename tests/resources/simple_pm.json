@@ -1,0 +1,28 @@
+{
+  "kind": "Mapping3",
+  "arch": {
+    "kind": "Architecture",
+    "insns": [
+        "add",
+        "sub",
+        "mul",
+        "fma",
+        "ld",
+        "st",
+        "addld",
+        "addst",
+        "fmaldst"
+    ]
+  },
+  "assignment": {
+    "add": [ [ 0, 1 ] ],
+    "sub": [ [ 0, 1 ] ],
+    "mul": [ [1] ],
+    "fma": [ [ 0, 1 ], [1] ],
+    "ld": [ [ 2 , 3 ] ],
+    "st": [ [ 2 ] ],
+    "addld": [ [ 0, 1 ], [ 2 , 3 ] ],
+    "addst": [ [ 0, 1 ], [ 2 ] ],
+    "fmaldst": [ [ 0, 1 ], [1], [ 2 ], [2, 3] ]
+  }
+}

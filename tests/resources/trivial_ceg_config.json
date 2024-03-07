@@ -1,0 +1,13 @@
+{
+    "synthesizer_kind": "smt",
+    "mapping_class": "Mapping3",
+    "smt_use_constrained_mapping3": false,
+    "smt_constrain_improper_uops": false,
+    "add_singleton_exps": true,
+    "num_uops_per_insn": -1,
+    "num_ports": 2,
+    "smt_slack_kind": "cpi",
+    "smt_slack_val": 0.02,
+    "smt_insn_bound": 20,
+    "smt_exp_limit_strategy": "incremental_optimistic"
+}

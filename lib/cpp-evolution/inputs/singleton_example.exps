@@ -1,0 +1,27 @@
+architecture:
+    instructions:
+        "add foo"
+        sub
+        mul
+        div
+
+experiment:
+    instructions:
+        "add foo"
+    cycles: 0.25
+
+experiment:
+    instructions:
+        sub
+    cycles: 0.25
+
+experiment:
+    instructions:
+        mul
+    cycles: 1.25
+
+experiment:
+    instructions:
+        div
+    cycles: 4.0
+

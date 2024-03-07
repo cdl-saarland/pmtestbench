@@ -1,0 +1,50 @@
+# This file contains made-up example data for the mapping generation.
+# It uses the three-level model.
+
+# Comments are possible everywhere after hash symbols.
+
+# This part contains necessary configuration information.
+# configuration:
+#     model: three-level   # we assume that instructions are not decomposed into uops
+#     num_ports: 4         # our hardware has 4 execution ports
+#     num_uops_per_insn: 4 # the maximal number of uops into which an instruction can be decomposed
+#     slack_limit: 0.0     # relative margin of error for cycle measurements
+
+architecture:
+    instructions:
+        "add foo"
+        sub
+        mul
+        div
+
+# Here follows a list of experiments.
+experiment:
+# These consist of a list of instructions...
+    instructions:
+        "add foo" $r1, $r2, $r3
+        mul $r4, $r5, $r6
+# ...followed by the measured number of cycles that are on average required to
+# execute them
+    cycles: 1.5
+# The operands of instructions are completely irrelevant for this format, they
+# can also be omitted, only the first white space separated word matters.
+
+experiment:
+    instructions:
+        "add foo" $r1, $r2, $r3
+        sub $r4, $r5, $r6
+    cycles: 0.5
+
+experiment:
+    instructions:
+        mul $r1, $r2, $r3
+        sub $r4, $r5, $r6
+    cycles: 1.5
+
+experiment:
+    instructions:
+        "add foo" $r1, $r2, $r3
+        div $r4, $r5, $r6
+    cycles: 4.0
+
+

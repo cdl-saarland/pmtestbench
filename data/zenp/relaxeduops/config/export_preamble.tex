@@ -1,0 +1,42 @@
+\title{Inferred Port Mapping for the AMD Zen+ Microarchitecture}
+\author{Fabian Ritter, Sebastian Hack -- Compiler Design Lab, Saarland University}
+\maketitle
+
+\noindent
+This port mapping was inferred with the technique described in the paper \emph{Explainable Port Mapping Inference with Sparse Performance Counters for AMD’s Zen Architectures} by Fabian Ritter and Sebastian Hack.
+Limitations and caveats are also discussed there.
+The columns contain the following information:
+    \begin{description}[labelindent=0.5cm, leftmargin=1.0cm]
+        \item[Instruction Scheme:] An instruction scheme, i.e., an instruction representation that abstracts from concrete operands. Click on one to open the corresponding entry in the ISA reference.
+        \item[\(\mathit{tp}^{-1}\):] The inverse throughput we measured for the instruction scheme, i.e., the number of cycles required on average to execute instances of the instruction scheme in a steady state.
+            For instance, an inverse throughput of 0.25 cycles means that 4 instructions are executed simultaneously.
+        \item[\#\(\mu\)ops:] The number of micro-operations (\(\mu\)ops) observed when executing instances of the instruction scheme.
+            We obtain this number by correcting the readings of a hardware performance counter as described in the paper.
+            If such a correction took place for a particular instruction scheme, the addition is made explicit in the table.
+            An asterisk here marks that the number of \(\mu\)ops does not match the number of characterized \(\mu\)ops in the port usage.
+        \item[Port Usage:] The ports used by the \(\mu\)ops of the instruction scheme.
+            For instance, the port usage \(1\times [a] + 2\times [b, c]\) means that the instruction scheme is decomposed into one \(\mu\)op that can only be executed on port \(a\) and two \(\mu\)ops that can be executed on port $b$ or port $c$.
+            All \(\mu\)ops need to be executed when executing an instance of the instruction scheme.
+            An empty entry means that no valid and stable port usage could be inferred in the last stage of the algorithm.
+    \end{description}
+
+The ports roughly correspond to the following hardware resources:
+\begin{center}
+    \begin{tabular}{clp{0.6\textwidth}}
+        \toprule
+        \textbf{Port} & \textbf{Resource} & \textbf{Comment}\\
+        \toprule
+        0 & FP0 & \multirow{4}{*}{Floating Point and Vector Units}\\
+        1 & FP1 & \\
+        2 & FP2 & \\
+        3 & FP3 & \\
+        4 & AGU & \multirow{2}{*}{Address Generation Units}\\
+        5 & AGU/store & \\
+        6 & ALU & \multirow{4}{*}{Scalar Integer Arithmetic and Logical Units}\\
+        7 & ALU & \\
+        8 & ALU & \\
+        9 & ALU & \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+

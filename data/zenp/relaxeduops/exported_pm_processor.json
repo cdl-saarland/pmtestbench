@@ -1,0 +1,5 @@
+{
+    "processor_kind": "sharablepm",
+    "spm_path": "./results/port_mapping.json",
+    "spm_restrict": true
+}

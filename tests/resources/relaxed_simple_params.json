@@ -1,0 +1,14 @@
+{
+  "use_cpi": true,
+  "num_uops_epsilon": 0.1,
+  "num_ports_epsilon": 0.02,
+  "tp_epsilon": 0.02,
+  "true_tp_epsilon": 0.15,
+  "surplus_uops_epsilon": 0.15,
+  "insn_skip_cycles": 14.0,
+  "num_ports": 4,
+  "smt_slack_val": 0.02,
+  "smt_slack_kind": "cpi",
+  "smt_insn_bound": 10,
+  "use_bottleneck_ipc": true
+}

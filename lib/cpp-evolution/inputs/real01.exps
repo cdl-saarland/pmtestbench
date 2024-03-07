@@ -1,0 +1,2033 @@
+architecture:
+    instructions:
+        ADD_((G:64)),_((IMM:32))
+        ADD_((G:64)),_((IMM:8))
+        ADD_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        ADD_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ADD_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        ADD_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ADD_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        ADD_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        AND_((G:64)),_((IMM:32))
+        AND_((G:64)),_((IMM:8))
+        AND_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        AND_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        AND_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        AND_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        AND_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        AND_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BSF_((G:64)),_((G:64))
+        BSF_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        BSR_((G:64)),_((G:64))
+        BSR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        BSWAP_((G:64))
+        BTR_((G:64)),_((G:64))
+        BTR_((G:64)),_((IMM:8))
+        BTR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BTR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+        BTR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BTR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BTS_((G:64)),_((G:64))
+        BTS_((G:64)),_((IMM:8))
+        BTS_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BTS_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+        BTS_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BTS_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BT_((G:64)),_((G:64))
+        BT_((G:64)),_((IMM:8))
+        BT_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BT_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+        BT_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        BT_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        CMP_((G:64)),_((IMM:32))
+        CMP_((G:64)),_((IMM:8))
+        CMP_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        CMP_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        CMP_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        CMP_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        CMP_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        CMP_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        INC_((G:64))
+        INC_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        INC_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        INC_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        INC_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        LEA_((G:64)),__[((IMM:8))]
+        LEA_((G:64)),__[((MEM:64))+((IMM:8))]
+        LEA_((G:64)),__[((MEM:64))+2*((DIV:64))+((IMM:8))]
+        LEA_((G:64)),__[((MEM:64))+2*((DIV:64))]
+        LEA_((G:64)),__[((MEM:64))_+_((MIMM:16))]
+        LEA_((G:64)),__[2*((DIV:64))+((IMM:8))]
+        LEA_((G:64)),__[2*((DIV:64))]
+        MOVSXD_((G:64)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOVSX_((G:64)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOVSX_((G:64)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOVZX_((G:64)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOVZX_((G:64)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOV_((G:64)),_((IMM:32))
+        MOV_((G:64)),_((IMM:64))
+        MOV_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        MOV_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        MOV_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        MOV_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        MOV_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        MOV_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        NEG_((G:64))
+        NEG_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        NEG_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        NEG_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        NEG_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        NOT_((G:64))
+        NOT_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        NOT_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        NOT_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        NOT_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        OR_((G:64)),_((IMM:32))
+        OR_((G:64)),_((IMM:8))
+        OR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        OR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        OR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        OR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        OR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        OR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROL_((G:64)),_((IMM:8))
+        ROL_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROL_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROL_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROL_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROR_((G:64)),_((IMM:8))
+        ROR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        ROR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SAR_((G:64)),_((IMM:8))
+        SAR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SAR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SAR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SAR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHLD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64)),_((IMM:8))
+        SHL_((G:64)),_((IMM:8))
+        SHL_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHL_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHL_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHL_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHRD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64)),_((IMM:8))
+        SHR_((G:64)),_((IMM:8))
+        SHR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SHR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SUB_((G:64)),_((IMM:32))
+        SUB_((G:64)),_((IMM:8))
+        SUB_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        SUB_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SUB_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        SUB_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        SUB_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        SUB_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        TEST_((G:64)),_((G:64))
+        TEST_((G:64)),_((IMM:32))
+        TEST_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        TEST_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        TEST_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        TEST_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        TEST_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        VADDPD_((V:256)),_((V:256)),_((V:256))
+        VADDPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VADDPS_((V:256)),_((V:256)),_((V:256))
+        VADDPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VANDNPD_((V:256)),_((V:256)),_((V:256))
+        VANDNPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VANDNPS_((V:256)),_((V:256)),_((V:256))
+        VANDNPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VANDPD_((V:256)),_((V:256)),_((V:256))
+        VANDPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VANDPS_((V:256)),_((V:256)),_((V:256))
+        VANDPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VBLENDVPS_((V:256)),_((V:256)),_((V:256)),_((V:256))
+        VBLENDVPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VBROADCASTSD_((V:256)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VBROADCASTSS_((V:256)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VCVTDQ2PD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VCVTDQ2PS_((V:256)),_((V:256))
+        VCVTDQ2PS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VCVTPS2PD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VCVTTSD2SI_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VCVTTSS2SI_((G:64)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VDIVPD_((V:256)),_((V:256)),_((V:256))
+        VDIVPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VDIVPS_((V:256)),_((V:256)),_((V:256))
+        VDIVPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VEXTRACTF128_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256)),_((IMM:8))
+        VEXTRACTI128_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256)),_((IMM:8))
+        VINSERTF128_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VINSERTI128_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VMAXPS_((V:256)),_((V:256)),_((V:256))
+        VMAXPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVAPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVAPD_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMOVAPS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVAPS_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMOVDDUP_((V:256)),_((V:256))
+        VMOVDDUP_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVDQA_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVDQA_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMOVDQU_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVDQU_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMOVUPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVUPD_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMOVUPS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMOVUPS_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VMULPD_((V:256)),_((V:256)),_((V:256))
+        VMULPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VMULPS_((V:256)),_((V:256)),_((V:256))
+        VMULPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VORPD_((V:256)),_((V:256)),_((V:256))
+        VORPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VORPS_((V:256)),_((V:256)),_((V:256))
+        VORPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPACKUSDW_((V:256)),_((V:256)),_((V:256))
+        VPACKUSDW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPACKUSWB_((V:256)),_((V:256)),_((V:256))
+        VPACKUSWB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPADDB_((V:256)),_((V:256)),_((V:256))
+        VPADDB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPADDD_((V:256)),_((V:256)),_((V:256))
+        VPADDD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPADDQ_((V:256)),_((V:256)),_((V:256))
+        VPADDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPADDW_((V:256)),_((V:256)),_((V:256))
+        VPADDW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPALIGNR_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+        VPALIGNR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VPANDN_((V:256)),_((V:256)),_((V:256))
+        VPANDN_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPAND_((V:256)),_((V:256)),_((V:256))
+        VPAND_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPAVGB_((V:256)),_((V:256)),_((V:256))
+        VPAVGB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPBLENDVB_((V:256)),_((V:256)),_((V:256)),_((V:256))
+        VPBLENDVB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+        VPBROADCASTB_((V:256)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPBROADCASTD_((V:256)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPBROADCASTW_((V:256)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPCMPEQB_((V:256)),_((V:256)),_((V:256))
+        VPCMPEQB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPCMPEQD_((V:256)),_((V:256)),_((V:256))
+        VPCMPEQD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPCMPEQW_((V:256)),_((V:256)),_((V:256))
+        VPCMPEQW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPCMPGTD_((V:256)),_((V:256)),_((V:256))
+        VPCMPGTD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPCMPGTW_((V:256)),_((V:256)),_((V:256))
+        VPCMPGTW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPERM2F128_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+        VPERM2F128_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VPERM2I128_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+        VPERM2I128_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VPERMD_((V:256)),_((V:256)),_((V:256))
+        VPERMD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPERMQ_((V:256)),_((V:256)),_((IMM:8))
+        VPERMQ_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VPMADDWD_((V:256)),_((V:256)),_((V:256))
+        VPMADDWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMAXSD_((V:256)),_((V:256)),_((V:256))
+        VPMAXSD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMAXUB_((V:256)),_((V:256)),_((V:256))
+        VPMAXUB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMINSD_((V:256)),_((V:256)),_((V:256))
+        VPMINSD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMOVSXDQ_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMOVSXWD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMOVZXBD_((V:256)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMOVZXBW_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMOVZXWD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMULLD_((V:256)),_((V:256)),_((V:256))
+        VPMULLD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPMULLW_((V:256)),_((V:256)),_((V:256))
+        VPMULLW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPOR_((V:256)),_((V:256)),_((V:256))
+        VPOR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSADBW_((V:256)),_((V:256)),_((V:256))
+        VPSADBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSHUFB_((V:256)),_((V:256)),_((V:256))
+        VPSHUFB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSHUFD_((V:256)),_((V:256)),_((IMM:8))
+        VPSHUFD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VPSLLDQ_((V:256)),_((V:256)),_((IMM:8))
+        VPSLLD_((V:256)),_((V:256)),_((IMM:8))
+        VPSLLD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSLLQ_((V:256)),_((V:256)),_((IMM:8))
+        VPSLLQ_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSLLW_((V:256)),_((V:256)),_((IMM:8))
+        VPSLLW_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSRAD_((V:256)),_((V:256)),_((IMM:8))
+        VPSRAD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSRAVD_((V:256)),_((V:256)),_((V:256))
+        VPSRAVD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSRLDQ_((V:256)),_((V:256)),_((IMM:8))
+        VPSRLD_((V:256)),_((V:256)),_((IMM:8))
+        VPSRLD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSRLW_((V:256)),_((V:256)),_((IMM:8))
+        VPSRLW_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSUBB_((V:256)),_((V:256)),_((V:256))
+        VPSUBB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSUBD_((V:256)),_((V:256)),_((V:256))
+        VPSUBD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPSUBW_((V:256)),_((V:256)),_((V:256))
+        VPSUBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKHBW_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKHBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKHDQ_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKHDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKHWD_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKHWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKLBW_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKLBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKLDQ_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKLDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKLQDQ_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKLQDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPUNPCKLWD_((V:256)),_((V:256)),_((V:256))
+        VPUNPCKLWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VPXOR_((V:256)),_((V:256)),_((V:256))
+        VPXOR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VROUNDPD_((V:256)),_((V:256)),_((IMM:8))
+        VROUNDPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VSHUFPD_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+        VSHUFPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        VSQRTPD_((V:256)),_((V:256))
+        VSQRTPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VSUBPD_((V:256)),_((V:256)),_((V:256))
+        VSUBPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VSUBPS_((V:256)),_((V:256)),_((V:256))
+        VSUBPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VUNPCKHPD_((V:256)),_((V:256)),_((V:256))
+        VUNPCKHPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VUNPCKLPD_((V:256)),_((V:256)),_((V:256))
+        VUNPCKLPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VUNPCKLPS_((V:256)),_((V:256)),_((V:256))
+        VUNPCKLPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VXORPD_((V:256)),_((V:256)),_((V:256))
+        VXORPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        VXORPS_((V:256)),_((V:256)),_((V:256))
+        VXORPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+        XOR_((G:64)),_((IMM:32))
+        XOR_((G:64)),_((IMM:8))
+        XOR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+        XOR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        XOR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        XOR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+        XOR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+        XOR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    ports: 10
+
+experiment:
+    instructions:
+        ADD_((G:64)),_((IMM:32))
+    cycles: 0.2598802248
+
+experiment:
+    instructions:
+        ADD_((G:64)),_((IMM:8))
+    cycles: 0.2598884447
+
+experiment:
+    instructions:
+        ADD_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5017110828
+
+experiment:
+    instructions:
+        ADD_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7128622003
+
+experiment:
+    instructions:
+        ADD_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1061446941
+
+experiment:
+    instructions:
+        ADD_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062135185
+
+experiment:
+    instructions:
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 1.1085055573
+
+experiment:
+    instructions:
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1061895522
+
+experiment:
+    instructions:
+        ADD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061377966
+
+experiment:
+    instructions:
+        ADD_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 1.7065514982
+
+experiment:
+    instructions:
+        ADD_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7148204306
+
+experiment:
+    instructions:
+        AND_((G:64)),_((IMM:32))
+    cycles: 0.2598779355
+
+experiment:
+    instructions:
+        AND_((G:64)),_((IMM:8))
+    cycles: 0.2598677892
+
+experiment:
+    instructions:
+        AND_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.501752088
+
+experiment:
+    instructions:
+        AND_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7155246003
+
+experiment:
+    instructions:
+        AND_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1062538642
+
+experiment:
+    instructions:
+        AND_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062074615
+
+experiment:
+    instructions:
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 1.1104548876
+
+experiment:
+    instructions:
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1061371619
+
+experiment:
+    instructions:
+        AND_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061252242
+
+experiment:
+    instructions:
+        AND_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 1.7141976279
+
+experiment:
+    instructions:
+        AND_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7139588256
+
+experiment:
+    instructions:
+        BSF_((G:64)),_((G:64))
+    cycles: 3.0004306953
+
+experiment:
+    instructions:
+        BSF_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 4.0008678772
+
+experiment:
+    instructions:
+        BSR_((G:64)),_((G:64))
+    cycles: 4.0008600598
+
+experiment:
+    instructions:
+        BSR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 5.0006935803
+
+experiment:
+    instructions:
+        BSWAP_((G:64))
+    cycles: 0.2598765339
+
+experiment:
+    instructions:
+        BTR_((G:64)),_((G:64))
+    cycles: 0.6450562578
+
+experiment:
+    instructions:
+        BTR_((G:64)),_((IMM:8))
+    cycles: 0.5099447754
+
+experiment:
+    instructions:
+        BTR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0003174841
+
+experiment:
+    instructions:
+        BTR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+    cycles: 3.0007712615
+
+experiment:
+    instructions:
+        BTR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0003667135
+
+experiment:
+    instructions:
+        BTR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.000521715
+
+experiment:
+    instructions:
+        BTS_((G:64)),_((G:64))
+    cycles: 0.6411662518
+
+experiment:
+    instructions:
+        BTS_((G:64)),_((IMM:8))
+    cycles: 0.5099410255
+
+experiment:
+    instructions:
+        BTS_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0003985354
+
+experiment:
+    instructions:
+        BTS_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+    cycles: 3.0007624439
+
+experiment:
+    instructions:
+        BTS_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0002974462
+
+experiment:
+    instructions:
+        BTS_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0005863634
+
+experiment:
+    instructions:
+        BT_((G:64)),_((G:64))
+    cycles: 0.2598801251
+
+experiment:
+    instructions:
+        BT_((G:64)),_((IMM:8))
+    cycles: 0.2745882235
+
+experiment:
+    instructions:
+        BT_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.4999073108
+
+experiment:
+    instructions:
+        BT_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64))
+    cycles: 3.0007313841
+
+experiment:
+    instructions:
+        BT_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.4999359405
+
+experiment:
+    instructions:
+        BT_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.4999963263
+
+experiment:
+    instructions:
+        CMP_((G:64)),_((IMM:32))
+    cycles: 0.2598799481
+
+experiment:
+    instructions:
+        CMP_((G:64)),_((IMM:8))
+    cycles: 0.2598710753
+
+experiment:
+    instructions:
+        CMP_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5003403077
+
+experiment:
+    instructions:
+        CMP_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.5001407995
+
+experiment:
+    instructions:
+        CMP_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.4999533479
+
+experiment:
+    instructions:
+        CMP_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.4999668695
+
+experiment:
+    instructions:
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 0.5002225592
+
+experiment:
+    instructions:
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.4998768886
+
+experiment:
+    instructions:
+        CMP_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.4998830258
+
+experiment:
+    instructions:
+        CMP_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 0.4999445958
+
+experiment:
+    instructions:
+        CMP_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.5000332173
+
+experiment:
+    instructions:
+        INC_((G:64))
+    cycles: 0.2598809938
+
+experiment:
+    instructions:
+        INC_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9377177605
+
+experiment:
+    instructions:
+        INC_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1030200976
+
+experiment:
+    instructions:
+        INC_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1108090698
+
+experiment:
+    instructions:
+        INC_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9320263766
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[((IMM:8))]
+    cycles: 0.2745905038
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[((MEM:64))+((IMM:8))]
+    cycles: 0.25987093
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[((MEM:64))+2*((DIV:64))+((IMM:8))]
+    cycles: 0.594939538
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[((MEM:64))+2*((DIV:64))]
+    cycles: 0.5949428719
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.2598711549
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[2*((DIV:64))+((IMM:8))]
+    cycles: 0.594939946
+
+experiment:
+    instructions:
+        LEA_((G:64)),__[2*((DIV:64))]
+    cycles: 0.5949397477
+
+experiment:
+    instructions:
+        MOVSXD_((G:64)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5002894923
+
+experiment:
+    instructions:
+        MOVSX_((G:64)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.4999423623
+
+experiment:
+    instructions:
+        MOVSX_((G:64)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.500167752
+
+experiment:
+    instructions:
+        MOVZX_((G:64)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5010712423
+
+experiment:
+    instructions:
+        MOVZX_((G:64)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.499919582
+
+experiment:
+    instructions:
+        MOV_((G:64)),_((IMM:32))
+    cycles: 0.259882085
+
+experiment:
+    instructions:
+        MOV_((G:64)),_((IMM:64))
+    cycles: 0.2598795757
+
+experiment:
+    instructions:
+        MOV_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5001395825
+
+experiment:
+    instructions:
+        MOV_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.0001464451
+
+experiment:
+    instructions:
+        MOV_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.9999874057
+
+experiment:
+    instructions:
+        MOV_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 0.9999646799
+
+experiment:
+    instructions:
+        MOV_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.9998991352
+
+experiment:
+    instructions:
+        MOV_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 0.9998977798
+
+experiment:
+    instructions:
+        NEG_((G:64))
+    cycles: 0.2598787034
+
+experiment:
+    instructions:
+        NEG_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9168912722
+
+experiment:
+    instructions:
+        NEG_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1094163315
+
+experiment:
+    instructions:
+        NEG_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1095355499
+
+experiment:
+    instructions:
+        NEG_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9234241601
+
+experiment:
+    instructions:
+        NOT_((G:64))
+    cycles: 0.2598798903
+
+experiment:
+    instructions:
+        NOT_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9276491485
+
+experiment:
+    instructions:
+        NOT_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1062983115
+
+experiment:
+    instructions:
+        NOT_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.1092595149
+
+experiment:
+    instructions:
+        NOT_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9224972787
+
+experiment:
+    instructions:
+        OR_((G:64)),_((IMM:32))
+    cycles: 0.2598832712
+
+experiment:
+    instructions:
+        OR_((G:64)),_((IMM:8))
+    cycles: 0.2598810512
+
+experiment:
+    instructions:
+        OR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5036331504
+
+experiment:
+    instructions:
+        OR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7128517183
+
+experiment:
+    instructions:
+        OR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1061875756
+
+experiment:
+    instructions:
+        OR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.106271021
+
+experiment:
+    instructions:
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 1.1076077938
+
+experiment:
+    instructions:
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.106249662
+
+experiment:
+    instructions:
+        OR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062101915
+
+experiment:
+    instructions:
+        OR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 1.7140066191
+
+experiment:
+    instructions:
+        OR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7146015034
+
+experiment:
+    instructions:
+        ROL_((G:64)),_((IMM:8))
+    cycles: 0.259882716
+
+experiment:
+    instructions:
+        ROL_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7149148632
+
+experiment:
+    instructions:
+        ROL_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.106177356
+
+experiment:
+    instructions:
+        ROL_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061759177
+
+experiment:
+    instructions:
+        ROL_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7142308237
+
+experiment:
+    instructions:
+        ROR_((G:64)),_((IMM:8))
+    cycles: 0.2598814666
+
+experiment:
+    instructions:
+        ROR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7143969425
+
+experiment:
+    instructions:
+        ROR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.106114188
+
+experiment:
+    instructions:
+        ROR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062292333
+
+experiment:
+    instructions:
+        ROR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7144498392
+
+experiment:
+    instructions:
+        SAR_((G:64)),_((IMM:8))
+    cycles: 0.2598714027
+
+experiment:
+    instructions:
+        SAR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7120051498
+
+experiment:
+    instructions:
+        SAR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061902742
+
+experiment:
+    instructions:
+        SAR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061511644
+
+experiment:
+    instructions:
+        SAR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7140276421
+
+experiment:
+    instructions:
+        SHLD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64)),_((IMM:8))
+    cycles: 3.0004742778
+
+experiment:
+    instructions:
+        SHL_((G:64)),_((IMM:8))
+    cycles: 0.2598852068
+
+experiment:
+    instructions:
+        SHL_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7104040819
+
+experiment:
+    instructions:
+        SHL_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062339041
+
+experiment:
+    instructions:
+        SHL_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062427104
+
+experiment:
+    instructions:
+        SHL_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7131052652
+
+experiment:
+    instructions:
+        SHRD_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((DIV:64)),_((IMM:8))
+    cycles: 3.0006415684
+
+experiment:
+    instructions:
+        SHR_((G:64)),_((IMM:8))
+    cycles: 0.2598782817
+
+experiment:
+    instructions:
+        SHR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.71339606
+
+experiment:
+    instructions:
+        SHR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061824571
+
+experiment:
+    instructions:
+        SHR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062078647
+
+experiment:
+    instructions:
+        SHR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7135571203
+
+experiment:
+    instructions:
+        SUB_((G:64)),_((IMM:32))
+    cycles: 0.2598807412
+
+experiment:
+    instructions:
+        SUB_((G:64)),_((IMM:8))
+    cycles: 0.2598815189
+
+experiment:
+    instructions:
+        SUB_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5031428468
+
+experiment:
+    instructions:
+        SUB_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7140986144
+
+experiment:
+    instructions:
+        SUB_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1061666424
+
+experiment:
+    instructions:
+        SUB_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061909881
+
+experiment:
+    instructions:
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 1.1057668529
+
+experiment:
+    instructions:
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1062052082
+
+experiment:
+    instructions:
+        SUB_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1061580854
+
+experiment:
+    instructions:
+        SUB_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 1.7144619655
+
+experiment:
+    instructions:
+        SUB_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7142155389
+
+experiment:
+    instructions:
+        TEST_((G:64)),_((G:64))
+    cycles: 0.2598759002
+
+experiment:
+    instructions:
+        TEST_((G:64)),_((IMM:32))
+    cycles: 0.2598793564
+
+experiment:
+    instructions:
+        TEST_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 0.499890728
+
+experiment:
+    instructions:
+        TEST_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.4998909897
+
+experiment:
+    instructions:
+        TEST_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 0.5003107613
+
+experiment:
+    instructions:
+        TEST_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 0.5000142559
+
+experiment:
+    instructions:
+        TEST_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 0.4999365829
+
+experiment:
+    instructions:
+        VADDPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0001604219
+
+experiment:
+    instructions:
+        VADDPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003346425
+
+experiment:
+    instructions:
+        VADDPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000356327
+
+experiment:
+    instructions:
+        VADDPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003043237
+
+experiment:
+    instructions:
+        VANDNPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.499919887
+
+experiment:
+    instructions:
+        VANDNPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002833823
+
+experiment:
+    instructions:
+        VANDNPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4998837486
+
+experiment:
+    instructions:
+        VANDNPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002839329
+
+experiment:
+    instructions:
+        VANDPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4999752444
+
+experiment:
+    instructions:
+        VANDPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0019711983
+
+experiment:
+    instructions:
+        VANDPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4998997243
+
+experiment:
+    instructions:
+        VANDPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002923084
+
+experiment:
+    instructions:
+        VBLENDVPS_((V:256)),_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000366217
+
+experiment:
+    instructions:
+        VBLENDVPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 1.000280881
+
+experiment:
+    instructions:
+        VBROADCASTSD_((V:256)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5001593098
+
+experiment:
+    instructions:
+        VBROADCASTSS_((V:256)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5001453533
+
+experiment:
+    instructions:
+        VCVTDQ2PD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 3.0007121997
+
+experiment:
+    instructions:
+        VCVTDQ2PS_((V:256)),_((V:256))
+    cycles: 2.0002200214
+
+experiment:
+    instructions:
+        VCVTDQ2PS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.9999487315
+
+experiment:
+    instructions:
+        VCVTPS2PD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003827803
+
+experiment:
+    instructions:
+        VCVTTSD2SI_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.9999710235
+
+experiment:
+    instructions:
+        VCVTTSS2SI_((G:64)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0001071579
+
+experiment:
+    instructions:
+        VDIVPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 8.6689317384
+
+experiment:
+    instructions:
+        VDIVPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 9.0016393847
+
+experiment:
+    instructions:
+        VDIVPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 6.0010916879
+
+experiment:
+    instructions:
+        VDIVPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 6.0012620285
+
+experiment:
+    instructions:
+        VEXTRACTF128_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256)),_((IMM:8))
+    cycles: 1.0000682799
+
+experiment:
+    instructions:
+        VEXTRACTI128_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256)),_((IMM:8))
+    cycles: 1.0000998842
+
+experiment:
+    instructions:
+        VINSERTF128_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.0002891708
+
+experiment:
+    instructions:
+        VINSERTI128_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.0006311043
+
+experiment:
+    instructions:
+        VMAXPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.000074241
+
+experiment:
+    instructions:
+        VMAXPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000290504
+
+experiment:
+    instructions:
+        VMOVAPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002966713
+
+experiment:
+    instructions:
+        VMOVAPD_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0002071156
+
+experiment:
+    instructions:
+        VMOVAPS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002882139
+
+experiment:
+    instructions:
+        VMOVAPS_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0001862272
+
+experiment:
+    instructions:
+        VMOVDDUP_((V:256)),_((V:256))
+    cycles: 0.9997272207
+
+experiment:
+    instructions:
+        VMOVDDUP_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0000382117
+
+experiment:
+    instructions:
+        VMOVDQA_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0000393981
+
+experiment:
+    instructions:
+        VMOVDQA_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0003190473
+
+experiment:
+    instructions:
+        VMOVDQU_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002877376
+
+experiment:
+    instructions:
+        VMOVDQU_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0003399301
+
+experiment:
+    instructions:
+        VMOVUPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002785292
+
+experiment:
+    instructions:
+        VMOVUPD_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0003476589
+
+experiment:
+    instructions:
+        VMOVUPS_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003225402
+
+experiment:
+    instructions:
+        VMOVUPS_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0002714662
+
+experiment:
+    instructions:
+        VMULPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999735811
+
+experiment:
+    instructions:
+        VMULPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0004792804
+
+experiment:
+    instructions:
+        VMULPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000144151
+
+experiment:
+    instructions:
+        VMULPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002957939
+
+experiment:
+    instructions:
+        VORPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.5000058374
+
+experiment:
+    instructions:
+        VORPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0000669178
+
+experiment:
+    instructions:
+        VORPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4998790164
+
+experiment:
+    instructions:
+        VORPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002811839
+
+experiment:
+    instructions:
+        VPACKUSDW_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000474169
+
+experiment:
+    instructions:
+        VPACKUSDW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003395123
+
+experiment:
+    instructions:
+        VPACKUSWB_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000729563
+
+experiment:
+    instructions:
+        VPACKUSWB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0000874151
+
+experiment:
+    instructions:
+        VPADDB_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666280221
+
+experiment:
+    instructions:
+        VPADDB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0000250715
+
+experiment:
+    instructions:
+        VPADDD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666961372
+
+experiment:
+    instructions:
+        VPADDD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003008101
+
+experiment:
+    instructions:
+        VPADDQ_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666396005
+
+experiment:
+    instructions:
+        VPADDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0001093638
+
+experiment:
+    instructions:
+        VPADDW_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665662046
+
+experiment:
+    instructions:
+        VPADDW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003516687
+
+experiment:
+    instructions:
+        VPALIGNR_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 0.999991736
+
+experiment:
+    instructions:
+        VPALIGNR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.0002935477
+
+experiment:
+    instructions:
+        VPANDN_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4999314912
+
+experiment:
+    instructions:
+        VPANDN_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000299475
+
+experiment:
+    instructions:
+        VPAND_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4999530226
+
+experiment:
+    instructions:
+        VPAND_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000304076
+
+experiment:
+    instructions:
+        VPAVGB_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000139909
+
+experiment:
+    instructions:
+        VPAVGB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002728054
+
+experiment:
+    instructions:
+        VPBLENDVB_((V:256)),_((V:256)),_((V:256)),_((V:256))
+    cycles: 2.0003638869
+
+experiment:
+    instructions:
+        VPBLENDVB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((V:256))
+    cycles: 2.0003838271
+
+experiment:
+    instructions:
+        VPBROADCASTB_((V:256)),_byte_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5006419383
+
+experiment:
+    instructions:
+        VPBROADCASTD_((V:256)),_dword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5001462322
+
+experiment:
+    instructions:
+        VPBROADCASTW_((V:256)),_word_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5012515445
+
+experiment:
+    instructions:
+        VPCMPEQB_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6667045227
+
+experiment:
+    instructions:
+        VPCMPEQB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0007657301
+
+experiment:
+    instructions:
+        VPCMPEQD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665422251
+
+experiment:
+    instructions:
+        VPCMPEQD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003063541
+
+experiment:
+    instructions:
+        VPCMPEQW_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666347458
+
+experiment:
+    instructions:
+        VPCMPEQW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0010399519
+
+experiment:
+    instructions:
+        VPCMPGTD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665894065
+
+experiment:
+    instructions:
+        VPCMPGTD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0010332964
+
+experiment:
+    instructions:
+        VPCMPGTW_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666189958
+
+experiment:
+    instructions:
+        VPCMPGTW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002964023
+
+experiment:
+    instructions:
+        VPERM2F128_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 3.0006412245
+
+experiment:
+    instructions:
+        VPERM2F128_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 4.0010687321
+
+experiment:
+    instructions:
+        VPERM2I128_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 3.0002866487
+
+experiment:
+    instructions:
+        VPERM2I128_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 4.0008761185
+
+experiment:
+    instructions:
+        VPERMD_((V:256)),_((V:256)),_((V:256))
+    cycles: 4.0009264652
+
+experiment:
+    instructions:
+        VPERMD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 4.0006427777
+
+experiment:
+    instructions:
+        VPERMQ_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0001216286
+
+experiment:
+    instructions:
+        VPERMQ_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0004806777
+
+experiment:
+    instructions:
+        VPMADDWD_((V:256)),_((V:256)),_((V:256))
+    cycles: 2.0001103413
+
+experiment:
+    instructions:
+        VPMADDWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0001609314
+
+experiment:
+    instructions:
+        VPMAXSD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6667157766
+
+experiment:
+    instructions:
+        VPMAXSD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002953357
+
+experiment:
+    instructions:
+        VPMAXUB_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665901123
+
+experiment:
+    instructions:
+        VPMAXUB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003169793
+
+experiment:
+    instructions:
+        VPMINSD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665883894
+
+experiment:
+    instructions:
+        VPMINSD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000302769
+
+experiment:
+    instructions:
+        VPMOVSXDQ_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003863014
+
+experiment:
+    instructions:
+        VPMOVSXWD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003722997
+
+experiment:
+    instructions:
+        VPMOVZXBD_((V:256)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003786072
+
+experiment:
+    instructions:
+        VPMOVZXBW_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003525413
+
+experiment:
+    instructions:
+        VPMOVZXWD_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0002587133
+
+experiment:
+    instructions:
+        VPMULLD_((V:256)),_((V:256)),_((V:256))
+    cycles: 4.0007626548
+
+experiment:
+    instructions:
+        VPMULLD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 4.0009316561
+
+experiment:
+    instructions:
+        VPMULLW_((V:256)),_((V:256)),_((V:256))
+    cycles: 2.0001818839
+
+experiment:
+    instructions:
+        VPMULLW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003138833
+
+experiment:
+    instructions:
+        VPOR_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4998212169
+
+experiment:
+    instructions:
+        VPOR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002958716
+
+experiment:
+    instructions:
+        VPSADBW_((V:256)),_((V:256)),_((V:256))
+    cycles: 2.0003746075
+
+experiment:
+    instructions:
+        VPSADBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0004484871
+
+experiment:
+    instructions:
+        VPSHUFB_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999341741
+
+experiment:
+    instructions:
+        VPSHUFB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000279043
+
+experiment:
+    instructions:
+        VPSHUFD_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 1.0000830923
+
+experiment:
+    instructions:
+        VPSHUFD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.0003008696
+
+experiment:
+    instructions:
+        VPSLLDQ_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 1.0000104552
+
+experiment:
+    instructions:
+        VPSLLD_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0004855149
+
+experiment:
+    instructions:
+        VPSLLD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.000290048
+
+experiment:
+    instructions:
+        VPSLLQ_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0002217403
+
+experiment:
+    instructions:
+        VPSLLQ_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003802153
+
+experiment:
+    instructions:
+        VPSLLW_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.000070191
+
+experiment:
+    instructions:
+        VPSLLW_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003970086
+
+experiment:
+    instructions:
+        VPSRAD_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0000865757
+
+experiment:
+    instructions:
+        VPSRAD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003417118
+
+experiment:
+    instructions:
+        VPSRAVD_((V:256)),_((V:256)),_((V:256))
+    cycles: 4.0008794114
+
+experiment:
+    instructions:
+        VPSRAVD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 4.000696077
+
+experiment:
+    instructions:
+        VPSRLDQ_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 0.9999948737
+
+experiment:
+    instructions:
+        VPSRLD_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.000051623
+
+experiment:
+    instructions:
+        VPSRLD_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.0003861137
+
+experiment:
+    instructions:
+        VPSRLW_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0003244187
+
+experiment:
+    instructions:
+        VPSRLW_((V:256)),_((V:256)),_xmmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 2.000279164
+
+experiment:
+    instructions:
+        VPSUBB_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6667463023
+
+experiment:
+    instructions:
+        VPSUBB_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000289193
+
+experiment:
+    instructions:
+        VPSUBD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6666923447
+
+experiment:
+    instructions:
+        VPSUBD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002922419
+
+experiment:
+    instructions:
+        VPSUBW_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.6665926308
+
+experiment:
+    instructions:
+        VPSUBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002788225
+
+experiment:
+    instructions:
+        VPUNPCKHBW_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999210416
+
+experiment:
+    instructions:
+        VPUNPCKHBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0007514501
+
+experiment:
+    instructions:
+        VPUNPCKHDQ_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0001055081
+
+experiment:
+    instructions:
+        VPUNPCKHDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003170803
+
+experiment:
+    instructions:
+        VPUNPCKHWD_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000147365
+
+experiment:
+    instructions:
+        VPUNPCKHWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002846703
+
+experiment:
+    instructions:
+        VPUNPCKLBW_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000251362
+
+experiment:
+    instructions:
+        VPUNPCKLBW_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002741824
+
+experiment:
+    instructions:
+        VPUNPCKLDQ_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000998581
+
+experiment:
+    instructions:
+        VPUNPCKLDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0004525022
+
+experiment:
+    instructions:
+        VPUNPCKLQDQ_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9997934429
+
+experiment:
+    instructions:
+        VPUNPCKLQDQ_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000282607
+
+experiment:
+    instructions:
+        VPUNPCKLWD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999802889
+
+experiment:
+    instructions:
+        VPUNPCKLWD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002768153
+
+experiment:
+    instructions:
+        VPXOR_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4998456854
+
+experiment:
+    instructions:
+        VPXOR_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003126866
+
+experiment:
+    instructions:
+        VROUNDPD_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 2.0002797448
+
+experiment:
+    instructions:
+        VROUNDPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 2.0003035873
+
+experiment:
+    instructions:
+        VSHUFPD_((V:256)),_((V:256)),_((V:256)),_((IMM:8))
+    cycles: 1.0000375063
+
+experiment:
+    instructions:
+        VSHUFPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.000298968
+
+experiment:
+    instructions:
+        VSQRTPD_((V:256)),_((V:256))
+    cycles: 16.0021619704
+
+experiment:
+    instructions:
+        VSQRTPD_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 16.0035080698
+
+experiment:
+    instructions:
+        VSUBPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000748528
+
+experiment:
+    instructions:
+        VSUBPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0007886987
+
+experiment:
+    instructions:
+        VSUBPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999136375
+
+experiment:
+    instructions:
+        VSUBPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003066704
+
+experiment:
+    instructions:
+        VUNPCKHPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 1.0000431826
+
+experiment:
+    instructions:
+        VUNPCKHPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003199825
+
+experiment:
+    instructions:
+        VUNPCKLPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999436144
+
+experiment:
+    instructions:
+        VUNPCKLPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.000311673
+
+experiment:
+    instructions:
+        VUNPCKLPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.9999980429
+
+experiment:
+    instructions:
+        VUNPCKLPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0003051704
+
+experiment:
+    instructions:
+        VXORPD_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.49988567
+
+experiment:
+    instructions:
+        VXORPD_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0002956657
+
+experiment:
+    instructions:
+        VXORPS_((V:256)),_((V:256)),_((V:256))
+    cycles: 0.4999193095
+
+experiment:
+    instructions:
+        VXORPS_((V:256)),_((V:256)),_ymmword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 1.0001653474
+
+experiment:
+    instructions:
+        XOR_((G:64)),_((IMM:32))
+    cycles: 0.259872776
+
+experiment:
+    instructions:
+        XOR_((G:64)),_((IMM:8))
+    cycles: 0.2598688644
+
+experiment:
+    instructions:
+        XOR_((G:64)),_qword_ptr_[((MEM:64))_+_((MIMM:16))]
+    cycles: 0.5002815193
+
+experiment:
+    instructions:
+        XOR_byte_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.714332362
+
+experiment:
+    instructions:
+        XOR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1062424626
+
+experiment:
+    instructions:
+        XOR_dword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.106205233
+
+experiment:
+    instructions:
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((G:64))
+    cycles: 1.1058520994
+
+experiment:
+    instructions:
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:32))
+    cycles: 1.1059828792
+
+experiment:
+    instructions:
+        XOR_qword_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.1062865105
+
+experiment:
+    instructions:
+        XOR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:16))
+    cycles: 1.7141871573
+
+experiment:
+    instructions:
+        XOR_word_ptr_[((MEM:64))_+_((MIMM:16))],_((IMM:8))
+    cycles: 1.7140392629
+
+

@@ -1,0 +1,6 @@
+{
+    "context_specifier": "x86_uops_info",
+    "filters": [
+        {"kind": "whitelist", "file_path": "../insn_lists/02_after_singletons.txt"}
+    ]
+}

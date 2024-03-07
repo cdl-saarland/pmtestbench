@@ -1,0 +1,42 @@
+{
+  "kind": "Mapping2",
+  "arch": {
+    "kind": "Architecture",
+    "insns": [
+      "add RW:GPR:32, R:GPR:32",
+      "mov W:GPR:32, dword ptr R:MEM(32)",
+      "mov dword ptr W:MEM(32), R:GPR:32",
+      "vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vbroadcastss W:XMM0..15, R:XMM0..15",
+      "vminps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpor W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15",
+      "vroundps W:XMM0..15, R:XMM0..15, IMM(8)"
+    ]
+  },
+  "assignment": {
+    "add RW:GPR:32, R:GPR:32": [ 6, 7, 8, 9 ],
+    "mov W:GPR:32, dword ptr R:MEM(32)": [ 4, 5 ],
+    "mov dword ptr W:MEM(32), R:GPR:32": [ 5 ],
+    "vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 2, 3 ],
+    "vbroadcastss W:XMM0..15, R:XMM0..15": [ 1, 2 ],
+    "vminps W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 0, 1 ],
+    "vmovapd xmmword ptr W:MEM(128), R:XMM0..15": [ 5 ],
+    "vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 0, 1, 3 ],
+    "vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 0, 3 ],
+    "vpor W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 0, 1, 2, 3 ],
+    "vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15": [ 2 ],
+    "vroundps W:XMM0..15, R:XMM0..15, IMM(8)": [ 3 ]
+  },
+  "metadata": {
+      "secondary_uops": {
+              "mov dword ptr W:MEM(32), R:GPR:32": [[6, 7, 8, 9]],
+              "vmovapd xmmword ptr W:MEM(128), R:XMM0..15": [[2]]
+          },
+      "creation_date": "2023-07-26",
+      "note": "manually adjusted to the expected port mapping; with improper blocking instructions"
+  }
+}
+

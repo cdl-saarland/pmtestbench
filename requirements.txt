@@ -1,0 +1,14 @@
+pybind11
+rpyc
+matplotlib
+numpy
+pandas
+seaborn
+scipy
+
+z3-solver
+
+pytest
+
+-r lib/iwho/requirements.txt
+-e lib/iwho

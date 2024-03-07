@@ -1,0 +1,1819 @@
+add RW:GPR:16, 0x0
+add RW:GPR:16, IMM(16)
+add RW:GPR:16, IMM(8)
+add RW:GPR:16, R:GPR:16
+add RW:GPR:16, word ptr R:MEM(16)
+add RW:GPR:32, 0x0
+add RW:GPR:32, IMM(32)
+add RW:GPR:32, IMM(8)
+add RW:GPR:32, R:GPR:32
+add RW:GPR:32, dword ptr R:MEM(32)
+add RW:GPR:64, 0x0
+add RW:GPR:64, IMM(32)
+add RW:GPR:64, IMM(8)
+add RW:GPR:64, R:GPR:64
+add RW:GPR:64, qword ptr R:MEM(64)
+add RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+add RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+add byte ptr RW:MEM(8), 0x0
+add byte ptr RW:MEM(8), IMM(8)
+add byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+add dword ptr RW:MEM(32), 0x0
+add dword ptr RW:MEM(32), IMM(32)
+add dword ptr RW:MEM(32), IMM(8)
+add dword ptr RW:MEM(32), R:GPR:32
+add qword ptr RW:MEM(64), 0x0
+add qword ptr RW:MEM(64), IMM(32)
+add qword ptr RW:MEM(64), IMM(8)
+add qword ptr RW:MEM(64), R:GPR:64
+add word ptr RW:MEM(16), 0x0
+add word ptr RW:MEM(16), IMM(16)
+add word ptr RW:MEM(16), IMM(8)
+add word ptr RW:MEM(16), R:GPR:16
+and RW:GPR:16, 0x0
+and RW:GPR:16, IMM(16)
+and RW:GPR:16, IMM(8)
+and RW:GPR:16, R:GPR:16
+and RW:GPR:16, word ptr R:MEM(16)
+and RW:GPR:32, 0x0
+and RW:GPR:32, IMM(32)
+and RW:GPR:32, IMM(8)
+and RW:GPR:32, R:GPR:32
+and RW:GPR:32, dword ptr R:MEM(32)
+and RW:GPR:64, 0x0
+and RW:GPR:64, IMM(32)
+and RW:GPR:64, IMM(8)
+and RW:GPR:64, R:GPR:64
+and RW:GPR:64, qword ptr R:MEM(64)
+and RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+and RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+and byte ptr RW:MEM(8), 0x0
+and byte ptr RW:MEM(8), IMM(8)
+and byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+and dword ptr RW:MEM(32), 0x0
+and dword ptr RW:MEM(32), IMM(32)
+and dword ptr RW:MEM(32), IMM(8)
+and dword ptr RW:MEM(32), R:GPR:32
+and qword ptr RW:MEM(64), 0x0
+and qword ptr RW:MEM(64), IMM(32)
+and qword ptr RW:MEM(64), IMM(8)
+and qword ptr RW:MEM(64), R:GPR:64
+and word ptr RW:MEM(16), 0x0
+and word ptr RW:MEM(16), IMM(16)
+and word ptr RW:MEM(16), IMM(8)
+and word ptr RW:MEM(16), R:GPR:16
+andn W:GPR:32, R:GPR:32, R:GPR:32
+andn W:GPR:32, R:GPR:32, dword ptr R:MEM(32)
+andn W:GPR:64, R:GPR:64, R:GPR:64
+andn W:GPR:64, R:GPR:64, qword ptr R:MEM(64)
+bextr W:GPR:32, R:GPR:32, R:GPR:32
+bextr W:GPR:32, dword ptr R:MEM(32), R:GPR:32
+bextr W:GPR:64, R:GPR:64, R:GPR:64
+bextr W:GPR:64, qword ptr R:MEM(64), R:GPR:64
+blsi W:GPR:32, R:GPR:32
+blsi W:GPR:32, dword ptr R:MEM(32)
+blsi W:GPR:64, R:GPR:64
+blsi W:GPR:64, qword ptr R:MEM(64)
+blsmsk W:GPR:32, R:GPR:32
+blsmsk W:GPR:32, dword ptr R:MEM(32)
+blsmsk W:GPR:64, R:GPR:64
+blsmsk W:GPR:64, qword ptr R:MEM(64)
+blsr W:GPR:32, R:GPR:32
+blsr W:GPR:32, dword ptr R:MEM(32)
+blsr W:GPR:64, R:GPR:64
+blsr W:GPR:64, qword ptr R:MEM(64)
+bsf RW:GPR:16, R:GPR:16
+bsf RW:GPR:16, word ptr R:MEM(16)
+bsf RW:GPR:32, R:GPR:32
+bsf RW:GPR:32, dword ptr R:MEM(32)
+bsf RW:GPR:64, R:GPR:64
+bsf RW:GPR:64, qword ptr R:MEM(64)
+bsr RW:GPR:16, R:GPR:16
+bsr RW:GPR:16, word ptr R:MEM(16)
+bsr RW:GPR:32, R:GPR:32
+bsr RW:GPR:32, dword ptr R:MEM(32)
+bsr RW:GPR:64, R:GPR:64
+bsr RW:GPR:64, qword ptr R:MEM(64)
+bswap RW:GPR:32
+bswap RW:GPR:64
+bt R:GPR:16, 0x0
+bt R:GPR:16, IMM(8)
+bt R:GPR:16, R:GPR:16
+bt R:GPR:32, 0x0
+bt R:GPR:32, IMM(8)
+bt R:GPR:32, R:GPR:32
+bt R:GPR:64, 0x0
+bt R:GPR:64, IMM(8)
+bt R:GPR:64, R:GPR:64
+bt dword ptr R:MEM(32), 0x0
+bt dword ptr R:MEM(32), IMM(8)
+bt dword ptr R:MEM(32), R:GPR:32
+bt qword ptr R:MEM(64), 0x0
+bt qword ptr R:MEM(64), IMM(8)
+bt qword ptr R:MEM(64), R:GPR:64
+bt word ptr R:MEM(16), 0x0
+bt word ptr R:MEM(16), IMM(8)
+bt word ptr R:MEM(16), R:GPR:16
+btc RW:GPR:16, 0x0
+btc RW:GPR:16, IMM(8)
+btc RW:GPR:16, R:GPR:16
+btc RW:GPR:32, 0x0
+btc RW:GPR:32, IMM(8)
+btc RW:GPR:32, R:GPR:32
+btc RW:GPR:64, 0x0
+btc RW:GPR:64, IMM(8)
+btc RW:GPR:64, R:GPR:64
+btc dword ptr RW:MEM(32), 0x0
+btc dword ptr RW:MEM(32), IMM(8)
+btc dword ptr RW:MEM(32), R:GPR:32
+btc qword ptr RW:MEM(64), 0x0
+btc qword ptr RW:MEM(64), IMM(8)
+btc qword ptr RW:MEM(64), R:GPR:64
+btc word ptr RW:MEM(16), 0x0
+btc word ptr RW:MEM(16), IMM(8)
+btc word ptr RW:MEM(16), R:GPR:16
+btr RW:GPR:16, 0x0
+btr RW:GPR:16, IMM(8)
+btr RW:GPR:16, R:GPR:16
+btr RW:GPR:32, 0x0
+btr RW:GPR:32, IMM(8)
+btr RW:GPR:32, R:GPR:32
+btr RW:GPR:64, 0x0
+btr RW:GPR:64, IMM(8)
+btr RW:GPR:64, R:GPR:64
+btr dword ptr RW:MEM(32), 0x0
+btr dword ptr RW:MEM(32), IMM(8)
+btr dword ptr RW:MEM(32), R:GPR:32
+btr qword ptr RW:MEM(64), 0x0
+btr qword ptr RW:MEM(64), IMM(8)
+btr qword ptr RW:MEM(64), R:GPR:64
+btr word ptr RW:MEM(16), 0x0
+btr word ptr RW:MEM(16), IMM(8)
+btr word ptr RW:MEM(16), R:GPR:16
+bts RW:GPR:16, 0x0
+bts RW:GPR:16, IMM(8)
+bts RW:GPR:16, R:GPR:16
+bts RW:GPR:32, 0x0
+bts RW:GPR:32, IMM(8)
+bts RW:GPR:32, R:GPR:32
+bts RW:GPR:64, 0x0
+bts RW:GPR:64, IMM(8)
+bts RW:GPR:64, R:GPR:64
+bts dword ptr RW:MEM(32), 0x0
+bts dword ptr RW:MEM(32), IMM(8)
+bts dword ptr RW:MEM(32), R:GPR:32
+bts qword ptr RW:MEM(64), 0x0
+bts qword ptr RW:MEM(64), IMM(8)
+bts qword ptr RW:MEM(64), R:GPR:64
+bts word ptr RW:MEM(16), 0x0
+bts word ptr RW:MEM(16), IMM(8)
+bts word ptr RW:MEM(16), R:GPR:16
+bzhi W:GPR:32, R:GPR:32, R:GPR:32
+bzhi W:GPR:32, dword ptr R:MEM(32), R:GPR:32
+bzhi W:GPR:64, R:GPR:64, R:GPR:64
+bzhi W:GPR:64, qword ptr R:MEM(64), R:GPR:64
+clc
+cmp R:GPR:16, 0x0
+cmp R:GPR:16, IMM(16)
+cmp R:GPR:16, IMM(8)
+cmp R:GPR:16, R:GPR:16
+cmp R:GPR:16, word ptr R:MEM(16)
+cmp R:GPR:32, 0x0
+cmp R:GPR:32, IMM(32)
+cmp R:GPR:32, IMM(8)
+cmp R:GPR:32, R:GPR:32
+cmp R:GPR:32, dword ptr R:MEM(32)
+cmp R:GPR:64, 0x0
+cmp R:GPR:64, IMM(32)
+cmp R:GPR:64, IMM(8)
+cmp R:GPR:64, R:GPR:64
+cmp R:GPR:64, qword ptr R:MEM(64)
+cmp R:al, 0x0
+cmp R:al, IMM(8)
+cmp R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+cmp R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+cmp R:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0
+cmp R:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)
+cmp R:ax, IMM(16)
+cmp R:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0
+cmp R:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)
+cmp R:eax, IMM(32)
+cmp R:rax, IMM(32)
+cmp byte ptr R:MEM(8), 0x0
+cmp byte ptr R:MEM(8), IMM(8)
+cmp byte ptr R:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+cmp dword ptr R:MEM(32), 0x0
+cmp dword ptr R:MEM(32), IMM(32)
+cmp dword ptr R:MEM(32), IMM(8)
+cmp dword ptr R:MEM(32), R:GPR:32
+cmp qword ptr R:MEM(64), 0x0
+cmp qword ptr R:MEM(64), IMM(32)
+cmp qword ptr R:MEM(64), IMM(8)
+cmp qword ptr R:MEM(64), R:GPR:64
+cmp word ptr R:MEM(16), 0x0
+cmp word ptr R:MEM(16), IMM(16)
+cmp word ptr R:MEM(16), IMM(8)
+cmp word ptr R:MEM(16), R:GPR:16
+dec RW:GPR:16
+dec RW:GPR:32
+dec RW:GPR:64
+dec RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+dec byte ptr RW:MEM(8)
+dec dword ptr RW:MEM(32)
+dec qword ptr RW:MEM(64)
+dec word ptr RW:MEM(16)
+inc RW:GPR:16
+inc RW:GPR:32
+inc RW:GPR:64
+inc RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+inc byte ptr RW:MEM(8)
+inc dword ptr RW:MEM(32)
+inc qword ptr RW:MEM(64)
+inc word ptr RW:MEM(16)
+lea RW:GPR:16, MEM(0)
+lea W:GPR:32, MEM(0)
+lea W:GPR:64, MEM(0)
+lzcnt RW:GPR:16, R:GPR:16
+lzcnt RW:GPR:16, word ptr R:MEM(16)
+lzcnt W:GPR:32, R:GPR:32
+lzcnt W:GPR:32, dword ptr R:MEM(32)
+lzcnt W:GPR:64, R:GPR:64
+lzcnt W:GPR:64, qword ptr R:MEM(64)
+mov RW:GPR:16, IMM(16)
+mov RW:GPR:16, R:GPR:16
+mov RW:GPR:16, word ptr R:MEM(16)
+mov RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, 0x0
+mov RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, IMM(8)
+mov RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+mov RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+mov W:GPR:32, IMM(32)
+mov W:GPR:32, dword ptr R:MEM(32)
+mov W:GPR:64, IMM(32)
+mov W:GPR:64, qword ptr R:MEM(64)
+mov W:eax, dword ptr R:MEM(32)
+mov W:rax, qword ptr R:MEM(64)
+mov byte ptr RW:MEM(8), 0x0
+mov byte ptr RW:MEM(8), IMM(8)
+mov byte ptr RW:MEM(8), R:al
+mov byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+mov dword ptr W:MEM(32), IMM(32)
+mov dword ptr W:MEM(32), R:GPR:32
+mov dword ptr W:MEM(32), R:eax
+mov qword ptr W:MEM(64), IMM(32)
+mov qword ptr W:MEM(64), R:GPR:64
+mov qword ptr W:MEM(64), R:rax
+mov word ptr RW:MEM(16), IMM(16)
+mov word ptr RW:MEM(16), R:GPR:16
+mov word ptr RW:MEM(16), R:ax
+movbe RW:GPR:16, word ptr R:MEM(16)
+movbe W:GPR:32, dword ptr R:MEM(32)
+movbe W:GPR:64, qword ptr R:MEM(64)
+movbe dword ptr W:MEM(32), R:GPR:32
+movbe qword ptr W:MEM(64), R:GPR:64
+movbe word ptr RW:MEM(16), R:GPR:16
+movsx RW:GPR:16, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movsx RW:GPR:16, byte ptr R:MEM(8)
+movsx W:GPR:32, R:GPR:16
+movsx W:GPR:32, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movsx W:GPR:32, byte ptr R:MEM(8)
+movsx W:GPR:32, word ptr R:MEM(16)
+movsx W:GPR:64, R:GPR:16
+movsx W:GPR:64, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movsx W:GPR:64, byte ptr R:MEM(8)
+movsx W:GPR:64, word ptr R:MEM(16)
+movsxd W:GPR:64, R:GPR:32
+movsxd W:GPR:64, dword ptr R:MEM(32)
+movzx RW:GPR:16, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movzx RW:GPR:16, byte ptr R:MEM(8)
+movzx W:GPR:32, R:GPR:16
+movzx W:GPR:32, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movzx W:GPR:32, byte ptr R:MEM(8)
+movzx W:GPR:32, word ptr R:MEM(16)
+movzx W:GPR:64, R:GPR:16
+movzx W:GPR:64, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+movzx W:GPR:64, byte ptr R:MEM(8)
+movzx W:GPR:64, word ptr R:MEM(16)
+mulx W:GPR:32, W:GPR:32, R:GPR:32
+mulx W:GPR:32, W:GPR:32, dword ptr R:MEM(32)
+mulx W:GPR:64, W:GPR:64, R:GPR:64
+mulx W:GPR:64, W:GPR:64, qword ptr R:MEM(64)
+neg RW:GPR:16
+neg RW:GPR:32
+neg RW:GPR:64
+neg RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+neg byte ptr RW:MEM(8)
+neg dword ptr RW:MEM(32)
+neg qword ptr RW:MEM(64)
+neg word ptr RW:MEM(16)
+not RW:GPR:16
+not RW:GPR:32
+not RW:GPR:64
+not RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+not byte ptr RW:MEM(8)
+not dword ptr RW:MEM(32)
+not qword ptr RW:MEM(64)
+not word ptr RW:MEM(16)
+or RW:GPR:16, 0x0
+or RW:GPR:16, IMM(16)
+or RW:GPR:16, IMM(8)
+or RW:GPR:16, R:GPR:16
+or RW:GPR:16, word ptr R:MEM(16)
+or RW:GPR:32, 0x0
+or RW:GPR:32, IMM(32)
+or RW:GPR:32, IMM(8)
+or RW:GPR:32, R:GPR:32
+or RW:GPR:32, dword ptr R:MEM(32)
+or RW:GPR:64, 0x0
+or RW:GPR:64, IMM(32)
+or RW:GPR:64, IMM(8)
+or RW:GPR:64, R:GPR:64
+or RW:GPR:64, qword ptr R:MEM(64)
+or RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+or RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+or byte ptr RW:MEM(8), 0x0
+or byte ptr RW:MEM(8), IMM(8)
+or byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+or dword ptr RW:MEM(32), 0x0
+or dword ptr RW:MEM(32), IMM(32)
+or dword ptr RW:MEM(32), IMM(8)
+or dword ptr RW:MEM(32), R:GPR:32
+or qword ptr RW:MEM(64), 0x0
+or qword ptr RW:MEM(64), IMM(32)
+or qword ptr RW:MEM(64), IMM(8)
+or qword ptr RW:MEM(64), R:GPR:64
+or word ptr RW:MEM(16), 0x0
+or word ptr RW:MEM(16), IMM(16)
+or word ptr RW:MEM(16), IMM(8)
+or word ptr RW:MEM(16), R:GPR:16
+pclmulqdq RW:XMM0..15, R:XMM0..15, IMM(8)
+pclmulqdq RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+rcl RW:GPR:16, 0x0
+rcl RW:GPR:32, 0x0
+rcl RW:GPR:64, 0x0
+rcl byte ptr RW:MEM(8), 0x0
+rcl dword ptr RW:MEM(32), 0x0
+rcl qword ptr RW:MEM(64), 0x0
+rcl word ptr RW:MEM(16), 0x0
+rcr RW:GPR:16, 0x0
+rcr RW:GPR:32, 0x0
+rcr RW:GPR:64, 0x0
+rcr byte ptr RW:MEM(8), 0x0
+rcr dword ptr RW:MEM(32), 0x0
+rcr qword ptr RW:MEM(64), 0x0
+rcr word ptr RW:MEM(16), 0x0
+rol RW:GPR:16
+rol RW:GPR:16, 0x0
+rol RW:GPR:16, IMM(8)
+rol RW:GPR:16, R:cl
+rol RW:GPR:32
+rol RW:GPR:32, 0x0
+rol RW:GPR:32, IMM(8)
+rol RW:GPR:32, R:cl
+rol RW:GPR:64
+rol RW:GPR:64, 0x0
+rol RW:GPR:64, IMM(8)
+rol RW:GPR:64, R:cl
+rol RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl
+rol byte ptr RW:MEM(8)
+rol byte ptr RW:MEM(8), 0x0
+rol byte ptr RW:MEM(8), IMM(8)
+rol byte ptr RW:MEM(8), R:cl
+rol dword ptr RW:MEM(32)
+rol dword ptr RW:MEM(32), 0x0
+rol dword ptr RW:MEM(32), IMM(8)
+rol dword ptr RW:MEM(32), R:cl
+rol qword ptr RW:MEM(64)
+rol qword ptr RW:MEM(64), 0x0
+rol qword ptr RW:MEM(64), IMM(8)
+rol qword ptr RW:MEM(64), R:cl
+rol word ptr RW:MEM(16)
+rol word ptr RW:MEM(16), 0x0
+rol word ptr RW:MEM(16), IMM(8)
+rol word ptr RW:MEM(16), R:cl
+ror RW:GPR:16
+ror RW:GPR:16, 0x0
+ror RW:GPR:16, IMM(8)
+ror RW:GPR:16, R:cl
+ror RW:GPR:32
+ror RW:GPR:32, 0x0
+ror RW:GPR:32, IMM(8)
+ror RW:GPR:32, R:cl
+ror RW:GPR:64
+ror RW:GPR:64, 0x0
+ror RW:GPR:64, IMM(8)
+ror RW:GPR:64, R:cl
+ror RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl
+ror byte ptr RW:MEM(8)
+ror byte ptr RW:MEM(8), 0x0
+ror byte ptr RW:MEM(8), IMM(8)
+ror byte ptr RW:MEM(8), R:cl
+ror dword ptr RW:MEM(32)
+ror dword ptr RW:MEM(32), 0x0
+ror dword ptr RW:MEM(32), IMM(8)
+ror dword ptr RW:MEM(32), R:cl
+ror qword ptr RW:MEM(64)
+ror qword ptr RW:MEM(64), 0x0
+ror qword ptr RW:MEM(64), IMM(8)
+ror qword ptr RW:MEM(64), R:cl
+ror word ptr RW:MEM(16)
+ror word ptr RW:MEM(16), 0x0
+ror word ptr RW:MEM(16), IMM(8)
+ror word ptr RW:MEM(16), R:cl
+rorx W:GPR:32, R:GPR:32, IMM(8)
+rorx W:GPR:32, dword ptr R:MEM(32), IMM(8)
+rorx W:GPR:64, R:GPR:64, IMM(8)
+rorx W:GPR:64, qword ptr R:MEM(64), IMM(8)
+sar RW:GPR:16
+sar RW:GPR:16, 0x0
+sar RW:GPR:16, IMM(8)
+sar RW:GPR:16, R:cl
+sar RW:GPR:32
+sar RW:GPR:32, 0x0
+sar RW:GPR:32, IMM(8)
+sar RW:GPR:32, R:cl
+sar RW:GPR:64
+sar RW:GPR:64, 0x0
+sar RW:GPR:64, IMM(8)
+sar RW:GPR:64, R:cl
+sar RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl
+sar byte ptr RW:MEM(8)
+sar byte ptr RW:MEM(8), 0x0
+sar byte ptr RW:MEM(8), IMM(8)
+sar byte ptr RW:MEM(8), R:cl
+sar dword ptr RW:MEM(32)
+sar dword ptr RW:MEM(32), 0x0
+sar dword ptr RW:MEM(32), IMM(8)
+sar dword ptr RW:MEM(32), R:cl
+sar qword ptr RW:MEM(64)
+sar qword ptr RW:MEM(64), 0x0
+sar qword ptr RW:MEM(64), IMM(8)
+sar qword ptr RW:MEM(64), R:cl
+sar word ptr RW:MEM(16)
+sar word ptr RW:MEM(16), 0x0
+sar word ptr RW:MEM(16), IMM(8)
+sar word ptr RW:MEM(16), R:cl
+sarx W:GPR:32, R:GPR:32, R:GPR:32
+sarx W:GPR:32, dword ptr R:MEM(32), R:GPR:32
+sarx W:GPR:64, R:GPR:64, R:GPR:64
+sarx W:GPR:64, qword ptr R:MEM(64), R:GPR:64
+shl RW:GPR:16
+shl RW:GPR:16, 0x0
+shl RW:GPR:16, IMM(8)
+shl RW:GPR:16, R:cl
+shl RW:GPR:32
+shl RW:GPR:32, 0x0
+shl RW:GPR:32, IMM(8)
+shl RW:GPR:32, R:cl
+shl RW:GPR:64
+shl RW:GPR:64, 0x0
+shl RW:GPR:64, IMM(8)
+shl RW:GPR:64, R:cl
+shl RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl
+shl byte ptr RW:MEM(8)
+shl byte ptr RW:MEM(8), 0x0
+shl byte ptr RW:MEM(8), IMM(8)
+shl byte ptr RW:MEM(8), R:cl
+shl dword ptr RW:MEM(32)
+shl dword ptr RW:MEM(32), 0x0
+shl dword ptr RW:MEM(32), IMM(8)
+shl dword ptr RW:MEM(32), R:cl
+shl qword ptr RW:MEM(64)
+shl qword ptr RW:MEM(64), 0x0
+shl qword ptr RW:MEM(64), IMM(8)
+shl qword ptr RW:MEM(64), R:cl
+shl word ptr RW:MEM(16)
+shl word ptr RW:MEM(16), 0x0
+shl word ptr RW:MEM(16), IMM(8)
+shl word ptr RW:MEM(16), R:cl
+shld RW:GPR:16, R:GPR:16, 0x0
+shld RW:GPR:16, R:GPR:16, IMM(8)
+shld RW:GPR:32, R:GPR:32, 0x0
+shld RW:GPR:32, R:GPR:32, IMM(8)
+shld RW:GPR:64, R:GPR:64, 0x0
+shld RW:GPR:64, R:GPR:64, IMM(8)
+shld dword ptr RW:MEM(32), R:GPR:32, 0x0
+shld dword ptr RW:MEM(32), R:GPR:32, IMM(8)
+shld qword ptr RW:MEM(64), R:GPR:64, 0x0
+shld qword ptr RW:MEM(64), R:GPR:64, IMM(8)
+shld word ptr RW:MEM(16), R:GPR:16, 0x0
+shld word ptr RW:MEM(16), R:GPR:16, IMM(8)
+shlx W:GPR:32, R:GPR:32, R:GPR:32
+shlx W:GPR:32, dword ptr R:MEM(32), R:GPR:32
+shlx W:GPR:64, R:GPR:64, R:GPR:64
+shlx W:GPR:64, qword ptr R:MEM(64), R:GPR:64
+shr RW:GPR:16
+shr RW:GPR:16, 0x0
+shr RW:GPR:16, IMM(8)
+shr RW:GPR:16, R:cl
+shr RW:GPR:32
+shr RW:GPR:32, 0x0
+shr RW:GPR:32, IMM(8)
+shr RW:GPR:32, R:cl
+shr RW:GPR:64
+shr RW:GPR:64, 0x0
+shr RW:GPR:64, IMM(8)
+shr RW:GPR:64, R:cl
+shr RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:cl
+shr byte ptr RW:MEM(8)
+shr byte ptr RW:MEM(8), 0x0
+shr byte ptr RW:MEM(8), IMM(8)
+shr byte ptr RW:MEM(8), R:cl
+shr dword ptr RW:MEM(32)
+shr dword ptr RW:MEM(32), 0x0
+shr dword ptr RW:MEM(32), IMM(8)
+shr dword ptr RW:MEM(32), R:cl
+shr qword ptr RW:MEM(64)
+shr qword ptr RW:MEM(64), 0x0
+shr qword ptr RW:MEM(64), IMM(8)
+shr qword ptr RW:MEM(64), R:cl
+shr word ptr RW:MEM(16)
+shr word ptr RW:MEM(16), 0x0
+shr word ptr RW:MEM(16), IMM(8)
+shr word ptr RW:MEM(16), R:cl
+shrd RW:GPR:16, R:GPR:16, 0x0
+shrd RW:GPR:16, R:GPR:16, IMM(8)
+shrd RW:GPR:32, R:GPR:32, 0x0
+shrd RW:GPR:32, R:GPR:32, IMM(8)
+shrd RW:GPR:64, R:GPR:64, 0x0
+shrd RW:GPR:64, R:GPR:64, IMM(8)
+shrd dword ptr RW:MEM(32), R:GPR:32, 0x0
+shrd dword ptr RW:MEM(32), R:GPR:32, IMM(8)
+shrd qword ptr RW:MEM(64), R:GPR:64, 0x0
+shrd qword ptr RW:MEM(64), R:GPR:64, IMM(8)
+shrd word ptr RW:MEM(16), R:GPR:16, 0x0
+shrd word ptr RW:MEM(16), R:GPR:16, IMM(8)
+shrx W:GPR:32, R:GPR:32, R:GPR:32
+shrx W:GPR:32, dword ptr R:MEM(32), R:GPR:32
+shrx W:GPR:64, R:GPR:64, R:GPR:64
+shrx W:GPR:64, qword ptr R:MEM(64), R:GPR:64
+stc
+sub RW:GPR:16, 0x0
+sub RW:GPR:16, IMM(16)
+sub RW:GPR:16, IMM(8)
+sub RW:GPR:16, R:GPR:16
+sub RW:GPR:16, word ptr R:MEM(16)
+sub RW:GPR:32, 0x0
+sub RW:GPR:32, IMM(32)
+sub RW:GPR:32, IMM(8)
+sub RW:GPR:32, R:GPR:32
+sub RW:GPR:32, dword ptr R:MEM(32)
+sub RW:GPR:64, 0x0
+sub RW:GPR:64, IMM(32)
+sub RW:GPR:64, IMM(8)
+sub RW:GPR:64, R:GPR:64
+sub RW:GPR:64, qword ptr R:MEM(64)
+sub RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+sub RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+sub byte ptr RW:MEM(8), 0x0
+sub byte ptr RW:MEM(8), IMM(8)
+sub byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+sub dword ptr RW:MEM(32), 0x0
+sub dword ptr RW:MEM(32), IMM(32)
+sub dword ptr RW:MEM(32), IMM(8)
+sub dword ptr RW:MEM(32), R:GPR:32
+sub qword ptr RW:MEM(64), 0x0
+sub qword ptr RW:MEM(64), IMM(32)
+sub qword ptr RW:MEM(64), IMM(8)
+sub qword ptr RW:MEM(64), R:GPR:64
+sub word ptr RW:MEM(16), 0x0
+sub word ptr RW:MEM(16), IMM(16)
+sub word ptr RW:MEM(16), IMM(8)
+sub word ptr RW:MEM(16), R:GPR:16
+test R:GPR:16, IMM(16)
+test R:GPR:16, R:GPR:16
+test R:GPR:32, IMM(32)
+test R:GPR:32, R:GPR:32
+test R:GPR:64, IMM(32)
+test R:GPR:64, R:GPR:64
+test R:al, 0x0
+test R:al, IMM(8)
+test R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+test R:al,bl,cl,dl,r10b,r11b,r8b,r9b, 0x0
+test R:al,bl,cl,dl,r10b,r11b,r8b,r9b, IMM(8)
+test R:ax, IMM(16)
+test R:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, 0x0
+test R:bpl,dil,r12b,r13b,r14b,r15b,sil,spl, IMM(8)
+test R:eax, IMM(32)
+test R:rax, IMM(32)
+test byte ptr R:MEM(8), 0x0
+test byte ptr R:MEM(8), IMM(8)
+test byte ptr R:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+test dword ptr R:MEM(32), IMM(32)
+test dword ptr R:MEM(32), R:GPR:32
+test qword ptr R:MEM(64), IMM(32)
+test qword ptr R:MEM(64), R:GPR:64
+test word ptr R:MEM(16), IMM(16)
+test word ptr R:MEM(16), R:GPR:16
+tzcnt RW:GPR:16, R:GPR:16
+tzcnt RW:GPR:16, word ptr R:MEM(16)
+tzcnt W:GPR:32, R:GPR:32
+tzcnt W:GPR:32, dword ptr R:MEM(32)
+tzcnt W:GPR:64, R:GPR:64
+tzcnt W:GPR:64, qword ptr R:MEM(64)
+vaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vaddps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vaddsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vaddss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vaddsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vaddsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vaddsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vaddsubps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vaddsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vaddsubps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vaddsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vandnpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vandnpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vandnpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vandnpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vandnps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vandnps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vandnps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vandnps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vandpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vandpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vandpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vandpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vandps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vandps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vandps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vandps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vblendpd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vblendpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vblendpd W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vblendpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vblendps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vblendps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vblendps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vblendps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vbroadcastf128 W:YMM0..15, xmmword ptr R:MEM(128)
+vbroadcasti128 W:YMM0..15, xmmword ptr R:MEM(128)
+vbroadcastsd W:YMM0..15, R:XMM0..15
+vbroadcastsd W:YMM0..15, qword ptr R:MEM(64)
+vbroadcastss W:XMM0..15, R:XMM0..15
+vbroadcastss W:XMM0..15, dword ptr R:MEM(32)
+vbroadcastss W:YMM0..15, R:XMM0..15
+vbroadcastss W:YMM0..15, dword ptr R:MEM(32)
+vcmpeq_ospd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_ospd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_ospd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_ospd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_osps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_osps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_osps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_osps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_ossd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_ossd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpeq_osss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_osss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpeq_uqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_uqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_uqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_uqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_uqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_uqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_uqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_uqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_uqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_uqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpeq_uqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_uqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpeq_uspd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_uspd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_uspd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_uspd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_usps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_usps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeq_usps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeq_usps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeq_ussd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_ussd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpeq_usss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeq_usss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpeqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpeqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpeqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpeqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpeqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpeqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpfalse_ospd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalse_ospd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpfalse_ospd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpfalse_ospd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpfalse_osps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalse_osps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpfalse_osps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpfalse_osps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpfalse_ossd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalse_ossd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpfalse_osss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalse_osss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpfalsepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalsepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpfalsepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpfalsepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpfalseps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalseps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpfalseps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpfalseps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpfalsesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalsesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpfalsess W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpfalsess W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpge_oqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpge_oqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpge_oqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpge_oqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpge_oqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpge_oqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpge_oqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpge_oqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpge_oqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpge_oqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpge_oqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpge_oqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpgepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgeps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgeps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgeps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgeps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpgess W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgess W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpgt_oqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgt_oqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgt_oqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgt_oqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgt_oqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgt_oqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgt_oqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgt_oqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgt_oqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgt_oqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpgt_oqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgt_oqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpgtpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgtpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgtpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgtpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgtps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgtps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpgtps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpgtps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpgtsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgtsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpgtss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpgtss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmple_oqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmple_oqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmple_oqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmple_oqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmple_oqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmple_oqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmple_oqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmple_oqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmple_oqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmple_oqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmple_oqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmple_oqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmplepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmplepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmplepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpleps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpleps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpleps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpleps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmplesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpless W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpless W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmplt_oqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplt_oqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmplt_oqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmplt_oqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmplt_oqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplt_oqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmplt_oqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmplt_oqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmplt_oqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplt_oqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmplt_oqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmplt_oqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpltpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpltpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpltpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpltpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpltps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpltps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpltps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpltps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpltsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpltsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpltss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpltss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpneq_oqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_oqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_oqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_oqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_oqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_oqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_oqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_oqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_oqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_oqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpneq_oqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_oqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpneq_ospd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_ospd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_ospd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_ospd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_osps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_osps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_osps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_osps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_ossd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_ossd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpneq_osss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_osss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpneq_uspd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_uspd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_uspd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_uspd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_usps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_usps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneq_usps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneq_usps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneq_ussd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_ussd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpneq_usss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneq_usss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpneqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpneqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpneqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpneqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpneqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpneqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpnge_uqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnge_uqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnge_uqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnge_uqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnge_uqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnge_uqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnge_uqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnge_uqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnge_uqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnge_uqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpnge_uqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnge_uqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpngepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngeps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngeps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngeps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngeps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpngess W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngess W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpngt_uqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngt_uqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngt_uqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngt_uqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngt_uqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngt_uqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngt_uqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngt_uqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngt_uqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngt_uqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpngt_uqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngt_uqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpngtpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngtpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngtpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngtpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngtps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngtps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpngtps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpngtps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpngtsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngtsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpngtss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpngtss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpnle_uqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnle_uqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnle_uqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnle_uqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnle_uqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnle_uqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnle_uqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnle_uqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnle_uqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnle_uqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpnle_uqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnle_uqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpnlepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnlepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnlepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnleps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnleps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnleps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnleps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnlesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpnless W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnless W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpnlt_uqpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlt_uqpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnlt_uqpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnlt_uqpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnlt_uqps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlt_uqps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnlt_uqps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnlt_uqps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnlt_uqsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlt_uqsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpnlt_uqss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnlt_uqss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpnltpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnltpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnltpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnltpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnltps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnltps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpnltps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpnltps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpnltsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnltsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpnltss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpnltss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpord_spd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpord_spd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpord_spd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpord_spd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpord_sps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpord_sps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpord_sps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpord_ssd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpord_ssd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpord_sss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpord_sss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpordpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpordpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpordpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpordpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpordps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpordps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpordps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpordps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpordsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpordsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpordss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpordss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmppd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vcmppd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vcmppd W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vcmppd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vcmpps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vcmpps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vcmpps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vcmpps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vcmpsd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vcmpsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), IMM(8)
+vcmpss W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vcmpss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), IMM(8)
+vcmptrue_uspd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptrue_uspd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmptrue_uspd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmptrue_uspd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmptrue_usps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptrue_usps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmptrue_usps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmptrue_usps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmptrue_ussd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptrue_ussd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmptrue_usss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptrue_usss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmptruepd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptruepd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmptruepd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmptruepd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmptrueps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptrueps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmptrueps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmptrueps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmptruesd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptruesd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmptruess W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmptruess W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpunord_spd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunord_spd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpunord_spd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpunord_spd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpunord_sps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunord_sps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpunord_sps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpunord_sps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpunord_ssd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunord_ssd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpunord_sss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunord_sss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcmpunordpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunordpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpunordpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpunordpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpunordps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunordps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vcmpunordps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vcmpunordps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vcmpunordsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunordsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vcmpunordss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vcmpunordss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vcomisd R:XMM0..15, R:XMM0..15
+vcomisd R:XMM0..15, qword ptr R:MEM(64)
+vcomiss R:XMM0..15, R:XMM0..15
+vcomiss R:XMM0..15, dword ptr R:MEM(32)
+vdppd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vdppd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vdpps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vdpps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vdpps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vdpps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vextractf128 W:XMM0..15, R:YMM0..15, IMM(8)
+vextractf128 xmmword ptr W:MEM(128), R:YMM0..15, IMM(8)
+vextracti128 W:XMM0..15, R:YMM0..15, IMM(8)
+vextracti128 xmmword ptr W:MEM(128), R:YMM0..15, IMM(8)
+vextractps W:GPR:32, R:XMM0..15, IMM(8)
+vextractps dword ptr W:MEM(32), R:XMM0..15, IMM(8)
+vhaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vhaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vhaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vhaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vhaddps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vhaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vhaddps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vhaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vhsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vhsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vhsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vhsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vhsubps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vhsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vhsubps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vhsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vinsertf128 W:YMM0..15, R:YMM0..15, R:XMM0..15, IMM(8)
+vinsertf128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vinserti128 W:YMM0..15, R:YMM0..15, R:XMM0..15, IMM(8)
+vinserti128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vinsertps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vinsertps W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), IMM(8)
+vlddqu W:XMM0..15, xmmword ptr R:MEM(128)
+vlddqu W:YMM0..15, ymmword ptr R:MEM(256)
+vmaskmovpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vmaskmovpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vmaskmovpd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15
+vmaskmovpd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15
+vmaskmovps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vmaskmovps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vmaskmovps xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15
+vmaskmovps ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15
+vmaxpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmaxpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vmaxpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vmaxpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vmaxps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmaxps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vmaxps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vmaxps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vmaxsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmaxsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vmaxss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmaxss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vminpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vminpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vminpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vminpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vminps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vminps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vminps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vminps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vminsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vminsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vminss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vminss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vmovapd W:XMM0..15, R:XMM0..15
+vmovapd W:XMM0..15, xmmword ptr R:MEM(128)
+vmovapd W:YMM0..15, R:YMM0..15
+vmovapd W:YMM0..15, ymmword ptr R:MEM(256)
+vmovapd xmmword ptr W:MEM(128), R:XMM0..15
+vmovapd ymmword ptr W:MEM(256), R:YMM0..15
+vmovaps W:XMM0..15, R:XMM0..15
+vmovaps W:XMM0..15, xmmword ptr R:MEM(128)
+vmovaps W:YMM0..15, R:YMM0..15
+vmovaps W:YMM0..15, ymmword ptr R:MEM(256)
+vmovaps xmmword ptr W:MEM(128), R:XMM0..15
+vmovaps ymmword ptr W:MEM(256), R:YMM0..15
+vmovd W:GPR:32, R:XMM0..15
+vmovd dword ptr W:MEM(32), R:XMM0..15
+vmovddup W:XMM0..15, R:XMM0..15
+vmovddup W:XMM0..15, qword ptr R:MEM(64)
+vmovddup W:YMM0..15, R:YMM0..15
+vmovddup W:YMM0..15, ymmword ptr R:MEM(256)
+vmovdqa W:XMM0..15, R:XMM0..15
+vmovdqa W:XMM0..15, xmmword ptr R:MEM(128)
+vmovdqa W:YMM0..15, R:YMM0..15
+vmovdqa W:YMM0..15, ymmword ptr R:MEM(256)
+vmovdqa xmmword ptr W:MEM(128), R:XMM0..15
+vmovdqa ymmword ptr W:MEM(256), R:YMM0..15
+vmovdqu W:XMM0..15, R:XMM0..15
+vmovdqu W:XMM0..15, xmmword ptr R:MEM(128)
+vmovdqu W:YMM0..15, R:YMM0..15
+vmovdqu W:YMM0..15, ymmword ptr R:MEM(256)
+vmovdqu xmmword ptr W:MEM(128), R:XMM0..15
+vmovdqu ymmword ptr W:MEM(256), R:YMM0..15
+vmovhlps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmovhpd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vmovhpd qword ptr W:MEM(64), R:XMM0..15
+vmovhps W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vmovhps qword ptr W:MEM(64), R:XMM0..15
+vmovlhps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmovlpd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vmovlpd qword ptr W:MEM(64), R:XMM0..15
+vmovlps W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vmovlps qword ptr W:MEM(64), R:XMM0..15
+vmovmskpd W:GPR:32, R:XMM0..15
+vmovmskpd W:GPR:32, R:YMM0..15
+vmovmskps W:GPR:32, R:XMM0..15
+vmovmskps W:GPR:32, R:YMM0..15
+vmovntdq xmmword ptr W:MEM(128), R:XMM0..15
+vmovntdq ymmword ptr W:MEM(256), R:YMM0..15
+vmovntdqa W:XMM0..15, xmmword ptr R:MEM(128)
+vmovntdqa W:YMM0..15, ymmword ptr R:MEM(256)
+vmovntpd xmmword ptr W:MEM(128), R:XMM0..15
+vmovntpd ymmword ptr W:MEM(256), R:YMM0..15
+vmovntps xmmword ptr W:MEM(128), R:XMM0..15
+vmovntps ymmword ptr W:MEM(256), R:YMM0..15
+vmovq W:GPR:64, R:XMM0..15
+vmovq W:XMM0..15, R:XMM0..15
+vmovq qword ptr W:MEM(64), R:XMM0..15
+vmovsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmovsd W:XMM0..15, qword ptr R:MEM(64)
+vmovsd qword ptr W:MEM(64), R:XMM0..15
+vmovshdup W:XMM0..15, R:XMM0..15
+vmovshdup W:XMM0..15, xmmword ptr R:MEM(128)
+vmovshdup W:YMM0..15, R:YMM0..15
+vmovshdup W:YMM0..15, ymmword ptr R:MEM(256)
+vmovsldup W:XMM0..15, R:XMM0..15
+vmovsldup W:XMM0..15, xmmword ptr R:MEM(128)
+vmovsldup W:YMM0..15, R:YMM0..15
+vmovsldup W:YMM0..15, ymmword ptr R:MEM(256)
+vmovss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmovss W:XMM0..15, dword ptr R:MEM(32)
+vmovss dword ptr W:MEM(32), R:XMM0..15
+vmovupd W:XMM0..15, R:XMM0..15
+vmovupd W:XMM0..15, xmmword ptr R:MEM(128)
+vmovupd W:YMM0..15, R:YMM0..15
+vmovupd W:YMM0..15, ymmword ptr R:MEM(256)
+vmovupd xmmword ptr W:MEM(128), R:XMM0..15
+vmovupd ymmword ptr W:MEM(256), R:YMM0..15
+vmovups W:XMM0..15, R:XMM0..15
+vmovups W:XMM0..15, xmmword ptr R:MEM(128)
+vmovups W:YMM0..15, R:YMM0..15
+vmovups W:YMM0..15, ymmword ptr R:MEM(256)
+vmovups xmmword ptr W:MEM(128), R:XMM0..15
+vmovups ymmword ptr W:MEM(256), R:YMM0..15
+vmpsadbw W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vmpsadbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vmpsadbw W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vmpsadbw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vmulps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmulps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vmulps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vmulps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vmulss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vmulss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vorpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vorpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vorpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vorpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vorps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vorps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vorps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vorps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpabsb W:XMM0..15, R:XMM0..15
+vpabsb W:XMM0..15, xmmword ptr R:MEM(128)
+vpabsb W:YMM0..15, R:YMM0..15
+vpabsb W:YMM0..15, ymmword ptr R:MEM(256)
+vpabsd W:XMM0..15, R:XMM0..15
+vpabsd W:XMM0..15, xmmword ptr R:MEM(128)
+vpabsd W:YMM0..15, R:YMM0..15
+vpabsd W:YMM0..15, ymmword ptr R:MEM(256)
+vpabsw W:XMM0..15, R:XMM0..15
+vpabsw W:XMM0..15, xmmword ptr R:MEM(128)
+vpabsw W:YMM0..15, R:YMM0..15
+vpabsw W:YMM0..15, ymmword ptr R:MEM(256)
+vpackssdw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpackssdw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpackssdw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpackssdw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpacksswb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpacksswb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpacksswb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpacksswb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpackusdw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpackusdw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpackusdw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpackusdw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpackuswb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpackuswb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpackuswb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpackuswb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddsb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddsb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddsb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddsb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddusb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddusb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddusb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddusb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddusw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddusw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddusw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddusw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpaddw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpaddw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpaddw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpaddw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpalignr W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vpalignr W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpalignr W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vpalignr W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpand W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpand W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpand W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpand W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpandn W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpandn W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpandn W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpandn W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpavgb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpavgb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpavgb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpavgb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpavgw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpavgw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpavgw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpavgw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpblendd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vpblendd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpblendd W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vpblendd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpblendw W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vpblendw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpblendw W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vpblendw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpbroadcastb W:XMM0..15, R:XMM0..15
+vpbroadcastb W:XMM0..15, byte ptr R:MEM(8)
+vpbroadcastb W:YMM0..15, R:XMM0..15
+vpbroadcastb W:YMM0..15, byte ptr R:MEM(8)
+vpbroadcastd W:XMM0..15, R:XMM0..15
+vpbroadcastd W:XMM0..15, dword ptr R:MEM(32)
+vpbroadcastd W:YMM0..15, R:XMM0..15
+vpbroadcastd W:YMM0..15, dword ptr R:MEM(32)
+vpbroadcastq W:XMM0..15, R:XMM0..15
+vpbroadcastq W:XMM0..15, qword ptr R:MEM(64)
+vpbroadcastq W:YMM0..15, R:XMM0..15
+vpbroadcastq W:YMM0..15, qword ptr R:MEM(64)
+vpbroadcastw W:XMM0..15, R:XMM0..15
+vpbroadcastw W:XMM0..15, word ptr R:MEM(16)
+vpbroadcastw W:YMM0..15, R:XMM0..15
+vpbroadcastw W:YMM0..15, word ptr R:MEM(16)
+vpclmulqdq W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vpclmulqdq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpcmpeqb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpeqb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpeqb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpeqb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpeqd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpeqd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpeqd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpeqd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpeqq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpeqq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpeqq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpeqq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpeqw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpeqw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpeqw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpeqw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpestrm R:XMM0..15, R:XMM0..15, IMM(8)
+vpcmpestrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpcmpgtb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpgtb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpgtb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpgtb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpgtd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpgtd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpgtd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpgtd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpgtw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpcmpgtw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpcmpgtw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpcmpgtw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpcmpistrm R:XMM0..15, R:XMM0..15, IMM(8)
+vpcmpistrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vperm2f128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vperm2f128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vperm2i128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vperm2i128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpermd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpermilpd W:XMM0..15, R:XMM0..15, IMM(8)
+vpermilpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpermilpd W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpermilpd W:YMM0..15, R:YMM0..15, IMM(8)
+vpermilpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpermilpd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpermilps W:XMM0..15, R:XMM0..15, IMM(8)
+vpermilps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpermilps W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpermilps W:YMM0..15, R:YMM0..15, IMM(8)
+vpermilps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpermilps W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpermpd W:YMM0..15, R:YMM0..15, IMM(8)
+vpermpd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpermps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpermq W:YMM0..15, R:YMM0..15, IMM(8)
+vpermq W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpextrb W:GPR:32, R:XMM0..15, IMM(8)
+vpextrb byte ptr RW:MEM(8), R:XMM0..15, IMM(8)
+vpextrd W:GPR:32, R:XMM0..15, IMM(8)
+vpextrd dword ptr W:MEM(32), R:XMM0..15, IMM(8)
+vpextrq W:GPR:64, R:XMM0..15, IMM(8)
+vpextrq qword ptr W:MEM(64), R:XMM0..15, IMM(8)
+vpextrw W:GPR:32, R:XMM0..15, IMM(8)
+vpextrw word ptr RW:MEM(16), R:XMM0..15, IMM(8)
+vphaddd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphaddd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphaddd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphaddd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vphaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphaddsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphaddsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphaddsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vphaddw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphaddw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphaddw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphaddw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vphminposuw W:XMM0..15, xmmword ptr R:MEM(128)
+vphsubd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphsubd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphsubd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphsubd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vphsubsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphsubsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphsubsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphsubsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vphsubw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vphsubw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vphsubw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vphsubw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpinsrb W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)
+vpinsrb W:XMM0..15, R:XMM0..15, byte ptr R:MEM(8), IMM(8)
+vpinsrd W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)
+vpinsrd W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), IMM(8)
+vpinsrq W:XMM0..15, R:XMM0..15, R:GPR:64, IMM(8)
+vpinsrq W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), IMM(8)
+vpinsrw W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)
+vpinsrw W:XMM0..15, R:XMM0..15, word ptr R:MEM(16), IMM(8)
+vpmaskmovd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaskmovd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaskmovd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15
+vpmaskmovd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15
+vpmaskmovq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaskmovq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaskmovq xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15
+vpmaskmovq ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15
+vpmaxsb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxsb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxsb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxsb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaxsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxsd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxsd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxsd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaxsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaxub W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxub W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxub W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxub W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaxud W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxud W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxud W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxud W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmaxuw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpmaxuw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmaxuw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpmaxuw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminsb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminsb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminsb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminsb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminsd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminsd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminsd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminub W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminub W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminub W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminub W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminud W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminud W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminud W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminud W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpminuw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpminuw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpminuw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpminuw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpmovmskb W:GPR:32, R:XMM0..15
+vpmovmskb W:GPR:32, R:YMM0..15
+vpmovsxbd W:XMM0..15, R:XMM0..15
+vpmovsxbd W:XMM0..15, dword ptr R:MEM(32)
+vpmovsxbd W:YMM0..15, R:XMM0..15
+vpmovsxbd W:YMM0..15, qword ptr R:MEM(64)
+vpmovsxbq W:XMM0..15, R:XMM0..15
+vpmovsxbq W:XMM0..15, word ptr R:MEM(16)
+vpmovsxbq W:YMM0..15, R:XMM0..15
+vpmovsxbq W:YMM0..15, dword ptr R:MEM(32)
+vpmovsxbw W:XMM0..15, R:XMM0..15
+vpmovsxbw W:XMM0..15, qword ptr R:MEM(64)
+vpmovsxbw W:YMM0..15, R:XMM0..15
+vpmovsxbw W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovsxdq W:XMM0..15, R:XMM0..15
+vpmovsxdq W:XMM0..15, qword ptr R:MEM(64)
+vpmovsxdq W:YMM0..15, R:XMM0..15
+vpmovsxdq W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovsxwd W:XMM0..15, R:XMM0..15
+vpmovsxwd W:XMM0..15, qword ptr R:MEM(64)
+vpmovsxwd W:YMM0..15, R:XMM0..15
+vpmovsxwd W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovsxwq W:XMM0..15, R:XMM0..15
+vpmovsxwq W:XMM0..15, dword ptr R:MEM(32)
+vpmovsxwq W:YMM0..15, R:XMM0..15
+vpmovsxwq W:YMM0..15, qword ptr R:MEM(64)
+vpmovzxbd W:XMM0..15, R:XMM0..15
+vpmovzxbd W:XMM0..15, dword ptr R:MEM(32)
+vpmovzxbd W:YMM0..15, R:XMM0..15
+vpmovzxbd W:YMM0..15, qword ptr R:MEM(64)
+vpmovzxbq W:XMM0..15, R:XMM0..15
+vpmovzxbq W:XMM0..15, word ptr R:MEM(16)
+vpmovzxbq W:YMM0..15, R:XMM0..15
+vpmovzxbq W:YMM0..15, dword ptr R:MEM(32)
+vpmovzxbw W:XMM0..15, R:XMM0..15
+vpmovzxbw W:XMM0..15, qword ptr R:MEM(64)
+vpmovzxbw W:YMM0..15, R:XMM0..15
+vpmovzxbw W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovzxdq W:XMM0..15, R:XMM0..15
+vpmovzxdq W:XMM0..15, qword ptr R:MEM(64)
+vpmovzxdq W:YMM0..15, R:XMM0..15
+vpmovzxdq W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovzxwd W:XMM0..15, R:XMM0..15
+vpmovzxwd W:XMM0..15, qword ptr R:MEM(64)
+vpmovzxwd W:YMM0..15, R:XMM0..15
+vpmovzxwd W:YMM0..15, xmmword ptr R:MEM(128)
+vpmovzxwq W:XMM0..15, R:XMM0..15
+vpmovzxwq W:XMM0..15, dword ptr R:MEM(32)
+vpmovzxwq W:YMM0..15, R:XMM0..15
+vpmovzxwq W:YMM0..15, qword ptr R:MEM(64)
+vpmulld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpmulld W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpor W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpor W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpor W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpor W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpshufb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpshufb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpshufb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpshufb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpshufd W:XMM0..15, R:XMM0..15, IMM(8)
+vpshufd W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpshufd W:YMM0..15, R:YMM0..15, IMM(8)
+vpshufd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpshufhw W:XMM0..15, R:XMM0..15, IMM(8)
+vpshufhw W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpshufhw W:YMM0..15, R:YMM0..15, IMM(8)
+vpshufhw W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpshuflw W:XMM0..15, R:XMM0..15, IMM(8)
+vpshuflw W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vpshuflw W:YMM0..15, R:YMM0..15, IMM(8)
+vpshuflw W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vpsignb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsignb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsignb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsignb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsignd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsignd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsignd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsignd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsignw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsignw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsignw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsignw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpslld W:XMM0..15, R:XMM0..15, IMM(8)
+vpslld W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpslld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpslld W:YMM0..15, R:YMM0..15, IMM(8)
+vpslld W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpslld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpslldq W:XMM0..15, R:XMM0..15, IMM(8)
+vpslldq W:YMM0..15, R:YMM0..15, IMM(8)
+vpsllq W:XMM0..15, R:XMM0..15, IMM(8)
+vpsllq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsllq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsllq W:YMM0..15, R:YMM0..15, IMM(8)
+vpsllq W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsllq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsllvd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsllvd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsllvq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsllvq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsllw W:XMM0..15, R:XMM0..15, IMM(8)
+vpsllw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsllw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsllw W:YMM0..15, R:YMM0..15, IMM(8)
+vpsllw W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsllw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsrad W:XMM0..15, R:XMM0..15, IMM(8)
+vpsrad W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsrad W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrad W:YMM0..15, R:YMM0..15, IMM(8)
+vpsrad W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsrad W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsravd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsravd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsraw W:XMM0..15, R:XMM0..15, IMM(8)
+vpsraw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsraw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsraw W:YMM0..15, R:YMM0..15, IMM(8)
+vpsraw W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsraw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsrld W:XMM0..15, R:XMM0..15, IMM(8)
+vpsrld W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsrld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrld W:YMM0..15, R:YMM0..15, IMM(8)
+vpsrld W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsrld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsrldq W:XMM0..15, R:XMM0..15, IMM(8)
+vpsrldq W:YMM0..15, R:YMM0..15, IMM(8)
+vpsrlq W:XMM0..15, R:XMM0..15, IMM(8)
+vpsrlq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsrlq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrlq W:YMM0..15, R:YMM0..15, IMM(8)
+vpsrlq W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsrlq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsrlvd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrlvd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsrlvq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrlvq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsrlw W:XMM0..15, R:XMM0..15, IMM(8)
+vpsrlw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsrlw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsrlw W:YMM0..15, R:YMM0..15, IMM(8)
+vpsrlw W:YMM0..15, R:YMM0..15, R:XMM0..15
+vpsrlw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)
+vpsubb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubsb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubsb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubsb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubsb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubsw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubsw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubusb W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubusb W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubusb W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubusb W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubusw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubusw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubusw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubusw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpsubw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpsubw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpsubw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpsubw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vptest R:XMM0..15, R:XMM0..15
+vptest R:XMM0..15, xmmword ptr R:MEM(128)
+vptest R:YMM0..15, R:YMM0..15
+vptest R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpckhbw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpckhbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpckhbw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpckhbw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpckhdq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpckhdq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpckhdq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpckhdq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpckhqdq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpckhqdq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpckhqdq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpckhqdq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpckhwd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpckhwd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpckhwd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpckhwd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpcklbw W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpcklbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpcklbw W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpcklbw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpckldq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpckldq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpckldq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpckldq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpcklqdq W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpcklqdq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpcklqdq W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpcklqdq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpunpcklwd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpunpcklwd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpunpcklwd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpunpcklwd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vpxor W:XMM0..15, R:XMM0..15, R:XMM0..15
+vpxor W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vpxor W:YMM0..15, R:YMM0..15, R:YMM0..15
+vpxor W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vroundpd W:XMM0..15, R:XMM0..15, IMM(8)
+vroundpd W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vroundpd W:YMM0..15, R:YMM0..15, IMM(8)
+vroundpd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vroundps W:XMM0..15, R:XMM0..15, IMM(8)
+vroundps W:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vroundps W:YMM0..15, R:YMM0..15, IMM(8)
+vroundps W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vroundsd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vroundsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64), IMM(8)
+vroundss W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vroundss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32), IMM(8)
+vshufpd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vshufpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vshufpd W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vshufpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vshufps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)
+vshufps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)
+vshufps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)
+vshufps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)
+vsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vsubps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vsubps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vsubsd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vsubsd W:XMM0..15, R:XMM0..15, qword ptr R:MEM(64)
+vsubss W:XMM0..15, R:XMM0..15, R:XMM0..15
+vsubss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)
+vtestpd R:XMM0..15, R:XMM0..15
+vtestpd R:XMM0..15, xmmword ptr R:MEM(128)
+vtestpd R:YMM0..15, R:YMM0..15
+vtestpd R:YMM0..15, ymmword ptr R:MEM(256)
+vtestps R:XMM0..15, R:XMM0..15
+vtestps R:XMM0..15, xmmword ptr R:MEM(128)
+vtestps R:YMM0..15, R:YMM0..15
+vtestps R:YMM0..15, ymmword ptr R:MEM(256)
+vucomisd R:XMM0..15, R:XMM0..15
+vucomisd R:XMM0..15, qword ptr R:MEM(64)
+vucomiss R:XMM0..15, R:XMM0..15
+vucomiss R:XMM0..15, dword ptr R:MEM(32)
+vunpckhpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vunpckhpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vunpckhpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vunpckhpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vunpckhps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vunpckhps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vunpckhps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vunpckhps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vunpcklpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vunpcklpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vunpcklpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vunpcklpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vunpcklps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vunpcklps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vunpcklps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vunpcklps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vxorpd W:XMM0..15, R:XMM0..15, R:XMM0..15
+vxorpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vxorpd W:YMM0..15, R:YMM0..15, R:YMM0..15
+vxorpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vxorps W:XMM0..15, R:XMM0..15, R:XMM0..15
+vxorps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)
+vxorps W:YMM0..15, R:YMM0..15, R:YMM0..15
+vxorps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)
+vzeroall
+vzeroupper
+xadd RW:GPR:16, RW:GPR:16
+xadd RW:GPR:32, RW:GPR:32
+xadd RW:GPR:64, RW:GPR:64
+xadd RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+xadd byte ptr RW:MEM(8), RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+xadd dword ptr RW:MEM(32), RW:GPR:32
+xadd qword ptr RW:MEM(64), RW:GPR:64
+xadd word ptr RW:MEM(16), RW:GPR:16
+xchg RW:GPR:16, RW:GPR:16
+xchg RW:GPR:32, RW:GPR:32
+xchg RW:GPR:64, RW:GPR:64
+xchg RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+xor RW:GPR:16, 0x0
+xor RW:GPR:16, IMM(16)
+xor RW:GPR:16, IMM(8)
+xor RW:GPR:16, R:GPR:16
+xor RW:GPR:16, word ptr R:MEM(16)
+xor RW:GPR:32, 0x0
+xor RW:GPR:32, IMM(32)
+xor RW:GPR:32, IMM(8)
+xor RW:GPR:32, R:GPR:32
+xor RW:GPR:32, dword ptr R:MEM(32)
+xor RW:GPR:64, 0x0
+xor RW:GPR:64, IMM(32)
+xor RW:GPR:64, IMM(8)
+xor RW:GPR:64, R:GPR:64
+xor RW:GPR:64, qword ptr R:MEM(64)
+xor RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+xor RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl, byte ptr R:MEM(8)
+xor byte ptr RW:MEM(8), 0x0
+xor byte ptr RW:MEM(8), IMM(8)
+xor byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl
+xor dword ptr RW:MEM(32), 0x0
+xor dword ptr RW:MEM(32), IMM(32)
+xor dword ptr RW:MEM(32), IMM(8)
+xor dword ptr RW:MEM(32), R:GPR:32
+xor qword ptr RW:MEM(64), 0x0
+xor qword ptr RW:MEM(64), IMM(32)
+xor qword ptr RW:MEM(64), IMM(8)
+xor qword ptr RW:MEM(64), R:GPR:64
+xor word ptr RW:MEM(16), 0x0
+xor word ptr RW:MEM(16), IMM(16)
+xor word ptr RW:MEM(16), IMM(8)
+xor word ptr RW:MEM(16), R:GPR:16

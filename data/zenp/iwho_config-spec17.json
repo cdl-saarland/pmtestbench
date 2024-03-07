@@ -1,0 +1,7 @@
+{
+    "context_specifier": "x86_uops_info",
+    "filters": [
+        {"kind": "blacklist", "file_path": "./relaxeduops/config/insn_blacklist.csv"},
+        {"kind": "whitelist", "file_path": "./spec17_insns.txt"}
+    ]
+}

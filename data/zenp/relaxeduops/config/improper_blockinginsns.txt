@@ -1,0 +1,2 @@
+mov dword ptr W:MEM(32), R:GPR:32
+vmovapd xmmword ptr W:MEM(128), R:XMM0..15

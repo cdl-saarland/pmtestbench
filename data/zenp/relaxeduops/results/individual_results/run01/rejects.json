@@ -1,0 +1,1519 @@
+[
+  [
+    "add byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for add byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "add byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for add byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "add byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for add byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (2):\n  3"
+  ],
+  [
+    "add word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for add word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "add word ptr RW:MEM(16), IMM(16)",
+    "more uops were characterized for add word ptr RW:MEM(16), IMM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "add word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for add word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "add word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for add word ptr RW:MEM(16), R:GPR:16 than were originally observed (2):\n  3"
+  ],
+  [
+    "and byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for and byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "and byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for and byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "and byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for and byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (2):\n  3"
+  ],
+  [
+    "and word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for and word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "and word ptr RW:MEM(16), IMM(16)",
+    "more uops were characterized for and word ptr RW:MEM(16), IMM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "and word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for and word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "and word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for and word ptr RW:MEM(16), R:GPR:16 than were originally observed (2):\n  3"
+  ],
+  [
+    "bextr W:GPR:32, dword ptr R:MEM(32), R:GPR:32",
+    "fewer uops were characterized for bextr W:GPR:32, dword ptr R:MEM(32), R:GPR:32 than were originally observed (3):\n  2"
+  ],
+  [
+    "bextr W:GPR:64, qword ptr R:MEM(64), R:GPR:64",
+    "fewer uops were characterized for bextr W:GPR:64, qword ptr R:MEM(64), R:GPR:64 than were originally observed (3):\n  2"
+  ],
+  [
+    "blsi W:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for blsi W:GPR:32, dword ptr R:MEM(32) than were originally observed (4):\n  9"
+  ],
+  [
+    "blsi W:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for blsi W:GPR:64, qword ptr R:MEM(64) than were originally observed (4):\n  9"
+  ],
+  [
+    "blsmsk W:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for blsmsk W:GPR:32, dword ptr R:MEM(32) than were originally observed (4):\n  9"
+  ],
+  [
+    "blsmsk W:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for blsmsk W:GPR:64, qword ptr R:MEM(64) than were originally observed (4):\n  9"
+  ],
+  [
+    "blsr W:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for blsr W:GPR:32, dword ptr R:MEM(32) than were originally observed (4):\n  9"
+  ],
+  [
+    "blsr W:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for blsr W:GPR:64, qword ptr R:MEM(64) than were originally observed (4):\n  9"
+  ],
+  [
+    "bsf RW:GPR:16, R:GPR:16",
+    "more uops were characterized for bsf RW:GPR:16, R:GPR:16 than were originally observed (6):\n  17"
+  ],
+  [
+    "bsf RW:GPR:16, word ptr R:MEM(16)",
+    "more uops were characterized for bsf RW:GPR:16, word ptr R:MEM(16) than were originally observed (9):\n  19"
+  ],
+  [
+    "bsf RW:GPR:32, R:GPR:32",
+    "more uops were characterized for bsf RW:GPR:32, R:GPR:32 than were originally observed (6):\n  17"
+  ],
+  [
+    "bsf RW:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for bsf RW:GPR:32, dword ptr R:MEM(32) than were originally observed (9):\n  19"
+  ],
+  [
+    "bsf RW:GPR:64, R:GPR:64",
+    "more uops were characterized for bsf RW:GPR:64, R:GPR:64 than were originally observed (6):\n  18"
+  ],
+  [
+    "bsf RW:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for bsf RW:GPR:64, qword ptr R:MEM(64) than were originally observed (9):\n  19"
+  ],
+  [
+    "bsr RW:GPR:16, R:GPR:16",
+    "more uops were characterized for bsr RW:GPR:16, R:GPR:16 than were originally observed (6):\n  24"
+  ],
+  [
+    "bsr RW:GPR:16, word ptr R:MEM(16)",
+    "more uops were characterized for bsr RW:GPR:16, word ptr R:MEM(16) than were originally observed (9):\n  27"
+  ],
+  [
+    "bsr RW:GPR:32, R:GPR:32",
+    "more uops were characterized for bsr RW:GPR:32, R:GPR:32 than were originally observed (6):\n  25"
+  ],
+  [
+    "bsr RW:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for bsr RW:GPR:32, dword ptr R:MEM(32) than were originally observed (9):\n  27"
+  ],
+  [
+    "bsr RW:GPR:64, R:GPR:64",
+    "more uops were characterized for bsr RW:GPR:64, R:GPR:64 than were originally observed (6):\n  26"
+  ],
+  [
+    "bsr RW:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for bsr RW:GPR:64, qword ptr R:MEM(64) than were originally observed (9):\n  27"
+  ],
+  [
+    "bt dword ptr R:MEM(32), R:GPR:32",
+    "more uops were characterized for bt dword ptr R:MEM(32), R:GPR:32 than were originally observed (6):\n  18"
+  ],
+  [
+    "bt qword ptr R:MEM(64), R:GPR:64",
+    "more uops were characterized for bt qword ptr R:MEM(64), R:GPR:64 than were originally observed (6):\n  20"
+  ],
+  [
+    "bt word ptr R:MEM(16), R:GPR:16",
+    "more uops were characterized for bt word ptr R:MEM(16), R:GPR:16 than were originally observed (6):\n  19"
+  ],
+  [
+    "btc dword ptr RW:MEM(32), 0x0",
+    "more uops were characterized for btc dword ptr RW:MEM(32), 0x0 than were originally observed (5):\n  11"
+  ],
+  [
+    "btc dword ptr RW:MEM(32), IMM(8)",
+    "more uops were characterized for btc dword ptr RW:MEM(32), IMM(8) than were originally observed (5):\n  11"
+  ],
+  [
+    "btc dword ptr RW:MEM(32), R:GPR:32",
+    "more uops were characterized for btc dword ptr RW:MEM(32), R:GPR:32 than were originally observed (9):\n  20"
+  ],
+  [
+    "btc qword ptr RW:MEM(64), 0x0",
+    "more uops were characterized for btc qword ptr RW:MEM(64), 0x0 than were originally observed (5):\n  9"
+  ],
+  [
+    "btc qword ptr RW:MEM(64), IMM(8)",
+    "more uops were characterized for btc qword ptr RW:MEM(64), IMM(8) than were originally observed (5):\n  9"
+  ],
+  [
+    "btc qword ptr RW:MEM(64), R:GPR:64",
+    "more uops were characterized for btc qword ptr RW:MEM(64), R:GPR:64 than were originally observed (9):\n  20"
+  ],
+  [
+    "btc word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for btc word ptr RW:MEM(16), 0x0 than were originally observed (5):\n  10"
+  ],
+  [
+    "btc word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for btc word ptr RW:MEM(16), IMM(8) than were originally observed (5):\n  10"
+  ],
+  [
+    "btc word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for btc word ptr RW:MEM(16), R:GPR:16 than were originally observed (9):\n  20"
+  ],
+  [
+    "btr dword ptr RW:MEM(32), 0x0",
+    "more uops were characterized for btr dword ptr RW:MEM(32), 0x0 than were originally observed (5):\n  9"
+  ],
+  [
+    "btr dword ptr RW:MEM(32), IMM(8)",
+    "more uops were characterized for btr dword ptr RW:MEM(32), IMM(8) than were originally observed (5):\n  10"
+  ],
+  [
+    "btr dword ptr RW:MEM(32), R:GPR:32",
+    "more uops were characterized for btr dword ptr RW:MEM(32), R:GPR:32 than were originally observed (9):\n  20"
+  ],
+  [
+    "btr qword ptr RW:MEM(64), 0x0",
+    "more uops were characterized for btr qword ptr RW:MEM(64), 0x0 than were originally observed (5):\n  11"
+  ],
+  [
+    "btr qword ptr RW:MEM(64), IMM(8)",
+    "more uops were characterized for btr qword ptr RW:MEM(64), IMM(8) than were originally observed (5):\n  11"
+  ],
+  [
+    "btr qword ptr RW:MEM(64), R:GPR:64",
+    "more uops were characterized for btr qword ptr RW:MEM(64), R:GPR:64 than were originally observed (9):\n  20"
+  ],
+  [
+    "btr word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for btr word ptr RW:MEM(16), 0x0 than were originally observed (5):\n  10"
+  ],
+  [
+    "btr word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for btr word ptr RW:MEM(16), IMM(8) than were originally observed (5):\n  10"
+  ],
+  [
+    "btr word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for btr word ptr RW:MEM(16), R:GPR:16 than were originally observed (9):\n  20"
+  ],
+  [
+    "bts dword ptr RW:MEM(32), 0x0",
+    "more uops were characterized for bts dword ptr RW:MEM(32), 0x0 than were originally observed (5):\n  11"
+  ],
+  [
+    "bts dword ptr RW:MEM(32), IMM(8)",
+    "more uops were characterized for bts dword ptr RW:MEM(32), IMM(8) than were originally observed (5):\n  11"
+  ],
+  [
+    "bts dword ptr RW:MEM(32), R:GPR:32",
+    "more uops were characterized for bts dword ptr RW:MEM(32), R:GPR:32 than were originally observed (9):\n  20"
+  ],
+  [
+    "bts qword ptr RW:MEM(64), 0x0",
+    "more uops were characterized for bts qword ptr RW:MEM(64), 0x0 than were originally observed (5):\n  11"
+  ],
+  [
+    "bts qword ptr RW:MEM(64), IMM(8)",
+    "more uops were characterized for bts qword ptr RW:MEM(64), IMM(8) than were originally observed (5):\n  11"
+  ],
+  [
+    "bts qword ptr RW:MEM(64), R:GPR:64",
+    "more uops were characterized for bts qword ptr RW:MEM(64), R:GPR:64 than were originally observed (9):\n  20"
+  ],
+  [
+    "bts word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for bts word ptr RW:MEM(16), 0x0 than were originally observed (5):\n  10"
+  ],
+  [
+    "bts word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for bts word ptr RW:MEM(16), IMM(8) than were originally observed (5):\n  10"
+  ],
+  [
+    "bts word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for bts word ptr RW:MEM(16), R:GPR:16 than were originally observed (9):\n  20"
+  ],
+  [
+    "bzhi W:GPR:32, dword ptr R:MEM(32), R:GPR:32",
+    "fewer uops were characterized for bzhi W:GPR:32, dword ptr R:MEM(32), R:GPR:32 than were originally observed (3):\n  2"
+  ],
+  [
+    "bzhi W:GPR:64, qword ptr R:MEM(64), R:GPR:64",
+    "fewer uops were characterized for bzhi W:GPR:64, qword ptr R:MEM(64), R:GPR:64 than were originally observed (3):\n  2"
+  ],
+  [
+    "dec byte ptr RW:MEM(8)",
+    "more uops were characterized for dec byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "dec word ptr RW:MEM(16)",
+    "more uops were characterized for dec word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "inc byte ptr RW:MEM(8)",
+    "more uops were characterized for inc byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "inc word ptr RW:MEM(16)",
+    "more uops were characterized for inc word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "movzx W:GPR:32, byte ptr R:MEM(8)",
+    "fewer uops were characterized for movzx W:GPR:32, byte ptr R:MEM(8) than were originally observed (2):\n  1"
+  ],
+  [
+    "movzx W:GPR:32, word ptr R:MEM(16)",
+    "fewer uops were characterized for movzx W:GPR:32, word ptr R:MEM(16) than were originally observed (2):\n  1"
+  ],
+  [
+    "movzx W:GPR:64, byte ptr R:MEM(8)",
+    "fewer uops were characterized for movzx W:GPR:64, byte ptr R:MEM(8) than were originally observed (2):\n  1"
+  ],
+  [
+    "movzx W:GPR:64, word ptr R:MEM(16)",
+    "fewer uops were characterized for movzx W:GPR:64, word ptr R:MEM(16) than were originally observed (2):\n  1"
+  ],
+  [
+    "mulx W:GPR:32, W:GPR:32, R:GPR:32",
+    "more uops were characterized for mulx W:GPR:32, W:GPR:32, R:GPR:32 than were originally observed (2):\n  3"
+  ],
+  [
+    "mulx W:GPR:32, W:GPR:32, dword ptr R:MEM(32)",
+    "more uops were characterized for mulx W:GPR:32, W:GPR:32, dword ptr R:MEM(32) than were originally observed (3):\n  5"
+  ],
+  [
+    "mulx W:GPR:64, W:GPR:64, R:GPR:64",
+    "more uops were characterized for mulx W:GPR:64, W:GPR:64, R:GPR:64 than were originally observed (2):\n  3"
+  ],
+  [
+    "mulx W:GPR:64, W:GPR:64, qword ptr R:MEM(64)",
+    "more uops were characterized for mulx W:GPR:64, W:GPR:64, qword ptr R:MEM(64) than were originally observed (3):\n  5"
+  ],
+  [
+    "neg byte ptr RW:MEM(8)",
+    "more uops were characterized for neg byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "neg word ptr RW:MEM(16)",
+    "more uops were characterized for neg word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "not byte ptr RW:MEM(8)",
+    "more uops were characterized for not byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "not word ptr RW:MEM(16)",
+    "more uops were characterized for not word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "or byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for or byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "or byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for or byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "or byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for or byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (2):\n  3"
+  ],
+  [
+    "or word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for or word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "or word ptr RW:MEM(16), IMM(16)",
+    "more uops were characterized for or word ptr RW:MEM(16), IMM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "or word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for or word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "or word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for or word ptr RW:MEM(16), R:GPR:16 than were originally observed (2):\n  3"
+  ],
+  ["pclmulqdq RW:XMM0..15, R:XMM0..15, IMM(8)", "surplus uops do not add up"],
+  [
+    "pclmulqdq RW:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "rcl RW:GPR:16, 0x0",
+    "more uops were characterized for rcl RW:GPR:16, 0x0 than were originally observed (9):\n  26"
+  ],
+  [
+    "rcl RW:GPR:32, 0x0",
+    "more uops were characterized for rcl RW:GPR:32, 0x0 than were originally observed (9):\n  26"
+  ],
+  [
+    "rcl RW:GPR:64, 0x0",
+    "more uops were characterized for rcl RW:GPR:64, 0x0 than were originally observed (9):\n  26"
+  ],
+  [
+    "rcl byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for rcl byte ptr RW:MEM(8), 0x0 than were originally observed (12):\n  28"
+  ],
+  [
+    "rcl dword ptr RW:MEM(32), 0x0",
+    "Experiment with significantly non-integer number of surplus uops (0.4957575505500049):\n  ['vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'rcl dword ptr RW:MEM(32), 0x0']"
+  ],
+  [
+    "rcl qword ptr RW:MEM(64), 0x0",
+    "Experiment with significantly non-integer number of surplus uops (0.500245469550002):\n  ['vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'rcl qword ptr RW:MEM(64), 0x0']"
+  ],
+  [
+    "rcl word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for rcl word ptr RW:MEM(16), 0x0 than were originally observed (12):\n  28"
+  ],
+  [
+    "rcr RW:GPR:16, 0x0",
+    "more uops were characterized for rcr RW:GPR:16, 0x0 than were originally observed (7):\n  18"
+  ],
+  [
+    "rcr RW:GPR:32, 0x0",
+    "more uops were characterized for rcr RW:GPR:32, 0x0 than were originally observed (7):\n  18"
+  ],
+  [
+    "rcr RW:GPR:64, 0x0",
+    "more uops were characterized for rcr RW:GPR:64, 0x0 than were originally observed (7):\n  18"
+  ],
+  [
+    "rcr byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for rcr byte ptr RW:MEM(8), 0x0 than were originally observed (11):\n  28"
+  ],
+  [
+    "rcr dword ptr RW:MEM(32), 0x0",
+    "more uops were characterized for rcr dword ptr RW:MEM(32), 0x0 than were originally observed (11):\n  27"
+  ],
+  [
+    "rcr qword ptr RW:MEM(64), 0x0",
+    "more uops were characterized for rcr qword ptr RW:MEM(64), 0x0 than were originally observed (11):\n  27"
+  ],
+  [
+    "rcr word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for rcr word ptr RW:MEM(16), 0x0 than were originally observed (11):\n  28"
+  ],
+  [
+    "rol byte ptr RW:MEM(8)",
+    "more uops were characterized for rol byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "rol byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for rol byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "rol byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for rol byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "rol byte ptr RW:MEM(8), R:cl",
+    "more uops were characterized for rol byte ptr RW:MEM(8), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "rol word ptr RW:MEM(16)",
+    "more uops were characterized for rol word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "rol word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for rol word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "rol word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for rol word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "rol word ptr RW:MEM(16), R:cl",
+    "more uops were characterized for rol word ptr RW:MEM(16), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "ror byte ptr RW:MEM(8)",
+    "more uops were characterized for ror byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "ror byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for ror byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "ror byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for ror byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "ror byte ptr RW:MEM(8), R:cl",
+    "more uops were characterized for ror byte ptr RW:MEM(8), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "ror word ptr RW:MEM(16)",
+    "more uops were characterized for ror word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "ror word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for ror word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "ror word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for ror word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "ror word ptr RW:MEM(16), R:cl",
+    "more uops were characterized for ror word ptr RW:MEM(16), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "rorx W:GPR:32, dword ptr R:MEM(32), IMM(8)",
+    "fewer uops were characterized for rorx W:GPR:32, dword ptr R:MEM(32), IMM(8) than were originally observed (3):\n  2"
+  ],
+  [
+    "rorx W:GPR:64, qword ptr R:MEM(64), IMM(8)",
+    "fewer uops were characterized for rorx W:GPR:64, qword ptr R:MEM(64), IMM(8) than were originally observed (3):\n  2"
+  ],
+  [
+    "sar byte ptr RW:MEM(8)",
+    "more uops were characterized for sar byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "sar byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for sar byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "sar byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for sar byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "sar byte ptr RW:MEM(8), R:cl",
+    "more uops were characterized for sar byte ptr RW:MEM(8), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "sar word ptr RW:MEM(16)",
+    "more uops were characterized for sar word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "sar word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for sar word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "sar word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for sar word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "sar word ptr RW:MEM(16), R:cl",
+    "more uops were characterized for sar word ptr RW:MEM(16), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "sarx W:GPR:32, dword ptr R:MEM(32), R:GPR:32",
+    "fewer uops were characterized for sarx W:GPR:32, dword ptr R:MEM(32), R:GPR:32 than were originally observed (3):\n  2"
+  ],
+  [
+    "sarx W:GPR:64, qword ptr R:MEM(64), R:GPR:64",
+    "fewer uops were characterized for sarx W:GPR:64, qword ptr R:MEM(64), R:GPR:64 than were originally observed (3):\n  2"
+  ],
+  [
+    "shl byte ptr RW:MEM(8)",
+    "more uops were characterized for shl byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shl byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for shl byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "shl byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for shl byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shl byte ptr RW:MEM(8), R:cl",
+    "more uops were characterized for shl byte ptr RW:MEM(8), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "shl word ptr RW:MEM(16)",
+    "more uops were characterized for shl word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "shl word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for shl word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "shl word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for shl word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shl word ptr RW:MEM(16), R:cl",
+    "more uops were characterized for shl word ptr RW:MEM(16), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "shld RW:GPR:16, R:GPR:16, 0x0",
+    "more uops were characterized for shld RW:GPR:16, R:GPR:16, 0x0 than were originally observed (6):\n  17"
+  ],
+  [
+    "shld RW:GPR:16, R:GPR:16, IMM(8)",
+    "more uops were characterized for shld RW:GPR:16, R:GPR:16, IMM(8) than were originally observed (6):\n  16"
+  ],
+  [
+    "shld RW:GPR:32, R:GPR:32, 0x0",
+    "more uops were characterized for shld RW:GPR:32, R:GPR:32, 0x0 than were originally observed (6):\n  16"
+  ],
+  [
+    "shld RW:GPR:32, R:GPR:32, IMM(8)",
+    "more uops were characterized for shld RW:GPR:32, R:GPR:32, IMM(8) than were originally observed (6):\n  17"
+  ],
+  [
+    "shld RW:GPR:64, R:GPR:64, 0x0",
+    "more uops were characterized for shld RW:GPR:64, R:GPR:64, 0x0 than were originally observed (6):\n  17"
+  ],
+  [
+    "shld RW:GPR:64, R:GPR:64, IMM(8)",
+    "more uops were characterized for shld RW:GPR:64, R:GPR:64, IMM(8) than were originally observed (6):\n  17"
+  ],
+  [
+    "shld dword ptr RW:MEM(32), R:GPR:32, 0x0",
+    "more uops were characterized for shld dword ptr RW:MEM(32), R:GPR:32, 0x0 than were originally observed (9):\n  19"
+  ],
+  [
+    "shld dword ptr RW:MEM(32), R:GPR:32, IMM(8)",
+    "more uops were characterized for shld dword ptr RW:MEM(32), R:GPR:32, IMM(8) than were originally observed (9):\n  19"
+  ],
+  [
+    "shld qword ptr RW:MEM(64), R:GPR:64, 0x0",
+    "more uops were characterized for shld qword ptr RW:MEM(64), R:GPR:64, 0x0 than were originally observed (9):\n  19"
+  ],
+  [
+    "shld qword ptr RW:MEM(64), R:GPR:64, IMM(8)",
+    "more uops were characterized for shld qword ptr RW:MEM(64), R:GPR:64, IMM(8) than were originally observed (9):\n  19"
+  ],
+  [
+    "shld word ptr RW:MEM(16), R:GPR:16, 0x0",
+    "more uops were characterized for shld word ptr RW:MEM(16), R:GPR:16, 0x0 than were originally observed (9):\n  20"
+  ],
+  [
+    "shld word ptr RW:MEM(16), R:GPR:16, IMM(8)",
+    "more uops were characterized for shld word ptr RW:MEM(16), R:GPR:16, IMM(8) than were originally observed (9):\n  20"
+  ],
+  [
+    "shlx W:GPR:32, dword ptr R:MEM(32), R:GPR:32",
+    "fewer uops were characterized for shlx W:GPR:32, dword ptr R:MEM(32), R:GPR:32 than were originally observed (3):\n  2"
+  ],
+  [
+    "shlx W:GPR:64, qword ptr R:MEM(64), R:GPR:64",
+    "fewer uops were characterized for shlx W:GPR:64, qword ptr R:MEM(64), R:GPR:64 than were originally observed (3):\n  2"
+  ],
+  [
+    "shr byte ptr RW:MEM(8)",
+    "more uops were characterized for shr byte ptr RW:MEM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shr byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for shr byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "shr byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for shr byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shr byte ptr RW:MEM(8), R:cl",
+    "Experiment with significantly non-integer number of surplus uops (2.3081931896000007):\n  ['mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'shr byte ptr RW:MEM(8), R:cl']"
+  ],
+  [
+    "shr word ptr RW:MEM(16)",
+    "more uops were characterized for shr word ptr RW:MEM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "shr word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for shr word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "shr word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for shr word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "shr word ptr RW:MEM(16), R:cl",
+    "more uops were characterized for shr word ptr RW:MEM(16), R:cl than were originally observed (2):\n  3"
+  ],
+  [
+    "shrd RW:GPR:16, R:GPR:16, 0x0",
+    "more uops were characterized for shrd RW:GPR:16, R:GPR:16, 0x0 than were originally observed (6):\n  18"
+  ],
+  [
+    "shrd RW:GPR:16, R:GPR:16, IMM(8)",
+    "more uops were characterized for shrd RW:GPR:16, R:GPR:16, IMM(8) than were originally observed (6):\n  18"
+  ],
+  [
+    "shrd RW:GPR:32, R:GPR:32, 0x0",
+    "more uops were characterized for shrd RW:GPR:32, R:GPR:32, 0x0 than were originally observed (6):\n  18"
+  ],
+  [
+    "shrd RW:GPR:32, R:GPR:32, IMM(8)",
+    "more uops were characterized for shrd RW:GPR:32, R:GPR:32, IMM(8) than were originally observed (6):\n  16"
+  ],
+  [
+    "shrd RW:GPR:64, R:GPR:64, 0x0",
+    "more uops were characterized for shrd RW:GPR:64, R:GPR:64, 0x0 than were originally observed (6):\n  18"
+  ],
+  [
+    "shrd RW:GPR:64, R:GPR:64, IMM(8)",
+    "more uops were characterized for shrd RW:GPR:64, R:GPR:64, IMM(8) than were originally observed (6):\n  18"
+  ],
+  [
+    "shrd dword ptr RW:MEM(32), R:GPR:32, 0x0",
+    "more uops were characterized for shrd dword ptr RW:MEM(32), R:GPR:32, 0x0 than were originally observed (9):\n  19"
+  ],
+  [
+    "shrd dword ptr RW:MEM(32), R:GPR:32, IMM(8)",
+    "more uops were characterized for shrd dword ptr RW:MEM(32), R:GPR:32, IMM(8) than were originally observed (9):\n  19"
+  ],
+  [
+    "shrd qword ptr RW:MEM(64), R:GPR:64, 0x0",
+    "more uops were characterized for shrd qword ptr RW:MEM(64), R:GPR:64, 0x0 than were originally observed (9):\n  19"
+  ],
+  [
+    "shrd qword ptr RW:MEM(64), R:GPR:64, IMM(8)",
+    "more uops were characterized for shrd qword ptr RW:MEM(64), R:GPR:64, IMM(8) than were originally observed (9):\n  19"
+  ],
+  [
+    "shrd word ptr RW:MEM(16), R:GPR:16, 0x0",
+    "Experiment with significantly non-integer number of surplus uops (1.6393698192799988):\n  ['mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'mov W:GPR:32, dword ptr R:MEM(32)', 'shrd word ptr RW:MEM(16), R:GPR:16, 0x0']"
+  ],
+  [
+    "shrd word ptr RW:MEM(16), R:GPR:16, IMM(8)",
+    "more uops were characterized for shrd word ptr RW:MEM(16), R:GPR:16, IMM(8) than were originally observed (9):\n  20"
+  ],
+  [
+    "shrx W:GPR:32, dword ptr R:MEM(32), R:GPR:32",
+    "fewer uops were characterized for shrx W:GPR:32, dword ptr R:MEM(32), R:GPR:32 than were originally observed (3):\n  2"
+  ],
+  [
+    "shrx W:GPR:64, qword ptr R:MEM(64), R:GPR:64",
+    "fewer uops were characterized for shrx W:GPR:64, qword ptr R:MEM(64), R:GPR:64 than were originally observed (3):\n  2"
+  ],
+  [
+    "sub byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for sub byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "sub byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for sub byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "sub byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for sub byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (2):\n  3"
+  ],
+  [
+    "sub word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for sub word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "sub word ptr RW:MEM(16), IMM(16)",
+    "more uops were characterized for sub word ptr RW:MEM(16), IMM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "sub word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for sub word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "sub word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for sub word ptr RW:MEM(16), R:GPR:16 than were originally observed (2):\n  3"
+  ],
+  [
+    "vcomisd R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vcomisd R:XMM0..15, R:XMM0..15 than were originally observed (2):\n  4"
+  ],
+  [
+    "vcomisd R:XMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vcomisd R:XMM0..15, qword ptr R:MEM(64) than were originally observed (3):\n  5"
+  ],
+  [
+    "vcomiss R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vcomiss R:XMM0..15, R:XMM0..15 than were originally observed (2):\n  4"
+  ],
+  [
+    "vcomiss R:XMM0..15, dword ptr R:MEM(32)",
+    "more uops were characterized for vcomiss R:XMM0..15, dword ptr R:MEM(32) than were originally observed (3):\n  5"
+  ],
+  [
+    "vdppd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.4983642741250005):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vdppd W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)']"
+  ],
+  [
+    "vdppd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.4991895020250006):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vdppd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)']"
+  ],
+  [
+    "vdpps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.4980442175333337):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vdpps W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)']"
+  ],
+  [
+    "vdpps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.4954951166000008):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vdpps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)']"
+  ],
+  [
+    "vdpps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (8.45462205816):\n  ['vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vdpps W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vdpps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "more uops were characterized for vdpps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8) than were originally observed (16):\n  36"
+  ],
+  [
+    "vextractps W:GPR:32, R:XMM0..15, IMM(8)",
+    "more uops were characterized for vextractps W:GPR:32, R:XMM0..15, IMM(8) than were originally observed (2):\n  4"
+  ],
+  [
+    "vhaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vhaddpd W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vhaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vhaddpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vhaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vhaddpd W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vhaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vhaddpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vhaddps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vhaddps W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vhaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vhaddps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vhaddps W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vhaddps W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vhaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vhaddps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (13):\n  28"
+  ],
+  [
+    "vhsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vhsubpd W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vhsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vhsubpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vhsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vhsubpd W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vhsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "Experiment with significantly non-integer number of surplus uops (0.4953835904499986):\n  ['vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vhsubpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)']"
+  ],
+  [
+    "vhsubps W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vhsubps W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vhsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vhsubps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vhsubps W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vhsubps W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vhsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vhsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vinsertf128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "more uops were characterized for vinsertf128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8) than were originally observed (3):\n  4"
+  ],
+  [
+    "vinserti128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "more uops were characterized for vinserti128 W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128), IMM(8) than were originally observed (3):\n  4"
+  ],
+  [
+    "vmaskmovpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vmaskmovpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (13):\n  29"
+  ],
+  [
+    "vmaskmovpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vmaskmovpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (26):\n  57"
+  ],
+  [
+    "vmaskmovpd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vmaskmovpd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15 than were originally observed (11):\n  31"
+  ],
+  [
+    "vmaskmovpd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vmaskmovpd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15 than were originally observed (20):\n  51"
+  ],
+  [
+    "vmaskmovps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vmaskmovps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (21):\n  48"
+  ],
+  [
+    "vmaskmovps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "Experiment with significantly non-integer number of surplus uops (1.3678808912000022):\n  ['vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vbroadcastss W:XMM0..15, R:XMM0..15', 'vmaskmovps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)']"
+  ],
+  [
+    "vmaskmovps xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vmaskmovps xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15 than were originally observed (20):\n  52"
+  ],
+  [
+    "vmaskmovps ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (9.492926894):\n  ['vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddd W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmaskmovps ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15']"
+  ],
+  [
+    "vmovntdq xmmword ptr W:MEM(128), R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (629.53235713445):\n  ['mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'vmovntdq xmmword ptr W:MEM(128), R:XMM0..15']"
+  ],
+  ["vmovntdq ymmword ptr W:MEM(256), R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vmovntpd xmmword ptr W:MEM(128), R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (629.243469411075):\n  ['mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'vmovntpd xmmword ptr W:MEM(128), R:XMM0..15']"
+  ],
+  ["vmovntpd ymmword ptr W:MEM(256), R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vmovntps xmmword ptr W:MEM(128), R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (629.4935475):\n  ['mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'mov dword ptr W:MEM(32), R:GPR:32', 'vmovntps xmmword ptr W:MEM(128), R:XMM0..15']"
+  ],
+  ["vmovntps ymmword ptr W:MEM(256), R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vmpsadbw W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vmpsadbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.3334928832):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmpsadbw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)']"
+  ],
+  [
+    "vmpsadbw W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.6654926219333355):\n  ['vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmpsadbw W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vmpsadbw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vmulps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4973546079499993):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmulps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vmulps W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.4983694056250005):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmulps W:YMM0..15, R:YMM0..15, R:YMM0..15']"
+  ],
+  [
+    "vmulps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "Experiment with significantly non-integer number of surplus uops (2.498426238021054):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmulps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)']"
+  ],
+  [
+    "vmulss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)",
+    "Experiment with significantly non-integer number of surplus uops (1.4976720828500003):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vmulss W:XMM0..15, R:XMM0..15, dword ptr R:MEM(32)']"
+  ],
+  [
+    "vpclmulqdq W:XMM0..15, R:XMM0..15, R:XMM0..15, IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpclmulqdq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpcmpestrm R:XMM0..15, R:XMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (3.6640925705333345):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpcmpestrm R:XMM0..15, R:XMM0..15, IMM(8)']"
+  ],
+  [
+    "vpcmpestrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (1.4954395970000007):\n  ['vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vminps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpcmpestrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)']"
+  ],
+  ["vpcmpistrm R:XMM0..15, R:XMM0..15, IMM(8)", "surplus uops do not add up"],
+  [
+    "vpcmpistrm R:XMM0..15, xmmword ptr R:MEM(128), IMM(8)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vperm2f128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)",
+    "more uops were characterized for vperm2f128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8) than were originally observed (8):\n  18"
+  ],
+  [
+    "vperm2f128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "more uops were characterized for vperm2f128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8) than were originally observed (14):\n  28"
+  ],
+  [
+    "vperm2i128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8)",
+    "more uops were characterized for vperm2i128 W:YMM0..15, R:YMM0..15, R:YMM0..15, IMM(8) than were originally observed (8):\n  18"
+  ],
+  [
+    "vperm2i128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "more uops were characterized for vperm2i128 W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256), IMM(8) than were originally observed (14):\n  28"
+  ],
+  [
+    "vpermd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermilpd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermilpd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermilps W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermilps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermpd W:YMM0..15, R:YMM0..15, IMM(8)",
+    "more uops were characterized for vpermpd W:YMM0..15, R:YMM0..15, IMM(8) than were originally observed (3):\n  8"
+  ],
+  [
+    "vpermpd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "more uops were characterized for vpermpd W:YMM0..15, ymmword ptr R:MEM(256), IMM(8) than were originally observed (6):\n  11"
+  ],
+  [
+    "vpermps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpermq W:YMM0..15, R:YMM0..15, IMM(8)",
+    "more uops were characterized for vpermq W:YMM0..15, R:YMM0..15, IMM(8) than were originally observed (3):\n  8"
+  ],
+  [
+    "vpermq W:YMM0..15, ymmword ptr R:MEM(256), IMM(8)",
+    "more uops were characterized for vpermq W:YMM0..15, ymmword ptr R:MEM(256), IMM(8) than were originally observed (6):\n  12"
+  ],
+  [
+    "vpextrb W:GPR:32, R:XMM0..15, IMM(8)",
+    "more uops were characterized for vpextrb W:GPR:32, R:XMM0..15, IMM(8) than were originally observed (2):\n  4"
+  ],
+  [
+    "vpextrd W:GPR:32, R:XMM0..15, IMM(8)",
+    "more uops were characterized for vpextrd W:GPR:32, R:XMM0..15, IMM(8) than were originally observed (2):\n  4"
+  ],
+  [
+    "vpextrq W:GPR:64, R:XMM0..15, IMM(8)",
+    "more uops were characterized for vpextrq W:GPR:64, R:XMM0..15, IMM(8) than were originally observed (2):\n  4"
+  ],
+  [
+    "vpextrw W:GPR:32, R:XMM0..15, IMM(8)",
+    "more uops were characterized for vpextrw W:GPR:32, R:XMM0..15, IMM(8) than were originally observed (2):\n  4"
+  ],
+  [
+    "vphaddd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphaddd W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphaddd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphaddd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphaddd W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphaddd W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphaddd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphaddd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vphaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphaddsw W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphaddsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphaddsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphaddsw W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphaddsw W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphaddsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphaddsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vphaddw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphaddw W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphaddw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphaddw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphaddw W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphaddw W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphaddw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphaddw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  ["vphminposuw W:XMM0..15, xmmword ptr R:MEM(128)", "surplus uops do not add up"],
+  [
+    "vphsubd W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphsubd W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphsubd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphsubd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphsubd W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphsubd W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphsubd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphsubd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vphsubsw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphsubsw W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphsubsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphsubsw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphsubsw W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphsubsw W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphsubsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphsubsw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vphsubw W:XMM0..15, R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vphsubw W:XMM0..15, R:XMM0..15, R:XMM0..15 than were originally observed (4):\n  8"
+  ],
+  [
+    "vphsubw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vphsubw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  [
+    "vphsubw W:YMM0..15, R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vphsubw W:YMM0..15, R:YMM0..15, R:YMM0..15 than were originally observed (8):\n  18"
+  ],
+  [
+    "vphsubw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vphsubw W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (12):\n  28"
+  ],
+  [
+    "vpinsrb W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)",
+    "more uops were characterized for vpinsrb W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "vpinsrd W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)",
+    "more uops were characterized for vpinsrd W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "vpinsrq W:XMM0..15, R:XMM0..15, R:GPR:64, IMM(8)",
+    "more uops were characterized for vpinsrq W:XMM0..15, R:XMM0..15, R:GPR:64, IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "vpinsrw W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8)",
+    "more uops were characterized for vpinsrw W:XMM0..15, R:XMM0..15, R:GPR:32, IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "vpmaskmovd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmaskmovd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (21):\n  49"
+  ],
+  [
+    "vpmaskmovd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "Experiment with significantly non-integer number of surplus uops (3.802634974100002):\n  ['vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vroundps W:XMM0..15, R:XMM0..15, IMM(8)', 'vpmaskmovd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)']"
+  ],
+  [
+    "vpmaskmovd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vpmaskmovd xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15 than were originally observed (20):\n  52"
+  ],
+  [
+    "vpmaskmovd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vpmaskmovd ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15 than were originally observed (44):\n  112"
+  ],
+  [
+    "vpmaskmovq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmaskmovq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (13):\n  29"
+  ],
+  [
+    "vpmaskmovq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vpmaskmovq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (26):\n  57"
+  ],
+  [
+    "vpmaskmovq xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vpmaskmovq xmmword ptr W:MEM(128), R:XMM0..15, R:XMM0..15 than were originally observed (11):\n  31"
+  ],
+  [
+    "vpmaskmovq ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15",
+    "more uops were characterized for vpmaskmovq ymmword ptr W:MEM(256), R:YMM0..15, R:YMM0..15 than were originally observed (20):\n  51"
+  ],
+  ["vpmovsxbd W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxbd W:YMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vpmovsxbd W:YMM0..15, qword ptr R:MEM(64) than were originally observed (5):\n  9"
+  ],
+  ["vpmovsxbq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxbq W:YMM0..15, dword ptr R:MEM(32)",
+    "more uops were characterized for vpmovsxbq W:YMM0..15, dword ptr R:MEM(32) than were originally observed (5):\n  9"
+  ],
+  ["vpmovsxbw W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxbw W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovsxbw W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovsxdq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxdq W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovsxdq W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovsxwd W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxwd W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovsxwd W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovsxwq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovsxwq W:YMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vpmovsxwq W:YMM0..15, qword ptr R:MEM(64) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxbd W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxbd W:YMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vpmovzxbd W:YMM0..15, qword ptr R:MEM(64) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxbq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxbq W:YMM0..15, dword ptr R:MEM(32)",
+    "more uops were characterized for vpmovzxbq W:YMM0..15, dword ptr R:MEM(32) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxbw W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxbw W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovzxbw W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxdq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxdq W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovzxdq W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxwd W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxwd W:YMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vpmovzxwd W:YMM0..15, xmmword ptr R:MEM(128) than were originally observed (5):\n  9"
+  ],
+  ["vpmovzxwq W:YMM0..15, R:XMM0..15", "surplus uops do not add up"],
+  [
+    "vpmovzxwq W:YMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vpmovzxwq W:YMM0..15, qword ptr R:MEM(64) than were originally observed (5):\n  9"
+  ],
+  [
+    "vpmulld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpmulld W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpslld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4704127130500009):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpslld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpslld W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3978548638631576):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpslld W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpslld W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3978902117789467):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpslld W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpslld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.4193744490999993):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpslld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsllq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4673437926750008):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsllq W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.398544908357895):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllq W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsllq W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3980136448249993):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllq W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsllq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.41964916525):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsllvd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsllvd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsllvq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsllvq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsllw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4718580040999996):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsllw W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3984210209789474):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllw W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsllw W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3982899362500003):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllw W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsllw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.4197990669500005):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsllw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrad W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.463609508452631):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrad W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrad W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3981771725263155):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrad W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsrad W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3984362092500007):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrad W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsrad W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.376039885031579):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrad W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsravd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsravd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsraw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4689015929052633):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsraw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsraw W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3997524782):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsraw W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsraw W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3984097432):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsraw W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsraw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.419322893663157):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsraw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4688591568000007):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrld W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrld W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.398210043475):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrld W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsrld W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3988263899):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrld W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsrld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.418778573778946):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrld W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrlq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4706095186500008):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrlq W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3986964625000002):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlq W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsrlq W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.3980895596947356):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlq W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsrlq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.4374385762):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlq W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrlvd W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsrlvd W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsrlvq W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsrlvq W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "surplus uops do not add up"
+  ],
+  [
+    "vpsrlw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (1.4684400866249998):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlw W:XMM0..15, R:XMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vpsrlw W:YMM0..15, R:YMM0..15, IMM(8)",
+    "Experiment with significantly non-integer number of surplus uops (2.3992984656999994):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlw W:YMM0..15, R:YMM0..15, IMM(8)']"
+  ],
+  [
+    "vpsrlw W:YMM0..15, R:YMM0..15, R:XMM0..15",
+    "Experiment with significantly non-integer number of surplus uops (2.398446641125):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlw W:YMM0..15, R:YMM0..15, R:XMM0..15']"
+  ],
+  [
+    "vpsrlw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)",
+    "Experiment with significantly non-integer number of surplus uops (2.4013397196736843):\n  ['vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vaddps W:XMM0..15, R:XMM0..15, R:XMM0..15', 'vpsrlw W:YMM0..15, R:YMM0..15, xmmword ptr R:MEM(128)']"
+  ],
+  [
+    "vptest R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vptest R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (3):\n  5"
+  ],
+  ["vptest R:YMM0..15, R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vptest R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vptest R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (7):\n  20"
+  ],
+  [
+    "vsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vsubps W:YMM0..15, R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (4):\n  5"
+  ],
+  [
+    "vtestpd R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vtestpd R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (3):\n  5"
+  ],
+  ["vtestpd R:YMM0..15, R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vtestpd R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vtestpd R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (7):\n  21"
+  ],
+  [
+    "vtestps R:XMM0..15, xmmword ptr R:MEM(128)",
+    "more uops were characterized for vtestps R:XMM0..15, xmmword ptr R:MEM(128) than were originally observed (3):\n  5"
+  ],
+  ["vtestps R:YMM0..15, R:YMM0..15", "surplus uops do not add up"],
+  [
+    "vtestps R:YMM0..15, ymmword ptr R:MEM(256)",
+    "more uops were characterized for vtestps R:YMM0..15, ymmword ptr R:MEM(256) than were originally observed (7):\n  21"
+  ],
+  [
+    "vucomisd R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vucomisd R:XMM0..15, R:XMM0..15 than were originally observed (2):\n  4"
+  ],
+  [
+    "vucomisd R:XMM0..15, qword ptr R:MEM(64)",
+    "more uops were characterized for vucomisd R:XMM0..15, qword ptr R:MEM(64) than were originally observed (3):\n  5"
+  ],
+  [
+    "vucomiss R:XMM0..15, R:XMM0..15",
+    "more uops were characterized for vucomiss R:XMM0..15, R:XMM0..15 than were originally observed (2):\n  4"
+  ],
+  [
+    "vucomiss R:XMM0..15, dword ptr R:MEM(32)",
+    "more uops were characterized for vucomiss R:XMM0..15, dword ptr R:MEM(32) than were originally observed (3):\n  5"
+  ],
+  [
+    "vzeroall",
+    "more uops were characterized for vzeroall than were originally observed (33):\n  78"
+  ],
+  [
+    "vzeroupper",
+    "more uops were characterized for vzeroupper than were originally observed (17):\n  42"
+  ],
+  [
+    "xadd RW:GPR:32, RW:GPR:32",
+    "fewer uops were characterized for xadd RW:GPR:32, RW:GPR:32 than were originally observed (2):\n  1"
+  ],
+  [
+    "xadd RW:GPR:64, RW:GPR:64",
+    "fewer uops were characterized for xadd RW:GPR:64, RW:GPR:64 than were originally observed (2):\n  1"
+  ],
+  [
+    "xadd byte ptr RW:MEM(8), RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for xadd byte ptr RW:MEM(8), RW:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (5):\n  10"
+  ],
+  [
+    "xadd dword ptr RW:MEM(32), RW:GPR:32",
+    "more uops were characterized for xadd dword ptr RW:MEM(32), RW:GPR:32 than were originally observed (5):\n  9"
+  ],
+  [
+    "xadd qword ptr RW:MEM(64), RW:GPR:64",
+    "more uops were characterized for xadd qword ptr RW:MEM(64), RW:GPR:64 than were originally observed (5):\n  9"
+  ],
+  [
+    "xadd word ptr RW:MEM(16), RW:GPR:16",
+    "more uops were characterized for xadd word ptr RW:MEM(16), RW:GPR:16 than were originally observed (5):\n  10"
+  ],
+  [
+    "xchg RW:GPR:32, RW:GPR:32",
+    "fewer uops were characterized for xchg RW:GPR:32, RW:GPR:32 than were originally observed (2):\n  0"
+  ],
+  [
+    "xchg RW:GPR:64, RW:GPR:64",
+    "fewer uops were characterized for xchg RW:GPR:64, RW:GPR:64 than were originally observed (2):\n  0"
+  ],
+  [
+    "xor byte ptr RW:MEM(8), 0x0",
+    "more uops were characterized for xor byte ptr RW:MEM(8), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "xor byte ptr RW:MEM(8), IMM(8)",
+    "more uops were characterized for xor byte ptr RW:MEM(8), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "xor byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl",
+    "more uops were characterized for xor byte ptr RW:MEM(8), R:al,bl,bpl,cl,dil,dl,r10b,r11b,r12b,r13b,r14b,r15b,r8b,r9b,sil,spl than were originally observed (2):\n  3"
+  ],
+  [
+    "xor word ptr RW:MEM(16), 0x0",
+    "more uops were characterized for xor word ptr RW:MEM(16), 0x0 than were originally observed (2):\n  3"
+  ],
+  [
+    "xor word ptr RW:MEM(16), IMM(16)",
+    "more uops were characterized for xor word ptr RW:MEM(16), IMM(16) than were originally observed (2):\n  3"
+  ],
+  [
+    "xor word ptr RW:MEM(16), IMM(8)",
+    "more uops were characterized for xor word ptr RW:MEM(16), IMM(8) than were originally observed (2):\n  3"
+  ],
+  [
+    "xor word ptr RW:MEM(16), R:GPR:16",
+    "more uops were characterized for xor word ptr RW:MEM(16), R:GPR:16 than were originally observed (2):\n  3"
+  ]
+]

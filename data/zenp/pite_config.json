@@ -1,0 +1,25 @@
+
+{
+    "processor_kind": "iwho",
+    "iwho_config_path": "./iwho_config-spec17.json",
+    "iwho_unroll_factors": [40, 80, 200],
+    "iwho_unroll_mode": "instructions",
+    "iwho_adjust_zenp_uopcount": true,
+    "iwho_operand_allocators": ["partitioned"],
+    "iwho_predictor_config": {
+            "kind": "pite",
+            "isa": "x86",
+            "compiler_cmd": ["gcc", "-O0", "-fomit-frame-pointer"],
+            "use_perf_counters": true,
+            "additional_mem_regs": false,
+            "pinned_core": 4,
+            "freq_threshold": 0.01,
+            "subconfigs": [
+                {"target_usec": 1000.0, "num_samples_internal": 11, "unroll_insns": 1}
+            ],
+            "timeout": 5.0,
+            "aggregator": "median"
+        }
+
+}
+
