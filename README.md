@@ -8,6 +8,8 @@ This is a research prototype, expect things to break!
 
 ## Installation
 
+** These steps are not required when using the prebuilt virtual machine. **
+
 Make sure that you have `llvm-mc` on your path (most likely by installing [LLVM](https://llvm.org/)).
 It is used to handle basic instruction (dis)assembly tasks.
 Furthermore, you need a python3 setup with the `venv` standard module available.
