@@ -14,12 +14,13 @@ This is a research prototype, expect things to break!
 
 Make sure that you have `llvm-mc` on your path (most likely by installing [LLVM](https://llvm.org/)).
 It is used to handle basic instruction (dis)assembly tasks.
-Furthermore, you need a python3 setup with the `venv` standard module available.
+Furthermore, you need a python setup with at least version 3.10 and with the `venv` standard module available.
 
 1. Get the repository and its submodule(s):
     ```
     git clone <repo> pmtestbench
     cd pmtestbench
+    git submodule update --init
     ```
 2. Set up a virtual environment and install python dependencies and the
    pmtestbench package itself there:
